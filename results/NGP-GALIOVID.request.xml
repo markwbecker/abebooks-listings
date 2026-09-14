@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GALIOVID</vendorBookID>
+      <author>Galinsky, G. Karl</author>
+      <title>Ovid's Metamorphoses: An Introduction to the Basic Aspects</title>
+      <publisher>University of California Press</publisher>
+      <subject>Ovid; Metamorphoses; classics; classical studies; Latin literature; Roman poetry; Augustan poetry; literary criticism; mythology; Galinsky; University of California Press</subject>
+      <price currency="USD">87.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Cloth</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Galinsky's study of Ovid's Metamorphoses, published by the University of California Press. Hardcover in olive cloth with bright gilt spine lettering, in the original pictorial dust jacket housed in a mylar protector. A withdrawn university library copy, and plainly marked as one: a barcode label at the foot of the spine and a second to the front endpaper, a Gaylord date-due pocket with its card still in place, the call number and shelf stamps struck through in black marker, a large 'W/D' inked across the card, and library stamps across the top and fore edges of the text block likewise obliterated. Two brown adhesive stains from old tape show on the front board, with matching rust bleed-through to the endpaper, and the top edge is age-toned with scattered foxing. The cloth spine itself is excellent - bright, unfaded and square, the gilt crisp, with no lean and no fraying at head or tail - the binding is tight, and the text is clean apart from light pencil markings.</description>
+      <bookCondition>Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Good</jacketCondition>
+      <bookType>Ex-Library</bookType>
+      <isbn>9780520028487</isbn>
+      <publishPlace>Berkeley</publishPlace>
+      <publishYear>1975</publishYear>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/93784eda26f733cfd1d78c339b5da20025313aa6/photos/NGP-GALIOVID/8.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

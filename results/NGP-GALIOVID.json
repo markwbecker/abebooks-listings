@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-GALIOVID",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-14T22:32:37+00:00",
+  "trigger_sha": "93784eda26f733cfd1d78c339b5da20025313aa6",
+  "run_id": "34904612233",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-GALIOVID",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
