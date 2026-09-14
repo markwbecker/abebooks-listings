@@ -16,9 +16,13 @@ Ground rules:
 
 * Work on the branch the session gives you and push it with the helper; the workflow
   fast-forwards `main` itself. Do not open pull requests for listings.
-* Show Mark the draft (title, price + comps, description, SKU, photo count) and wait for "go"
-  before `publish`. Prices follow his rule: average of comparable AbeBooks item prices, shipping
-  excluded, rounded to whole dollars.
+* SKUs are `NGP-` + letters of the author's surname and the title (`python3 tools/abe_local.py sku
+  --author ... --title ...`), never reused. Grade the condition from the photos and list the
+  specific points you see; Mark can override the grade.
+* Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
+  wait for "go" before `publish`. He often sends photos in several batches — the photos command
+  appends, so keep collecting until he says go (AbeBooks keeps up to 20). Prices follow his rule:
+  average of comparable AbeBooks item prices, shipping excluded, rounded to whole dollars.
 * Credentials never go in this repo, in chat, or in memory — only in Actions secrets
   (`ABE_USERNAME` + `ABE_API_KEY`, or `ABE_ACCESS_KEY` + `ABE_SECRET_KEY`).
 * `listings/<SKU>.json` is the source of truth. Updates must carry the full record — AbeBooks

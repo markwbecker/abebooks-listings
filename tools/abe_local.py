@@ -15,8 +15,8 @@ Two transports, chosen automatically:
 
 Sub-commands
   check                          where am I, can I push, is the workflow present
-  sku                            print a fresh unique SKU (NGP- + 8 chars)
-  photos  --sku SKU [--out DIR] f1 f2 ...   normalise photos -> photos/SKU/1.jpg, 2.jpg ...
+  sku     --author "Surname, First" --title "Title"   NGP- + letters of surname+title, unique (or --random)
+  photos  --sku SKU [--replace] f1 f2 ...   normalise photos -> photos/SKU/1.jpg ... ; later calls append
   price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new]
   validate listing.json          check fields / lengths, print normalised listing
   publish listing.json [--photos DIR] [--wait 300] [--skip-photos]
@@ -236,6 +236,54 @@ def existing_skus() -> set[str]:
     return taken
 
 
+def _alnum(text: str, digits: bool) -> str:
+    """Uppercase ASCII letters (and optionally digits) of text, accents stripped."""
+    import unicodedata
+    flat = "".join(c for c in unicodedata.normalize("NFKD", text or "") if not unicodedata.combining(c))
+    keep = "A-Z0-9" if digits else "A-Z"
+    return re.sub(f"[^{keep}]", "", flat.upper())
+
+
+ARTICLES = ("THE ", "A ", "AN ", "LE ", "LA ", "LES ", "DER ", "DIE ", "DAS ", "EL ", "LOS ")
+
+
+def derive_sku(author: str | None, title: str | None, taken: set[str]) -> str:
+    """NGP- + 4 letters of the author's surname + letters of the title (8 in all), unique.
+
+    'Wittgenstein, Ludwig' / 'Tractatus Logico-Philosophicus' -> NGP-WITTTRAC
+    'Hemingway, Ernest'    / 'The Old Man and the Sea'         -> NGP-HEMIOLDM
+    A second copy of the same book gets NGP-HEMIOLD2, then ...3, and so on.
+    """
+    surname = ""
+    if author:
+        first = re.split(r"[;&]| and ", author)[0].strip()
+        surname = first.split(",")[0].strip() if "," in first else (first.split()[-1] if first.split() else "")
+    main_title = re.split(r"[:;(\[]", title or "")[0].strip().upper()
+    for art in ARTICLES:
+        if main_title.startswith(art):
+            main_title = main_title[len(art):]
+            break
+    s, t = _alnum(surname, digits=False), _alnum(main_title, digits=True)
+    n_s = min(4, len(s))
+    core = s[:n_s] + t[: 8 - n_s]
+    if len(core) < 8:                      # short title: borrow more of the surname, then the rest of the title
+        core = (core + s[n_s:] + t[8 - n_s:])[:8]
+    if len(core) < 8:
+        core = (core + "".join(secrets.choice(SKU_ALPHABET) for _ in range(8)))[:8]
+    cand = SKU_PREFIX + core
+    if cand not in taken:
+        return cand
+    for d in "23456789":
+        cand = SKU_PREFIX + core[:7] + d
+        if cand not in taken:
+            return cand
+    for d in range(10, 100):
+        cand = SKU_PREFIX + core[:6] + str(d)
+        if cand not in taken:
+            return cand
+    raise SystemExit("could not derive a unique SKU — pass --random")
+
+
 def new_sku(taken: set[str]) -> str:
     for _ in range(50):
         cand = SKU_PREFIX + "".join(secrets.choice(SKU_ALPHABET) for _ in range(8))
@@ -244,8 +292,12 @@ def new_sku(taken: set[str]) -> str:
     raise SystemExit("could not generate a unique SKU")
 
 
-def cmd_sku(_):
-    print(new_sku(existing_skus()))
+def cmd_sku(a):
+    taken = existing_skus()
+    if a.random or not (a.author or a.title):
+        print(new_sku(taken))
+    else:
+        print(derive_sku(a.author, a.title, taken))
 
 
 def cmd_photos(a):
@@ -257,8 +309,14 @@ def cmd_photos(a):
         pass
     out = Path(a.out) if a.out else ((ROOT / "photos" / a.sku) if GIT_MODE else Path("photos") / a.sku)
     out.mkdir(parents=True, exist_ok=True)
+    existing = sorted_photos(str(out))
+    if a.replace:
+        for p in existing:
+            p.unlink()
+        existing = []
+    start = (max(int(p.stem) for p in existing) + 1) if existing else 1   # later batches append, numbering continues
     report = []
-    for i, src in enumerate(a.files, start=1):
+    for i, src in enumerate(a.files, start=start):
         p = Path(src)
         try:
             im = Image.open(p)
@@ -273,8 +331,11 @@ def cmd_photos(a):
         im.save(dest, "JPEG", quality=a.quality, optimize=True, progressive=True)
         report.append({"source": str(p), "output": str(dest), "size_kb": round(dest.stat().st_size / 1024),
                        "width": im.width, "height": im.height})
-    repo_paths = [f"photos/{a.sku}/{Path(r['output']).name}" for r in report if "output" in r]
-    print(json.dumps({"sku": a.sku, "dir": str(out), "photos": report, "listing_photos_field": repo_paths}, indent=2))
+    all_photos = sorted_photos(str(out))
+    repo_paths = [f"photos/{a.sku}/{p.name}" for p in all_photos]
+    print(json.dumps({"sku": a.sku, "dir": str(out), "added": report, "total_photos": len(all_photos),
+                      "over_abebooks_limit": max(0, len(all_photos) - 20),
+                      "listing_photos_field": repo_paths[:20]}, indent=2))
 
 
 def condition_tier(text: str | None) -> int | None:
@@ -576,8 +637,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("check").set_defaults(fn=cmd_check)
-    sub.add_parser("sku").set_defaults(fn=cmd_sku)
+    p = sub.add_parser("sku"); p.add_argument("--author"); p.add_argument("--title"); p.add_argument("--random", action="store_true")
+    p.set_defaults(fn=cmd_sku)
     p = sub.add_parser("photos"); p.add_argument("--sku", required=True); p.add_argument("--out")
+    p.add_argument("--replace", action="store_true", help="start numbering from 1 again instead of appending")
     p.add_argument("--max-px", type=int, default=1600); p.add_argument("--quality", type=int, default=85)
     p.add_argument("files", nargs="+"); p.set_defaults(fn=cmd_photos)
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)

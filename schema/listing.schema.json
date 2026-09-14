@@ -42,6 +42,8 @@
       "description": "Repo-relative paths (photos/<SKU>/1.jpg) or full URLs; the workflow turns paths into raw.githubusercontent.com URLs."
     },
     "pricing": { "type": "object", "description": "How the price was derived (comps used, url, method). Not sent to AbeBooks." },
+    "condition_points": { "type": "array", "items": { "type": "string" }, "description": "Specific condition points observed in the photos. Not sent as a field; they are written into the description." },
+    "not_seen_in_photos": { "type": "array", "items": { "type": "string" }, "description": "Parts of the book the photos did not show. Not sent." },
     "condition_notes_from_mark": { "type": "string", "description": "Mark's own words. Not sent." },
     "pushed_at": { "type": "string" },
     "deleted_at": { "type": "string" }
