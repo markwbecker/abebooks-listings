@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GOLDLANG</vendorBookID>
+      <author>Goldhill, Simon</author>
+      <title>Language, Sexuality, Narrative: The Oresteia</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>classics; Greek tragedy; Aeschylus; Oresteia; Aeschylus criticism; ancient Greek drama; literary theory; narratology; gender and sexuality in antiquity; Cambridge University Press; Simon Goldhill</subject>
+      <price currency="USD">54.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>First paperback edition (2004) of Goldhill's 1984 study, a close reading of Aeschylus' Oresteia that draws on modern literary theory and anthropology. Trade paperback in the pink Cambridge wrappers; no dust jacket, as issued. A very good copy, with three defects: a previous owner's name at the head of the title page has been struck out with a solid band of dark purple marker; the upper corner of the rear wrapper is creased and bumped, with light white scuffing to the laminate beside it; and a leaf in the bibliography at the rear carries a lengthwise crease. Otherwise the wrappers are bright and unfaded, the text is clean and unmarked, and the binding is tight and square.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521604307</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>2004</publishYear>
+      <edition>First Paperback Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9f1fd6b1e62e357dd561029e4a9f615606e5e7f3/photos/NGP-GOLDLANG/8.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
