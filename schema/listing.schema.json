@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/markwbecker/abebooks-listings/schema/listing.schema.json",
+  "title": "AbeBooks listing",
+  "description": "One book record. Maps to a single <Abebook> element in an inventoryUpdateRequest. Remember the full-record rule: every add/update must carry the complete record, because AbeBooks overwrites all fields on each request.",
+  "type": "object",
+  "required": ["transactionType", "vendorBookID", "price", "currency"],
+  "anyOf": [
+    { "required": ["author"] },
+    { "required": ["title"] },
+    { "required": ["publisher"] }
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "transactionType": {
+      "type": "string",
+      "enum": ["add", "update", "delete"],
+      "description": "AbeBooks accepts these case-insensitively (documented as ADD/UPDATE/DELETE)."
+    },
+    "vendorBookID": {
+      "type": "string",
+      "maxLength": 40,
+      "minLength": 1,
+      "description": "Unique across your entire inventory. Never reuse or renumber. Should match this file's name."
+    },
+    "price": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]{2}$",
+      "description": "Exactly two decimal places, e.g. \"24.50\"."
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217 code, e.g. USD."
+    },
+    "quantity": { "type": "integer", "minimum": 0, "default": 1 },
+
+    "author": { "type": "string" },
+    "title": { "type": "string" },
+    "publisher": { "type": "string" },
+    "publishYear": { "type": "string", "pattern": "^[0-9]{4}$" },
+    "isbn": { "type": "string" },
+
+    "bookCondition": { "type": "string", "maxLength": 30 },
+    "jacketCondition": { "type": "string", "maxLength": 30 },
+    "dustJacket": { "type": "boolean" },
+    "binding": { "type": "string", "maxLength": 30 },
+    "printing": { "type": "string", "maxLength": 20 },
+    "edition": { "type": "string" },
+    "inscriptionType": { "type": "string" },
+    "productType": {
+      "type": "string",
+      "description": "books, maps, manuscripts, comics, periodicals, art prints, sheet music, photos"
+    },
+
+    "description": { "type": "string" },
+
+    "pictures": {
+      "type": "array",
+      "maxItems": 20,
+      "description": "Publicly fetchable image URLs. AbeBooks pulls these; it does not accept uploads. Point at raw.githubusercontent.com paths under photos/<vendorBookID>/.",
+      "items": { "type": "string", "format": "uri" }
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Local-only. Not submitted to AbeBooks."
+    }
+  }
+}

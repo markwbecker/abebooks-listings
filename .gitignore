@@ -1,0 +1,25 @@
+# Credentials — never commit. AbeBooks client PIN / API key / HMAC secret.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Generated API payloads (may embed credentials in the action block)
+build/
+*.request.xml
+*.response.xml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
