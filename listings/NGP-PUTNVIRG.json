@@ -1,0 +1,58 @@
+{
+  "sku": "NGP-PUTNVIRG",
+  "transaction": "update",
+  "title": "Virgil's Aeneid: Interpretation and Influence",
+  "author": "Putnam, Michael C. J.",
+  "publisher": "The University of North Carolina Press",
+  "publishPlace": "Chapel Hill",
+  "publishYear": "1995",
+  "isbn": "9780807844991",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Virgil; Aeneid; classics; classical studies; Latin literature; Roman poetry; literary criticism; epic poetry; Michael C. J. Putnam; University of North Carolina Press; Ovid; Lucan; Seneca; Dante",
+  "description": "A collection of twelve essays on the Aeneid by Michael C. J. Putnam, MacMillan Professor of Classics at Brown University, from the University of North Carolina Press. Trade paperback in pictorial wrappers with the labyrinth cover design; no dust jacket, as issued. A very good copy: the upper front corner is lightly bumped, the wrappers show light handling marks and the page edges are mildly toned; the spine is unbroken and uncreased and the binding is tight. The text is clean and unmarked, with no previous owner's name or bookplate. Includes the major essay on wrathful Aeneas and the tactics of Pietas, published here for the first time.",
+  "price": 17.99,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-PUTNVIRG/1.jpg",
+    "photos/NGP-PUTNVIRG/2.jpg",
+    "photos/NGP-PUTNVIRG/3.jpg",
+    "photos/NGP-PUTNVIRG/4.jpg",
+    "photos/NGP-PUTNVIRG/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780807844991/",
+    "method": "20% below the highest total (item + shipping) from a U.S. seller in the same condition, rounded to whole dollars",
+    "basis_seller": "HPB-Emerald, Dallas, TX",
+    "basis_condition": "Used - Very good, Softcover",
+    "basis_total": 19.99,
+    "raw_price": 15.99,
+    "n_us_same_condition": 1,
+    "n_total_listings": 17,
+    "overridden_by_mark": true,
+    "computed_price": 16,
+    "note": "Mark set $17.99; comp-derived price was $16."
+  },
+  "condition_points": [
+    "upper front corner lightly bumped",
+    "light handling marks to the wrappers",
+    "page edges mildly toned",
+    "spine unbroken and uncreased, lettering bright",
+    "binding tight",
+    "text clean and unmarked; no owner's name on the title page"
+  ],
+  "not_seen_in_photos": [
+    "copyright page (so no printing statement)",
+    "interior pages beyond the title page",
+    "rear inside wrapper"
+  ],
+  "condition_notes_from_mark": "very good condition, no markings in the text, spine is unbroken. Slight bump in the upper front corner.",
+  "pushed_at": "2026-09-14T21:47:11+00:00"
+}
