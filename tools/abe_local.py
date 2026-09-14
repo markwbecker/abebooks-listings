@@ -17,7 +17,8 @@ Sub-commands
   check                          where am I, can I push, is the workflow present
   sku     --author "Surname, First" --title "Title"   NGP- + letters of surname+title, unique (or --random)
   photos  --sku SKU [--replace] f1 f2 ...   normalise photos -> photos/SKU/1.jpg ... ; later calls append
-  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new]
+  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--discount 0.20]
+          -> 20% below the highest U.S. seller total (item + shipping) in the same condition
   validate listing.json          check fields / lengths, print normalised listing
   publish listing.json [--photos DIR] [--wait 300] [--skip-photos]
   status  SKU                    show results/<SKU>.json
@@ -372,20 +373,64 @@ def binding_kind(text: str | None) -> str | None:
     return None
 
 
+US_RE = re.compile(r"\bU\.?\s?S\.?\s?A?\.?\b|\bUnited States\b|\bUSA\b", re.I)
+US_STATES = set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split())
+NON_US_RE = re.compile(r"United Kingdom|\bU\.?K\.?\b|England|Scotland|Wales|Ireland|Canada|Germany|France|Spain|Italy|Netherlands|Belgium|"
+                       r"Australia|New Zealand|India|Japan|Austria|Switzerland|Sweden|Denmark|Norway|Finland|Poland|Portugal|Mexico|"
+                       r"Brazil|Argentina|South Africa|Israel|Greece|Czech|Hungary|Romania|Turkey|China|Hong Kong|Singapore|Korea", re.I)
+
+
+def seller_in_us(location: str | None) -> bool | None:
+    """True/False from the seller location string as AbeBooks shows it; None when unknown."""
+    if not location:
+        return None
+    loc = location.strip()
+    if NON_US_RE.search(loc) and not US_RE.search(loc):
+        return False
+    if US_RE.search(loc):
+        return True
+    parts = [x.strip() for x in loc.split(",")]
+    if len(parts) >= 2 and parts[-1].upper() in US_STATES:      # "Dallas, TX"
+        return True
+    return None
+
+
+def money(v) -> float | None:
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip().lower()
+    if s in ("", "n/a", "unknown", "none", "null"):
+        return None
+    if "free" in s:
+        return 0.0
+    s = re.sub(r"[^0-9.]", "", s.replace(",", ""))
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+COND_URL_TOKEN = {7: "new", 6: "an", 5: "fine", 4: "nf", 3: "vg", 2: "good", 1: "fair", 0: "poor"}
+TIER_NAME = {7: "New", 6: "As New", 5: "Fine", 4: "Near Fine", 3: "Very Good", 2: "Good", 1: "Fair", 0: "Poor"}
+
+
 def cmd_price(a):
     comps = json.loads(Path(a.comps).read_text())
     mine_tier = 7 if a.new else condition_tier(a.condition)
     if mine_tier is None:
         sys.exit(f"could not understand condition {a.condition!r}; use e.g. 'Very Good', 'Good', 'Fine'")
-    junk = re.compile(r"test|\bqa\b|qa_|zz[-_]|prueba|no comprar|do not buy|sample listing", re.I)
+    junk = re.compile(r"test|\bqa\b|qa_|zz[-_]|prueba|no comprar|do not buy|sample listing|seotest", re.I)
     kept, dropped = [], []
     for c in comps:
-        try:
-            price = float(str(c.get("price", "")).replace("$", "").replace(",", "").replace("US", "").strip())
-        except ValueError:
-            dropped.append({**c, "reason": "no price"})
-            continue
-        c = {**c, "price": price, "tier": condition_tier(c.get("condition")), "kind": binding_kind(c.get("binding"))}
+        price = money(c.get("price"))
+        if price is None:
+            dropped.append({**c, "reason": "no price"}); continue
+        ship = money(c.get("shipping"))
+        c = {**c, "price": price, "shipping": ship, "total": (price + ship) if ship is not None else None,
+             "tier": condition_tier(c.get("condition")), "kind": binding_kind(c.get("binding")),
+             "us": seller_in_us(c.get("location") or c.get("seller_location") or c.get("country"))}
         blob = " ".join(str(c.get(k, "")) for k in ("seller", "title", "notes"))
         if price <= 0:
             dropped.append({**c, "reason": "non-positive price"})
@@ -407,6 +452,53 @@ def cmd_price(a):
         else:
             filters.append("binding relaxed (too few same-binding comps)")
 
+    if a.method == "max-us-total":
+        # Mark's rule: 20% under the highest buyer-total (item + shipping) advertised by a U.S. seller
+        # for a copy in the same condition. Foreign sellers look cheap on item price but not on total.
+        us = [c for c in kept if c["us"] is True]
+        dropped += [{**c, "reason": "seller outside the U.S." if c["us"] is False else "seller location unknown"}
+                    for c in kept if c["us"] is not True]
+        kept = us
+        filters.append("U.S. sellers only")
+        priced = [c for c in kept if c["total"] is not None]
+        dropped += [{**c, "reason": "shipping cost not shown"} for c in kept if c["total"] is None]
+        kept = priced
+        for width in (0, 1, 99):
+            near = [c for c in kept if c["tier"] is not None and abs(c["tier"] - mine_tier) <= width]
+            if len(near) >= a.min_comps or width == 99:
+                if width < 99:
+                    dropped += [{**c, "reason": "different condition grade"} for c in kept if c not in near]
+                    kept = near
+                filters.append({0: "same condition grade only", 1: "no same-grade U.S. copies — widened to ±1 grade",
+                                99: "no nearby-grade U.S. copies — all U.S. used copies considered"}[width])
+                break
+        outliers = []
+        if len(kept) >= 4 and not a.no_outlier_filter:
+            med = statistics.median(c["total"] for c in kept)
+            outliers = [c for c in kept if c["total"] > 4 * med]
+            kept = [c for c in kept if c not in outliers]
+            if outliers:
+                filters.append("totals above 4x the median treated as outliers (listed separately — say so if one should count)")
+        if not kept:
+            print(json.dumps({"price": None, "method": a.method, "n_used": 0, "filters": filters,
+                              "dropped": [{k: c.get(k) for k in ("seller", "location", "condition", "price", "shipping", "reason")} for c in dropped],
+                              "note": "no U.S. listings in this condition with a visible total — widen the search (drop bi=/cond=) or ask Mark for a price"}, indent=2))
+            return
+        kept.sort(key=lambda c: c["total"], reverse=True)
+        top = kept[0]
+        raw = top["total"] * (1 - a.discount)
+        price = max(1, int(raw + 0.5))
+        view = lambda c: {k: c.get(k) for k in ("seller", "location", "condition", "binding", "price", "shipping", "total")}
+        print(json.dumps({"price": price, "currency": "USD",
+                          "method": f"{int(a.discount*100)}% below the highest total (item + shipping) from a U.S. seller in the same condition, rounded to whole dollars",
+                          "basis": view(top), "raw_price": round(raw, 2), "n_us_same_condition": len(kept),
+                          "range_total": [kept[-1]["total"], top["total"]], "filters": filters,
+                          "comps_used": [view(c) for c in kept],
+                          "outliers_not_used": [view(c) for c in outliers],
+                          "dropped": [{**view(c), "reason": c.get("reason")} for c in dropped]}, indent=2))
+        return
+
+    # ---- legacy method: average of comparable item prices (shipping excluded)
     for width in (1, 2, 99):
         near = [c for c in kept if c["tier"] is not None and abs(c["tier"] - mine_tier) <= width]
         if len(near) >= a.min_comps or width == 99:
@@ -415,21 +507,19 @@ def cmd_price(a):
                 kept = near
             filters.append(f"condition within ±{width} grade(s)" if width < 99 else "condition filter relaxed")
             break
-
     if len(kept) >= 4:
         med = statistics.median(c["price"] for c in kept)
         inl = [c for c in kept if 0.25 * med <= c["price"] <= 4 * med]
         dropped += [{**c, "reason": "price outlier vs median"} for c in kept if c not in inl]
         kept = inl
         filters.append("outliers beyond 0.25x–4x median removed")
-
     if not kept:
         print(json.dumps({"price": None, "n_used": 0, "filters": filters, "dropped": dropped,
                           "note": "no comparable listings — ask Mark for a price or widen the search"}, indent=2))
         return
     prices = [c["price"] for c in kept]
     mean = statistics.fmean(prices)
-    price = max(1, int(mean + 0.5))  # average of item prices, rounded to whole dollars
+    price = max(1, int(mean + 0.5))
     print(json.dumps({"price": price, "currency": "USD",
                       "method": "average of comparable item prices, shipping excluded, rounded to whole dollars",
                       "n_used": len(kept), "mean_raw": round(mean, 2), "median": round(statistics.median(prices), 2),
@@ -645,7 +735,10 @@ def main():
     p.add_argument("files", nargs="+"); p.set_defaults(fn=cmd_photos)
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)
     p.add_argument("--binding", choices=["hard", "soft", "any"], default="any"); p.add_argument("--new", action="store_true")
-    p.add_argument("--min-comps", type=int, default=3); p.set_defaults(fn=cmd_price)
+    p.add_argument("--method", choices=["max-us-total", "average"], default="max-us-total")
+    p.add_argument("--discount", type=float, default=0.20, help="fraction below the top U.S. total (default 0.20)")
+    p.add_argument("--no-outlier-filter", action="store_true"); p.add_argument("--min-comps", type=int, default=1)
+    p.set_defaults(fn=cmd_price)
     p = sub.add_parser("validate"); p.add_argument("listing"); p.set_defaults(fn=cmd_validate)
     p = sub.add_parser("publish"); p.add_argument("listing"); p.add_argument("--photos"); p.add_argument("--wait", type=int, default=300)
     p.add_argument("--skip-photos", action="store_true"); p.set_defaults(fn=cmd_publish)
