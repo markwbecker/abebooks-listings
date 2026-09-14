@@ -1,6 +1,6 @@
 {
   "sku": "NGP-FEENGODS",
-  "transaction": "add",
+  "transaction": "update",
   "title": "The Gods in Epic: Poets and Critics of the Classical Tradition",
   "author": "Feeney, D. C.",
   "publisher": "Clarendon Press",
@@ -22,7 +22,7 @@
   "language": "ENG",
   "subject": "classics; classical studies; Latin literature; epic poetry; Greek religion; Roman religion; Virgil; Ovid; Lucan; Statius; Homer; Apollonius; literary criticism; Oxford Clarendon Press",
   "description": "Clarendon Paperbacks issue of Feeney's study of the role of the gods in the classical epic tradition, first published in 1991 and first issued in paperback by Oxford University Press in 1993. Trade paperback in the red pictorial wrappers; no dust jacket, as issued. The spine is creased from reading with light wear at the head, and the wrappers are lightly rubbed with a short crease and small nick at the head of the front panel. Scattered foxing to the fore-edge, a previous owner's name and date in ink on the half-title, and a previous reader's pencil brackets and marginal lines in the chapter on Ovid's Metamorphoses. Binding sound and the text complete and otherwise clean; includes bibliographical references and index.",
-  "price": 43,
+  "price": 56,
   "currency": "USD",
   "quantity": 1,
   "photos": [
@@ -43,7 +43,8 @@
     "median": 39.98,
     "min": 33.26,
     "max": 65.0,
-    "method": "average item price excl. shipping, rounded; used softcover comps within 1 grade of Good; 4 'As new' copies dropped"
+    "method": "price set by Mark at $56; comps for reference only (6 used softcover copies within 1 grade of Good, $33.26-$65.00, mean $42.94, median $39.98; 4 'As new' copies excluded)",
+    "set_by": "Mark"
   },
   "condition_points": [
     "Wrappers bright and unfaded; red panels show no sunning and the spine lettering is crisp",
@@ -62,5 +63,6 @@
     "Top and bottom edges - shown only obliquely; spotting there is not fully assessable",
     "The rest of the text block - the full extent of the pencil marginalia is unknown"
   ],
-  "condition_notes_from_mark": ""
+  "condition_notes_from_mark": "",
+  "pushed_at": "2026-09-14T20:24:53+00:00"
 }
