@@ -1,0 +1,62 @@
+{
+  "sku": "NGP-GRUECULT",
+  "transaction": "update",
+  "title": "Culture and National Identity in Republican Rome",
+  "author": "Gruen, Erich S.",
+  "publisher": "Cornell University Press",
+  "publishPlace": "Ithaca, NY",
+  "publishYear": "1994",
+  "isbn": "9780801480416",
+  "edition": "First Cornell Paperbacks printing",
+  "printing": "1st",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "bookCondition": "Near Fine",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Rome--Civilization; Rome--Civilization--Greek influences; ancient history; classics; classical philology; Roman Republic; Hellenism; Greek culture; Erich S. Gruen; Cornell Studies in Classical Philology; Townsend Lectures",
+  "description": "First Cornell Paperbacks printing (1994) of Gruen's 1992 study of the Roman encounter with Greek culture, issued as volume 52 of Cornell Studies in Classical Philology and as part of the Townsend Lectures series. Trade paperback in pictorial wrappers; no dust jacket, as issued. Near fine: the upper corner of the front wrapper is bumped with faint associated creasing, otherwise the wrappers are bright and unrubbed and the spine is uncreased and unbroken. Text clean and unmarked throughout, binding tight. Includes bibliographical references and index.",
+  "price": 46,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-GRUECULT/1.jpg",
+    "photos/NGP-GRUECULT/2.jpg",
+    "photos/NGP-GRUECULT/3.jpg",
+    "photos/NGP-GRUECULT/4.jpg",
+    "photos/NGP-GRUECULT/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780801480416/used/?bi=s",
+    "method": "20% below the highest total (item + shipping) from a U.S. seller in the same condition, rounded to whole dollars",
+    "basis": "GreatBookPrices, Columbia MD - Softcover, Used - As new, $55.26 + $2.64 = $57.90 total",
+    "raw_price": 46.32,
+    "n_us_same_condition": 1,
+    "range_total": [
+      57.9,
+      57.9
+    ],
+    "filters": [
+      "binding=soft",
+      "U.S. sellers only",
+      "same condition grade only"
+    ],
+    "note": "Priced by Mark's instruction against the near-new U.S. comp; the copy is catalogued Near Fine."
+  },
+  "condition_points": [
+    "upper corner of front wrapper bumped, with faint associated creasing",
+    "spine uncreased and unbroken, lettering bright",
+    "wrappers bright and unrubbed, no fading or soiling",
+    "text clean and unmarked; no owner's name, bookplate or underlining seen",
+    "binding tight"
+  ],
+  "not_seen_in_photos": [
+    "page edges / text block in detail",
+    "interior pages beyond the title and copyright pages"
+  ],
+  "condition_notes_from_mark": "Like new condition except for a bumped corner, no markings in the text and the spine is unbroken.",
+  "pushed_at": "2026-09-14T21:16:44+00:00"
+}
