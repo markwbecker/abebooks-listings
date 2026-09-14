@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-SMOKE001",
+  "transaction": "delete",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-14T18:47:26+00:00",
+  "trigger_sha": "bacd87ec6f160b0ad32ba962e915dbaa5d7964fc",
+  "run_id": "34882929497",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-SMOKE001",
+      "code": "600",
+      "message": "Book deleted",
+      "transactionType": "delete"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book deleted",
+  "hint": "Successful transaction"
+}

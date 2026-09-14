@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>delete</transactionType>
+      <vendorBookID>NGP-SMOKE001</vendorBookID>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
