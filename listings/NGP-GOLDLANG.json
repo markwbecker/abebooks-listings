@@ -1,0 +1,62 @@
+{
+  "sku": "NGP-GOLDLANG",
+  "transaction": "update",
+  "title": "Language, Sexuality, Narrative: The Oresteia",
+  "author": "Goldhill, Simon",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "2004",
+  "isbn": "9780521604307",
+  "edition": "First Paperback Edition",
+  "printing": "",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; Greek tragedy; Aeschylus; Oresteia; Aeschylus criticism; ancient Greek drama; literary theory; narratology; gender and sexuality in antiquity; Cambridge University Press; Simon Goldhill",
+  "description": "First paperback edition (2004) of Goldhill's 1984 study, a close reading of Aeschylus' Oresteia that draws on modern literary theory and anthropology. Trade paperback in the pink Cambridge wrappers; no dust jacket, as issued. A very good copy, with three defects: a previous owner's name at the head of the title page has been struck out with a solid band of dark purple marker; the upper corner of the rear wrapper is creased and bumped, with light white scuffing to the laminate beside it; and a leaf in the bibliography at the rear carries a lengthwise crease. Otherwise the wrappers are bright and unfaded, the text is clean and unmarked, and the binding is tight and square.",
+  "price": 54,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-GOLDLANG/1.jpg",
+    "photos/NGP-GOLDLANG/2.jpg",
+    "photos/NGP-GOLDLANG/3.jpg",
+    "photos/NGP-GOLDLANG/4.jpg",
+    "photos/NGP-GOLDLANG/5.jpg",
+    "photos/NGP-GOLDLANG/6.jpg",
+    "photos/NGP-GOLDLANG/7.jpg",
+    "photos/NGP-GOLDLANG/8.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521604307/",
+    "method": "20% below the highest total (item + shipping) from a U.S. seller in the same condition, rounded to whole dollars",
+    "basis_seller": "GreatBookPrices (U.S.A.), Used - As new softcover, $65.42 + $2.64 shipping = $68.06",
+    "n_us_same_condition": 1,
+    "raw_price": 54.45,
+    "note": "Only one U.S. used softcover copy on AbeBooks; it is graded As New, a grade above this copy. Non-U.S. used copies (Italy, Canada) and 15 New copies were excluded."
+  },
+  "condition_points": [
+    "previous owner's name at head of title page struck out with a solid band of dark purple marker",
+    "upper corner of rear wrapper creased and bumped, with a soft diagonal fold",
+    "light white scuffing to the laminate beside the creased corner",
+    "lengthwise crease to a leaf in the bibliography at the rear",
+    "head of spine lightly creased/bumped",
+    "wrappers bright, colours unfaded",
+    "text clean and unmarked, binding tight and square"
+  ],
+  "not_seen_in_photos": [
+    "most interior text pages",
+    "front and rear pastedowns"
+  ],
+  "condition_notes_from_mark": "Very good condition, except for a bumped rear corner, and a name crossed out on the title page in black marker.",
+  "pushed_at": "2026-09-14T21:35:39+00:00"
+}
