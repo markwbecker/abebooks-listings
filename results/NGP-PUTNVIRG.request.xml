@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-PUTNVIRG</vendorBookID>
+      <author>Putnam, Michael C. J.</author>
+      <title>Virgil's Aeneid: Interpretation and Influence</title>
+      <publisher>The University of North Carolina Press</publisher>
+      <subject>Virgil; Aeneid; classics; classical studies; Latin literature; Roman poetry; literary criticism; epic poetry; Michael C. J. Putnam; University of North Carolina Press; Ovid; Lucan; Seneca; Dante</subject>
+      <price currency="USD">17.99</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>A collection of twelve essays on the Aeneid by Michael C. J. Putnam, MacMillan Professor of Classics at Brown University, from the University of North Carolina Press. Trade paperback in pictorial wrappers with the labyrinth cover design; no dust jacket, as issued. A very good copy: the upper front corner is lightly bumped, the wrappers show light handling marks and the page edges are mildly toned; the spine is unbroken and uncreased and the binding is tight. The text is clean and unmarked, with no previous owner's name or bookplate. Includes the major essay on wrathful Aeneas and the tactics of Pietas, published here for the first time.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <isbn>9780807844991</isbn>
+      <publishPlace>Chapel Hill</publishPlace>
+      <publishYear>1995</publishYear>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/09e5da6b15dfd9d95aa67fc72b61da07aba1f960/photos/NGP-PUTNVIRG/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/09e5da6b15dfd9d95aa67fc72b61da07aba1f960/photos/NGP-PUTNVIRG/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/09e5da6b15dfd9d95aa67fc72b61da07aba1f960/photos/NGP-PUTNVIRG/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/09e5da6b15dfd9d95aa67fc72b61da07aba1f960/photos/NGP-PUTNVIRG/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/09e5da6b15dfd9d95aa67fc72b61da07aba1f960/photos/NGP-PUTNVIRG/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
