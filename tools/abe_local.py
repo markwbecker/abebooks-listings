@@ -17,8 +17,9 @@ Sub-commands
   check                          where am I, can I push, is the workflow present
   sku     --author "Surname, First" --title "Title"   NGP- + letters of surname+title, unique (or --random)
   photos  --sku SKU [--replace] f1 f2 ...   normalise photos -> photos/SKU/1.jpg ... ; later calls append
-  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--discount 0.20]
-          -> 20% below the highest U.S. seller total (item + shipping) in the same condition
+  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--regions US,UK]
+          -> average buyer total (item + shipping) of U.S. and U.K. sellers in the same condition
+             (--method max-total-discount [--discount 0.20] or average-item for the older rules)
   validate listing.json          check fields / lengths, print normalised listing
   publish listing.json [--photos DIR] [--wait 300] [--skip-photos]
   status  SKU                    show results/<SKU>.json
@@ -375,24 +376,32 @@ def binding_kind(text: str | None) -> str | None:
 
 US_RE = re.compile(r"\bU\.?\s?S\.?\s?A?\.?\b|\bUnited States\b|\bUSA\b", re.I)
 US_STATES = set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split())
-NON_US_RE = re.compile(r"United Kingdom|\bU\.?K\.?\b|England|Scotland|Wales|Ireland|Canada|Germany|France|Spain|Italy|Netherlands|Belgium|"
-                       r"Australia|New Zealand|India|Japan|Austria|Switzerland|Sweden|Denmark|Norway|Finland|Poland|Portugal|Mexico|"
-                       r"Brazil|Argentina|South Africa|Israel|Greece|Czech|Hungary|Romania|Turkey|China|Hong Kong|Singapore|Korea", re.I)
+UK_RE = re.compile(r"United Kingdom|Great Britain|\bU\.?K\.?\b|\bGB\b|\bEngland\b|\bScotland\b|\bWales\b|Northern Ireland", re.I)
+OTHER_RE = re.compile(r"\bIreland\b|Canada|Germany|France|Spain|Italy|Netherlands|Belgium|Australia|New Zealand|India|Japan|"
+                      r"Austria|Switzerland|Sweden|Denmark|Norway|Finland|Poland|Portugal|Mexico|Brazil|Argentina|South Africa|"
+                      r"Israel|Greece|Czech|Hungary|Romania|Turkey|China|Hong Kong|Singapore|Korea", re.I)
 
 
-def seller_in_us(location: str | None) -> bool | None:
-    """True/False from the seller location string as AbeBooks shows it; None when unknown."""
+def seller_region(location: str | None) -> str | None:
+    """'US', 'UK', 'other' from the seller location as AbeBooks shows it; None when unknown."""
     if not location:
         return None
     loc = location.strip()
-    if NON_US_RE.search(loc) and not US_RE.search(loc):
-        return False
+    if UK_RE.search(loc):                       # checked first: "Northern Ireland" is UK, "Ireland" alone is not
+        return "UK"
     if US_RE.search(loc):
-        return True
+        return "US"
+    if OTHER_RE.search(loc):
+        return "other"
     parts = [x.strip() for x in loc.split(",")]
     if len(parts) >= 2 and parts[-1].upper() in US_STATES:      # "Dallas, TX"
-        return True
+        return "US"
     return None
+
+
+def seller_in_us(location: str | None) -> bool | None:
+    r = seller_region(location)
+    return None if r is None else (r == "US")
 
 
 def money(v) -> float | None:
@@ -421,6 +430,7 @@ def cmd_price(a):
     mine_tier = 7 if a.new else condition_tier(a.condition)
     if mine_tier is None:
         sys.exit(f"could not understand condition {a.condition!r}; use e.g. 'Very Good', 'Good', 'Fine'")
+    regions = [r.strip().upper() for r in a.regions.split(",") if r.strip()]
     junk = re.compile(r"test|\bqa\b|qa_|zz[-_]|prueba|no comprar|do not buy|sample listing|seotest", re.I)
     kept, dropped = [], []
     for c in comps:
@@ -430,7 +440,7 @@ def cmd_price(a):
         ship = money(c.get("shipping"))
         c = {**c, "price": price, "shipping": ship, "total": (price + ship) if ship is not None else None,
              "tier": condition_tier(c.get("condition")), "kind": binding_kind(c.get("binding")),
-             "us": seller_in_us(c.get("location") or c.get("seller_location") or c.get("country"))}
+             "region": seller_region(c.get("location") or c.get("seller_location") or c.get("country"))}
         blob = " ".join(str(c.get(k, "")) for k in ("seller", "title", "notes"))
         if price <= 0:
             dropped.append({**c, "reason": "non-positive price"})
@@ -452,14 +462,16 @@ def cmd_price(a):
         else:
             filters.append("binding relaxed (too few same-binding comps)")
 
-    if a.method == "max-us-total":
-        # Mark's rule: 20% under the highest buyer-total (item + shipping) advertised by a U.S. seller
-        # for a copy in the same condition. Foreign sellers look cheap on item price but not on total.
-        us = [c for c in kept if c["us"] is True]
-        dropped += [{**c, "reason": "seller outside the U.S." if c["us"] is False else "seller location unknown"}
-                    for c in kept if c["us"] is not True]
-        kept = us
-        filters.append("U.S. sellers only")
+    view = lambda c: {k: c.get(k) for k in ("seller", "location", "region", "condition", "binding", "price", "shipping", "total")}
+
+    if a.method in ("avg-total", "max-total-discount"):
+        # Mark's rules work on the buyer's total (item + shipping): overseas sellers show a low item
+        # price and make it up in shipping. Only sellers in the chosen regions count.
+        inreg = [c for c in kept if c["region"] in regions]
+        dropped += [{**c, "reason": (f"seller outside {'/'.join(regions)}" if c["region"] else "seller location unknown")}
+                    for c in kept if c["region"] not in regions]
+        kept = inreg
+        filters.append(f"sellers in {'/'.join(regions)} only")
         priced = [c for c in kept if c["total"] is not None]
         dropped += [{**c, "reason": "shipping cost not shown"} for c in kept if c["total"] is None]
         kept = priced
@@ -469,8 +481,8 @@ def cmd_price(a):
                 if width < 99:
                     dropped += [{**c, "reason": "different condition grade"} for c in kept if c not in near]
                     kept = near
-                filters.append({0: "same condition grade only", 1: "no same-grade U.S. copies — widened to ±1 grade",
-                                99: "no nearby-grade U.S. copies — all U.S. used copies considered"}[width])
+                filters.append({0: "same condition grade only", 1: "no same-grade copies — widened to ±1 grade",
+                                99: "no nearby-grade copies — all used copies in region considered"}[width])
                 break
         outliers = []
         if len(kept) >= 4 and not a.no_outlier_filter:
@@ -481,24 +493,32 @@ def cmd_price(a):
                 filters.append("totals above 4x the median treated as outliers (listed separately — say so if one should count)")
         if not kept:
             print(json.dumps({"price": None, "method": a.method, "n_used": 0, "filters": filters,
-                              "dropped": [{k: c.get(k) for k in ("seller", "location", "condition", "price", "shipping", "reason")} for c in dropped],
-                              "note": "no U.S. listings in this condition with a visible total — widen the search (drop bi=/cond=) or ask Mark for a price"}, indent=2))
+                              "dropped": [{**view(c), "reason": c.get("reason")} for c in dropped],
+                              "note": f"no {'/'.join(regions)} listings in this condition with a visible total — widen the search (drop bi=/cond=) or ask Mark for a price"}, indent=2))
             return
         kept.sort(key=lambda c: c["total"], reverse=True)
-        top = kept[0]
-        raw = top["total"] * (1 - a.discount)
+        totals = [c["total"] for c in kept]
+        if a.method == "avg-total":
+            raw = statistics.fmean(totals)
+            method = f"average of the buyer total (item + shipping) across {'/'.join(regions)} sellers in the same condition, rounded to whole dollars"
+            basis = None
+        else:
+            raw = totals[0] * (1 - a.discount)
+            method = f"{int(a.discount*100)}% below the highest total (item + shipping) from a {'/'.join(regions)} seller in the same condition, rounded to whole dollars"
+            basis = view(kept[0])
         price = max(1, int(raw + 0.5))
-        view = lambda c: {k: c.get(k) for k in ("seller", "location", "condition", "binding", "price", "shipping", "total")}
-        print(json.dumps({"price": price, "currency": "USD",
-                          "method": f"{int(a.discount*100)}% below the highest total (item + shipping) from a U.S. seller in the same condition, rounded to whole dollars",
-                          "basis": view(top), "raw_price": round(raw, 2), "n_us_same_condition": len(kept),
-                          "range_total": [kept[-1]["total"], top["total"]], "filters": filters,
-                          "comps_used": [view(c) for c in kept],
-                          "outliers_not_used": [view(c) for c in outliers],
-                          "dropped": [{**view(c), "reason": c.get("reason")} for c in dropped]}, indent=2))
+        out = {"price": price, "currency": "USD", "method": method, "raw_price": round(raw, 2),
+               "n_used": len(kept), "mean_total": round(statistics.fmean(totals), 2),
+               "median_total": round(statistics.median(totals), 2), "range_total": [min(totals), max(totals)],
+               "by_region": {r: sum(1 for c in kept if c["region"] == r) for r in regions}, "filters": filters,
+               "comps_used": [view(c) for c in kept], "outliers_not_used": [view(c) for c in outliers],
+               "dropped": [{**view(c), "reason": c.get("reason")} for c in dropped]}
+        if basis:
+            out["basis"] = basis
+        print(json.dumps(out, indent=2))
         return
 
-    # ---- legacy method: average of comparable item prices (shipping excluded)
+    # ---- legacy method: average of comparable item prices (shipping excluded), any seller location
     for width in (1, 2, 99):
         near = [c for c in kept if c["tier"] is not None and abs(c["tier"] - mine_tier) <= width]
         if len(near) >= a.min_comps or width == 99:
@@ -735,8 +755,9 @@ def main():
     p.add_argument("files", nargs="+"); p.set_defaults(fn=cmd_photos)
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)
     p.add_argument("--binding", choices=["hard", "soft", "any"], default="any"); p.add_argument("--new", action="store_true")
-    p.add_argument("--method", choices=["max-us-total", "average"], default="max-us-total")
-    p.add_argument("--discount", type=float, default=0.20, help="fraction below the top U.S. total (default 0.20)")
+    p.add_argument("--method", choices=["avg-total", "max-total-discount", "average-item"], default="avg-total")
+    p.add_argument("--regions", default="US,UK", help="seller regions that count, comma-separated (default US,UK)")
+    p.add_argument("--discount", type=float, default=0.20, help="max-total-discount only: fraction below the top total")
     p.add_argument("--no-outlier-filter", action="store_true"); p.add_argument("--min-comps", type=int, default=1)
     p.set_defaults(fn=cmd_price)
     p = sub.add_parser("validate"); p.add_argument("listing"); p.set_defaults(fn=cmd_validate)
