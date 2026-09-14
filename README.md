@@ -1,65 +1,37 @@
 # abebooks-listings
 
-Source of truth for AbeBooks seller inventory listings and their photos, submitted
-via the [AbeBooks Inventory Update API](https://www.abebooks.com/developer/inventory-update-api/overview).
+Bridge between Claude and the AbeBooks Inventory Update API for seller **markwbecker**.
 
-## Why this repo exists
+How a listing flows:
 
-The Inventory Update API takes **picture URLs, not uploaded image files** — up to 20
-per book. The images have to live somewhere publicly fetchable. This repo is that
-place: photos are committed under `photos/`, and AbeBooks pulls them over their
-`raw.githubusercontent.com` URLs.
+1. Claude (from a phone or desktop session) identifies the book from photos, prices it
+   against comparable AbeBooks listings, and writes `listings/NGP-XXXXXXXX.json` plus the
+   photos under `photos/NGP-XXXXXXXX/`.
+2. Pushing the listing file triggers the **Publish to AbeBooks** workflow
+   (`.github/workflows/publish.yml`), which runs `tools/abe_publish.py`. The script builds the
+   API XML, adds the credentials held in this repo's *encrypted Actions secrets*, and sends it
+   to `https://inventoryupdate.abebooks.com:10027/`.
+3. The workflow commits the API's answer to `results/NGP-XXXXXXXX.json` (and the raw XML), and
+   Claude reads that to confirm the listing is live.
 
-That is also why this repo is **public**. Keep that in mind: anything committed here
-is world-readable. See [Secrets](#secrets) below.
+Photos are served to AbeBooks from this public repo (`raw.githubusercontent.com/.../photos/...`).
 
-## Layout
+## Secrets (Settings → Secrets and variables → Actions)
 
-```
-listings/                 one YAML file per book, named <vendorBookID>.yaml
-photos/<vendorBookID>/    that book's images, referenced by raw URL
-schema/listing.schema.json  JSON Schema the listing files validate against
-docs/abebooks-api-notes.md  field reference and gotchas
-```
+| Secret | Meaning |
+| --- | --- |
+| `ABE_USERNAME` | Seller client PIN / sign-in username (Classic key auth) |
+| `ABE_API_KEY` | The hashed "Classic" API key from AbeBooks' Manage API Keys page |
+| `ABE_ACCESS_KEY` / `ABE_SECRET_KEY` | Alternative: a "Signed" key pair (HMAC-SHA256 request signing) |
 
-### vendorBookID
+Optional repository *variables*: `PHOTO_URL_BASE` (default `https://raw.githubusercontent.com/<owner>/<repo>/main`),
+`ABE_HTTP_METHOD` (`PUT` default, or `POST`).
 
-The filename stem is the `vendorBookID` you send to AbeBooks. It must be **unique
-across your whole inventory** and **max 40 characters**. Once a book is listed,
-never reuse or renumber its ID — AbeBooks keys `update` and `delete` transactions
-off it.
+## Manual operations
 
-## Required fields
+* Re-send one listing: Actions → Publish to AbeBooks → *Run workflow* → enter the SKU.
+* Delete a listing: set `"transaction": "delete"` in its JSON and push (or ask Claude: "delete NGP-…").
+* Change a price: edit `price` in the JSON, set `"transaction": "update"`, push. Updates must carry the
+  full record — AbeBooks clears any field you leave out.
 
-Every listing needs, at minimum:
-
-- `transactionType` — `add`, `update`, or `delete`
-- `vendorBookID`
-- `price` — `#.##` plus a currency ISO code
-- at least one of `author`, `title`, `publisher`
-
-## The full-record rule
-
-This one bites. From the API docs: on `add` or `update` you must send **all** book
-information, because the server overwrites every field on each request. Omitted or
-empty fields are **cleared**, not left alone. There is no partial update.
-
-So a listing file here should always be the complete record, and the submission step
-should send the whole thing — never a diff.
-
-## Batch size
-
-`AbebookList` holds 1–100 `Abebook` elements per request. Inventory larger than that
-has to be chunked.
-
-## Secrets
-
-Credentials (client PIN, API key, HMAC secret) **never** go in this repo. They belong
-in a local `.env`, which `.gitignore` excludes. Treat any key that does get committed
-as compromised and rotate it.
-
-## Status
-
-Scaffold only — no submission code yet. The `/abebooks-lister` skill is intended to
-generate and validate listing files against `schema/listing.schema.json` and build the
-XML payload.
+Folders: `listings/` (source of truth, one JSON per SKU), `photos/`, `results/`, `tools/`.

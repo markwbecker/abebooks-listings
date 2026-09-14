@@ -1,70 +1,58 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/markwbecker/abebooks-listings/schema/listing.schema.json",
-  "title": "AbeBooks listing",
-  "description": "One book record. Maps to a single <Abebook> element in an inventoryUpdateRequest. Remember the full-record rule: every add/update must carry the complete record, because AbeBooks overwrites all fields on each request.",
+  "title": "AbeBooks listing record (listings/<SKU>.json)",
+  "description": "One book. tools/abe_publish.py turns this into a single <Abebook> element of an inventoryUpdateRequest. Full-record rule: every add/update must carry the complete record, because AbeBooks clears any field that is omitted.",
   "type": "object",
-  "required": ["transactionType", "vendorBookID", "price", "currency"],
-  "anyOf": [
-    { "required": ["author"] },
-    { "required": ["title"] },
-    { "required": ["publisher"] }
-  ],
-  "additionalProperties": false,
+  "required": ["sku", "transaction"],
   "properties": {
-    "transactionType": {
-      "type": "string",
-      "enum": ["add", "update", "delete"],
-      "description": "AbeBooks accepts these case-insensitively (documented as ADD/UPDATE/DELETE)."
-    },
-    "vendorBookID": {
-      "type": "string",
-      "maxLength": 40,
-      "minLength": 1,
-      "description": "Unique across your entire inventory. Never reuse or renumber. Should match this file's name."
-    },
-    "price": {
-      "type": "string",
-      "pattern": "^[0-9]+\\.[0-9]{2}$",
-      "description": "Exactly two decimal places, e.g. \"24.50\"."
-    },
-    "currency": {
-      "type": "string",
-      "pattern": "^[A-Z]{3}$",
-      "description": "ISO 4217 code, e.g. USD."
-    },
-    "quantity": { "type": "integer", "minimum": 0, "default": 1 },
-
-    "author": { "type": "string" },
-    "title": { "type": "string" },
-    "publisher": { "type": "string" },
+    "sku": { "type": "string", "pattern": "^NGP-[A-Z0-9]{8}$", "description": "vendorBookID. Unique forever; never reuse." },
+    "transaction": { "type": "string", "enum": ["add", "update", "delete"] },
+    "title": { "type": "string", "maxLength": 750 },
+    "author": { "type": "string", "maxLength": 750, "description": "Surname, First; Surname, First" },
+    "publisher": { "type": "string", "maxLength": 750 },
+    "publishPlace": { "type": "string", "maxLength": 50 },
     "publishYear": { "type": "string", "pattern": "^[0-9]{4}$" },
-    "isbn": { "type": "string" },
-
-    "bookCondition": { "type": "string", "maxLength": 30 },
-    "jacketCondition": { "type": "string", "maxLength": 30 },
-    "dustJacket": { "type": "boolean" },
-    "binding": { "type": "string", "maxLength": 30 },
+    "isbn": { "type": "string", "maxLength": 15 },
+    "edition": { "type": "string", "maxLength": 40 },
     "printing": { "type": "string", "maxLength": 20 },
-    "edition": { "type": "string" },
-    "inscriptionType": { "type": "string" },
-    "productType": {
-      "type": "string",
-      "description": "books, maps, manuscripts, comics, periodicals, art prints, sheet music, photos"
+    "firstEdition": { "type": "boolean" },
+    "signed": { "type": "boolean" },
+    "inscriptionType": { "type": "string", "maxLength": 50 },
+    "illustrator": { "type": "string", "maxLength": 254 },
+    "binding": { "type": "string", "maxLength": 30, "description": "Keyword: Hardcover, Softcover, Leather, Cloth ..." },
+    "bindingType": { "type": "string", "enum": ["hard", "soft"] },
+    "dustJacket": { "type": "boolean" },
+    "jacketCondition": { "type": "string", "enum": ["New", "As New", "Fine", "Near Fine", "Very Good", "Good", "Fair", "Poor", "No Jacket"] },
+    "bookCondition": { "type": "string", "enum": ["New", "As New", "Fine", "Near Fine", "Very Good", "Good", "Fair", "Poor"] },
+    "bookType": { "type": "string", "maxLength": 30, "description": "e.g. Ex-Library, Advance Reading Copy" },
+    "size": { "type": "string", "maxLength": 50 },
+    "language": { "type": "string", "pattern": "^[A-Za-z]{3}$", "default": "ENG" },
+    "subject": { "type": "string", "maxLength": 2000, "description": "Search keywords, semicolon separated" },
+    "description": { "type": "string", "maxLength": 4000 },
+    "catalogue": { "type": "string", "maxLength": 750, "description": "booksellerCatalogue" },
+    "price": { "type": "number", "exclusiveMinimum": 0 },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$", "default": "USD" },
+    "quantity": { "type": "integer", "minimum": 0, "maximum": 999, "default": 1 },
+    "shippingTemplateID": { "type": "string", "maxLength": 40 },
+    "weight": { "type": "object", "properties": { "value": { "type": "number" }, "unit": { "type": "string", "enum": ["GRAMS", "KILOGRAMS", "OUNCES", "POUNDS"] } } },
+    "photos": {
+      "type": "array", "maxItems": 20,
+      "items": { "type": "string" },
+      "description": "Repo-relative paths (photos/<SKU>/1.jpg) or full URLs; the workflow turns paths into raw.githubusercontent.com URLs."
     },
-
-    "description": { "type": "string" },
-
-    "pictures": {
-      "type": "array",
-      "maxItems": 20,
-      "description": "Publicly fetchable image URLs. AbeBooks pulls these; it does not accept uploads. Point at raw.githubusercontent.com paths under photos/<vendorBookID>/.",
-      "items": { "type": "string", "format": "uri" }
-    },
-
-    "notes": {
-      "type": "string",
-      "description": "Local-only. Not submitted to AbeBooks."
+    "pricing": { "type": "object", "description": "How the price was derived (comps used, url, method). Not sent to AbeBooks." },
+    "condition_notes_from_mark": { "type": "string", "description": "Mark's own words. Not sent." },
+    "pushed_at": { "type": "string" },
+    "deleted_at": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "transaction": { "enum": ["add", "update"] } } },
+      "then": {
+        "required": ["price", "bookCondition"],
+        "anyOf": [ { "required": ["author"] }, { "required": ["title"] }, { "required": ["publisher"] } ]
+      }
     }
-  }
+  ]
 }

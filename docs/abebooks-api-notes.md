@@ -62,10 +62,20 @@ Additional elements appear in the endpoints page's sample request — `quantity`
 `dustJacket`, `isbn`, `description`, and picture URLs — but the keywords page does
 not enumerate them with types or caps.
 
-**Open question:** the exact element name and nesting for picture URLs is not stated
-on the pages read. The docs confirm *up to 20 picture URLs* per book, but the literal
-tag name needs to be lifted from the endpoints page's full sample XML before any
-submission code is written. Don't guess it.
+**Resolved (from the endpoints page sample XML):** pictures go in
+`<pictureList><pictureURL>https://…</pictureURL>…</pictureList>` — up to 20 `pictureURL`
+elements, each up to 2000 characters. "URLs from Amazon, eBay, etc. are blocked." Other
+elements confirmed there: `subject` (2000), `description` (4000), `isbn` (15), `publishPlace`
+(50), `edition` (40), `bookType` (30), `illustrator` (254), `size` (50), `shippingTemplateID`
+(40), `weight unit="GRAMS|KILOGRAMS|OUNCES|POUNDS"`, `languageIsoCode` (3 letters),
+`firstEdition` / `signed` / `dustJacket` booleans, `quantity amount="n"` (0 deletes).
+
+## How this repo submits (added 2026-09-14)
+
+Listings are JSON (`listings/<SKU>.json`, schema in `schema/listing.schema.json`). A push to
+`listings/*.json` runs `.github/workflows/publish.yml`, which executes `tools/abe_publish.py`
+with the credentials from the repo's encrypted Actions secrets and commits the API response to
+`results/`. Claude drives it with `tools/abe_local.py` — see README.
 
 ## Photos
 

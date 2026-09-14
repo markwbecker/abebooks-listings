@@ -1,0 +1,95 @@
+name: Publish to AbeBooks
+
+# Runs whenever a listing file is added or changed on ANY branch (Claude Code cloud
+# sessions push their own claude/... branch; main works too), or manually for one SKU.
+# Photo URLs are pinned to the pushed commit, so they resolve no matter which branch
+# the listing arrived on. After publishing, the job fast-forwards main so the record
+# of what was sent to AbeBooks always ends up on main.
+on:
+  push:
+    paths: ["listings/*.json"]
+  workflow_dispatch:
+    inputs:
+      sku:
+        description: "SKU to (re)send, e.g. NGP-7K3M9QW2"
+        required: true
+
+permissions:
+  contents: write
+
+# One publish at a time so result commits never race each other.
+concurrency:
+  group: abebooks-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --quiet requests
+
+      - name: Work out which listing files changed
+        id: changed
+        env:
+          INPUT_SKU: ${{ github.event.inputs.sku }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -e
+          if [ -n "$INPUT_SKU" ]; then
+            FILES="listings/${INPUT_SKU}.json"
+          elif [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$BEFORE" 2>/dev/null; then
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- 'listings/*.json' | tr '\n' ' ')
+          else
+            # New branch: everything that differs from main; first push ever: the head commit itself.
+            git fetch --quiet origin main || true
+            FILES=$(git diff --name-only --diff-filter=AM origin/main...HEAD -- 'listings/*.json' 2>/dev/null | tr '\n' ' ')
+            if [ -z "$FILES" ]; then
+              FILES=$(git diff-tree --no-commit-id --name-only -r --diff-filter=AM "$GITHUB_SHA" -- 'listings/*.json' | tr '\n' ' ')
+            fi
+          fi
+          echo "Changed listing files: $FILES"
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+
+      - name: Send to AbeBooks Inventory Update API
+        if: steps.changed.outputs.files != ''
+        env:
+          ABE_USERNAME: ${{ secrets.ABE_USERNAME }}
+          ABE_API_KEY: ${{ secrets.ABE_API_KEY }}
+          ABE_ACCESS_KEY: ${{ secrets.ABE_ACCESS_KEY }}
+          ABE_SECRET_KEY: ${{ secrets.ABE_SECRET_KEY }}
+          # Pin photos to this exact commit unless a custom host is configured.
+          PHOTO_URL_BASE: ${{ vars.PHOTO_URL_BASE || format('https://raw.githubusercontent.com/{0}/{1}', github.repository, github.sha) }}
+          ABE_HTTP_METHOD: ${{ vars.ABE_HTTP_METHOD }}
+        run: python tools/abe_publish.py ${{ steps.changed.outputs.files }} || echo "publish reported a failure — see results/"
+
+      - name: Commit results and bring main up to date
+        if: steps.changed.outputs.files != ''
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "abebooks-publisher[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add results/
+          if git diff --cached --quiet; then
+            echo "No result files to commit."
+          else
+            git commit -m "Results: ${{ steps.changed.outputs.files }} [skip ci]"
+          fi
+          # Push back to the branch the listing arrived on (retry once if it moved).
+          git push origin "HEAD:$BRANCH" || (git pull --rebase origin "$BRANCH" && git push origin "HEAD:$BRANCH")
+          # Then make sure main contains everything (fast-forward; if main has diverged, leave a note).
+          if [ "$BRANCH" != "main" ]; then
+            if git push origin HEAD:main 2>/dev/null; then
+              echo "main fast-forwarded to $(git rev-parse --short HEAD)"
+            else
+              echo "::warning::main could not be fast-forwarded from $BRANCH — merge that branch into main manually."
+            fi
+          fi

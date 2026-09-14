@@ -1,15 +1,9 @@
-# Credentials — never commit. AbeBooks client PIN / API key / HMAC secret.
+# Credentials never live in this repo — they are GitHub Actions secrets.
 .env
 .env.*
-!.env.example
 *.pem
 *.key
 secrets.*
-
-# Generated API payloads (may embed credentials in the action block)
-build/
-*.request.xml
-*.response.xml
 
 # Python
 __pycache__/
@@ -17,9 +11,7 @@ __pycache__/
 .venv/
 venv/
 
-# macOS
+# macOS / editors
 .DS_Store
-
-# Editors
 .vscode/
 .idea/
