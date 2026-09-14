@@ -1,0 +1,103 @@
+{
+  "sku": "NGP-GALIOVID",
+  "transaction": "update",
+  "title": "Ovid's Metamorphoses: An Introduction to the Basic Aspects",
+  "author": "Galinsky, G. Karl",
+  "publisher": "University of California Press",
+  "publishPlace": "Berkeley",
+  "isbn": "9780520028487",
+  "edition": "",
+  "printing": "",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Cloth",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Good",
+  "bookCondition": "Good",
+  "bookType": "Ex-Library",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Ovid; Metamorphoses; classics; classical studies; Latin literature; Roman poetry; Augustan poetry; literary criticism; mythology; Galinsky; University of California Press",
+  "description": "Galinsky's study of Ovid's Metamorphoses, published by the University of California Press. Hardcover in olive cloth with bright gilt spine lettering, in the original pictorial dust jacket housed in a mylar protector. A withdrawn university library copy, and plainly marked as one: a barcode label at the foot of the spine and a second to the front endpaper, a Gaylord date-due pocket with its card still in place, the call number and shelf stamps struck through in black marker, a large 'W/D' inked across the card, and library stamps across the top and fore edges of the text block likewise obliterated. Two brown adhesive stains from old tape show on the front board, with matching rust bleed-through to the endpaper, and the top edge is age-toned with scattered foxing. The cloth spine itself is excellent - bright, unfaded and square, the gilt crisp, with no lean and no fraying at head or tail - the binding is tight, and the text is clean apart from light pencil markings.",
+  "price": 87,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-GALIOVID/1.jpg",
+    "photos/NGP-GALIOVID/2.jpg",
+    "photos/NGP-GALIOVID/3.jpg",
+    "photos/NGP-GALIOVID/4.jpg",
+    "photos/NGP-GALIOVID/5.jpg",
+    "photos/NGP-GALIOVID/6.jpg",
+    "photos/NGP-GALIOVID/7.jpg",
+    "photos/NGP-GALIOVID/8.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780520028487/",
+    "n_used": 1,
+    "mean_total": 86.99,
+    "min": 37.5,
+    "max": 86.99,
+    "method": "Mark's rule applied to the same-grade comp: average US/UK buyer total (item + shipping) for a Used-Good copy = $86.99 (Chamblin Bookmine, $80.00 + $6.99), rounded to $87. Set by Mark at $87. Only 3 copies worldwide. An earlier title/author search missed the Chamblin copy (listed as 'Metamorphosis', singular) and produced a $24 draft off the single Near Fine comp; corrected via the ISBN Mark supplied.",
+    "comps_used": [
+      {
+        "seller": "Chamblin Bookmine",
+        "location": "Jacksonville, FL, U.S.A.",
+        "condition": "Used - Good",
+        "binding": "Hardcover",
+        "price": 80.0,
+        "shipping": 6.99,
+        "total": 86.99,
+        "notes": "owner's name, sunned spine, dampstain to back cover; not ex-library"
+      }
+    ],
+    "dropped": [
+      {
+        "seller": "Structure, Verses, Agency Books",
+        "location": "Spray, OR, U.S.A.",
+        "condition": "Used - Near Fine",
+        "price": 30.25,
+        "shipping": 7.25,
+        "total": 37.5,
+        "reason": "different condition grade; but sets the practical ceiling for an ex-library copy while listed"
+      },
+      {
+        "seller": "BennettBooksLtd",
+        "location": "Los Angeles, CA, U.S.A.",
+        "condition": "New",
+        "price": 144.66,
+        "shipping": 6.95,
+        "total": 151.61,
+        "reason": "new vs used mismatch; shrink-wrapped stock"
+      }
+    ],
+    "set_by": "Mark"
+  },
+  "condition_points": [
+    "Ex-library, withdrawn: barcode label 'W7-ACO-996' at the foot of the spine, over the jacket/mylar",
+    "Second barcode label to the front endpaper, university name struck through in black marker",
+    "Gaylord date-due pocket and card still present; card stamped OCT 06 1997 and dated 9/30/03 and JAN 17 2006, with a large 'W/D' (withdrawn) inked across it",
+    "Call number to the pocket ('PA 6519...') struck through in black marker; pocket numbered 1-22778",
+    "Library stamp across the top edge of the text block, heavily struck through in black marker",
+    "Second library stamp across the fore-edge, likewise fully struck through",
+    "Two brown adhesive stains from old tape on the front board, at head and tail of centre; matching rust-coloured bleed-through to the endpaper",
+    "Top edge age-toned with scattered foxing and light spotting; small foxing spot to the facing endpaper",
+    "Fore-edge otherwise clean and pale apart from the obliterated stamp",
+    "Olive cloth boards clean and unfaded apart from the tape stains; corners lightly bumped at the tail",
+    "Cloth spine excellent - bright, unfaded, square, gilt lettering crisp, no lean or cocking, no fraying at head or tail",
+    "Dust jacket present and complete in a mylar protector; no chips or tears seen, light scuffing and fine surface scratches, creasing and wrinkling at the head",
+    "Binding tight, boards square, book stands squarely on its own",
+    "Text clean with only light pencil markings (per Mark; interior pages not photographed)"
+  ],
+  "not_seen_in_photos": [
+    "Title page and copyright page - ISBN and 1975 date confirmed from Mark's ISBN, but the edition/printing statement on this copy is still unverified",
+    "Rear board and rear pastedown",
+    "Interior pages - the extent of the pencil markings is known only from Mark's description"
+  ],
+  "condition_notes_from_mark": "It's an ex library copy in good condition, the spine is in excellent condition and the text is clean with only light pencil markings.",
+  "publishYear": "1975",
+  "pushed_at": "2026-09-14T22:32:25+00:00"
+}
