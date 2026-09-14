@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GRUECULT</vendorBookID>
+      <author>Gruen, Erich S.</author>
+      <title>Culture and National Identity in Republican Rome</title>
+      <publisher>Cornell University Press</publisher>
+      <subject>Rome--Civilization; Rome--Civilization--Greek influences; ancient history; classics; classical philology; Roman Republic; Hellenism; Greek culture; Erich S. Gruen; Cornell Studies in Classical Philology; Townsend Lectures</subject>
+      <price currency="USD">46.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>First Cornell Paperbacks printing (1994) of Gruen's 1992 study of the Roman encounter with Greek culture, issued as volume 52 of Cornell Studies in Classical Philology and as part of the Townsend Lectures series. Trade paperback in pictorial wrappers; no dust jacket, as issued. Near fine: the upper corner of the front wrapper is bumped with faint associated creasing, otherwise the wrappers are bright and unrubbed and the spine is uncreased and unbroken. Text clean and unmarked throughout, binding tight. Includes bibliographical references and index.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <isbn>9780801480416</isbn>
+      <publishPlace>Ithaca, NY</publishPlace>
+      <publishYear>1994</publishYear>
+      <edition>First Cornell Paperbacks printing</edition>
+      <printing>1st</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5d92a0ba2e025ef5d35e6d9dce3fdd1f9759e1c0/photos/NGP-GRUECULT/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5d92a0ba2e025ef5d35e6d9dce3fdd1f9759e1c0/photos/NGP-GRUECULT/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5d92a0ba2e025ef5d35e6d9dce3fdd1f9759e1c0/photos/NGP-GRUECULT/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5d92a0ba2e025ef5d35e6d9dce3fdd1f9759e1c0/photos/NGP-GRUECULT/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5d92a0ba2e025ef5d35e6d9dce3fdd1f9759e1c0/photos/NGP-GRUECULT/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
