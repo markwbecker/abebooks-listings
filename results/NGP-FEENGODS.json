@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-FEENGODS",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-14T20:25:07+00:00",
+  "trigger_sha": "c14f2d3cfebe65497bb802fc85e16e2dea73546c",
+  "run_id": "34892773140",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-FEENGODS",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
