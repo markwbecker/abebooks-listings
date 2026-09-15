@@ -22,8 +22,8 @@
   "size": "8vo",
   "language": "ENG",
   "subject": "Ancient Rome; Roman history; Augustus Caesar; Roman art; art history; classical studies; Latin literature; Roman religion; Augustan age; Princeton University Press",
-  "description": "Princeton University Press paperback of Galinsky's interpretive introduction to the age of Augustus, being the second printing and first paperback printing of 1998 (first published 1996). Softcover in glossy pictorial wrappers; no dust jacket, as issued. Near fine: the corners are bumped and about ten leaves have the lower corner creased; otherwise the spine is uncreased, the binding tight, and the text clean and unmarked throughout. Wrappers bright with strong colour, edges of the text block clean and free of foxing. Richly illustrated, with bibliography and index.",
-  "price": 38,
+  "description": "Princeton University Press paperback of Galinsky's interpretive introduction to the age of Augustus, being the second printing and first paperback printing of 1998 (first published 1996). Softcover in glossy pictorial wrappers; no dust jacket, as issued. Near fine: the corners are bumped, and about ten leaves in the central illustration section have the lower corner creased; otherwise the spine is uncreased, the binding tight, and the text clean and unmarked throughout. Wrappers bright with strong colour, colour plates clean and bright, text block edges free of foxing. Richly illustrated with figures and colour plates, with notes, bibliography and indexes.",
+  "price": 35,
   "currency": "USD",
   "quantity": 1,
   "photos": [
@@ -31,7 +31,12 @@
     "photos/NGP-GALIAUGU/2.jpg",
     "photos/NGP-GALIAUGU/3.jpg",
     "photos/NGP-GALIAUGU/4.jpg",
-    "photos/NGP-GALIAUGU/5.jpg"
+    "photos/NGP-GALIAUGU/5.jpg",
+    "photos/NGP-GALIAUGU/6.jpg",
+    "photos/NGP-GALIAUGU/7.jpg",
+    "photos/NGP-GALIAUGU/8.jpg",
+    "photos/NGP-GALIAUGU/9.jpg",
+    "photos/NGP-GALIAUGU/10.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/isbn/9780691058900/used/?bi=s",
@@ -40,18 +45,17 @@
     "median_total": 34.44,
     "min": 25.95,
     "max": 53.76,
-    "method": "average of the buyer total (item + shipping) across US/UK sellers in the same condition, rounded to whole dollars"
+    "method": "price set by Mark at $35; comps average of buyer total (item + shipping) across US/UK sellers in the same condition was $38"
   },
   "condition_points": [
     "corners bumped",
-    "about 10 leaves with the lower corner creased",
+    "about 10 leaves in the central illustration section with the lower corner creased",
     "spine uncreased, binding tight",
     "wrappers bright, colour strong, no creasing or scuffing seen",
     "text clean and unmarked",
+    "plates clean and bright",
     "text block edges clean, no foxing or soiling"
   ],
-  "not_seen_in_photos": [
-    "interior text pages beyond the copyright page"
-  ],
+  "not_seen_in_photos": [],
   "condition_notes_from_mark": "Like new, except for bumped corners, 10 pages at bottom corner, spine unbroken, text unmarked."
 }
