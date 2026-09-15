@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-GOLDRGT",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T19:54:29+00:00",
+  "trigger_sha": "ea09e2a892cab761d63a07131fa825bac779d2b6",
+  "run_id": "35016393663",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-GOLDRGT",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}

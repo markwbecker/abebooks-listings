@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GOLDRGT</vendorBookID>
+      <author>Goldhill, Simon</author>
+      <title>Reading Greek Tragedy</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>Greek tragedy; classics; classical studies; Athenian drama; Aeschylus; Sophocles; Euripides; ancient Greek literature; literary criticism; Cambridge University Press</subject>
+      <price currency="USD">18.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Cambridge University Press printing of 1994, reprinting Goldhill's 1986 critical introduction to Athenian tragedy. Trade paperback in black laminated wrappers with red and white lettering; issued without dust jacket. The laminate is chipped and creased at the upper outer corner of the front wrapper, the corners are bumped, and the wrappers show light rubbing along the edges; the page edges have toned evenly to cream. The binding is tight and square and the text is clean and unmarked throughout. A very good copy of a standard critical study of Aeschylus, Sophocles and Euripides.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521315791</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>1994</publishYear>
+      <edition>Reprint</edition>
+      <printing>1994 reprint</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ea09e2a892cab761d63a07131fa825bac779d2b6/photos/NGP-GOLDRGT/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ea09e2a892cab761d63a07131fa825bac779d2b6/photos/NGP-GOLDRGT/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ea09e2a892cab761d63a07131fa825bac779d2b6/photos/NGP-GOLDRGT/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ea09e2a892cab761d63a07131fa825bac779d2b6/photos/NGP-GOLDRGT/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ea09e2a892cab761d63a07131fa825bac779d2b6/photos/NGP-GOLDRGT/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
