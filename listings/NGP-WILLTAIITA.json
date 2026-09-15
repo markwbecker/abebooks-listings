@@ -18,8 +18,8 @@
   "bookCondition": "Very Good",
   "size": "8vo",
   "language": "ENG",
-  "subject": "Virgil; Vergil; Aeneid; Latin literature; classical studies; classics; epic poetry; Roman poetry; literary criticism; Gordon Williams; Yale University Press",
-  "description": "Second printing of the Yale University Press paperback edition of Gordon Williams's study of Virgil's literary technique as a route to the meaning of the Aeneid; with bibliography and index. Trade softcover, cream wrappers with a line drawing of a Roman soldier to the front panel, protected by a clear plastic cover sealed over the wrappers; issued without dust jacket. The wrappers are bright and clean beneath that plastic cover, which has preserved them well, with one small brown spot to the lower front panel; the edges of the text block are toned, with a darker stain to the upper outer corner of the leaves. The binding is tight and unbroken and the text is clean and unmarked throughout. A very good copy.",
+  "subject": "Virgil; Vergil; Aeneid; Latin literature; classical studies; classics; epic poetry; Roman poetry; literary criticism; Gordon Williams; Yale University Press; Yale Paperbound",
+  "description": "Second printing of the Yale University Press paperback edition (Yale Paperbound Y-539) of Gordon Williams's study of Virgil's literary technique as a route to the meaning of the Aeneid; with bibliography and index. Trade softcover, cream wrappers with a line drawing of a Roman soldier to the front panel, protected by a clear plastic cover whose flaps fold inside the wrappers; issued without dust jacket. The wrappers are bright and clean beneath that cover, which has preserved them well, with one small brown spot to the lower front panel and a few dark specks to the spine; the spine is square and uncreased and the binding tight and unbroken, the book opening flat without strain. The edges of the text block are toned, with a darker stain to the upper outer corner of the leaves and a few small specks to the preliminary leaves; the text itself is clean and unmarked throughout, with no underlining or annotation. A very good copy.",
   "price": 19,
   "currency": "USD",
   "quantity": 1,
@@ -28,23 +28,40 @@
     "photos/NGP-WILLTAIITA/2.jpg",
     "photos/NGP-WILLTAIITA/3.jpg",
     "photos/NGP-WILLTAIITA/4.jpg",
-    "photos/NGP-WILLTAIITA/5.jpg"
+    "photos/NGP-WILLTAIITA/5.jpg",
+    "photos/NGP-WILLTAIITA/6.jpg",
+    "photos/NGP-WILLTAIITA/7.jpg",
+    "photos/NGP-WILLTAIITA/8.jpg",
+    "photos/NGP-WILLTAIITA/9.jpg",
+    "photos/NGP-WILLTAIITA/10.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/title/technique-and-ideas-in-the-aeneid/author/williams/?sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 1,
-    "by_region": {"US": 1, "UK": 0, "CA": 0},
-    "range_total": [18.5, 18.5],
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 0
+    },
+    "range_total": [
+      18.5,
+      18.5
+    ],
     "raw_price": 18.5
   },
   "condition_points": [
-    "wrappers bright and clean beneath a clear plastic cover sealed over them",
+    "wrappers bright and clean beneath a clear plastic cover whose flaps fold inside them",
     "one small brown spot to the lower front panel",
+    "spine square and uncreased, lettering bright; a few dark specks to the spine panel",
+    "binding tight and unbroken; the book opens flat without strain",
     "edges of the text block toned, with a darker stain to the upper outer corner of the leaves",
-    "binding tight and unbroken",
-    "text clean and unmarked"
+    "a few small dark specks to the preliminary leaves",
+    "text clean and unmarked throughout - no underlining or annotation at pp. 16-17, 82-83 or 232-233"
   ],
-  "not_seen_in_photos": ["spine", "interior text pages beyond the contents leaf"],
-  "condition_notes_from_mark": "Very good condition, the binding tight and unbroken, the pages clean and unmarked. There is stain on the upper right corner of the pages. The paper cover has been sealed with some kind of plastic book cover that has preserved it well."
+  "not_seen_in_photos": [
+    "rear pastedown and rear free endpaper"
+  ],
+  "condition_notes_from_mark": "Very good condition, the binding tight and unbroken, the pages clean and unmarked. There is stain on the upper right corner of the pages. The paper cover has been sealed with some kind of plastic book cover that has preserved it well.",
+  "bookType": ""
 }
