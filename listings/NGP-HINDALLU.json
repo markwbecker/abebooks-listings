@@ -1,0 +1,55 @@
+{
+  "sku": "NGP-HINDALLU",
+  "transaction": "add",
+  "title": "Allusion and Intertext: Dynamics of Appropriation in Roman Poetry",
+  "author": "Hinds, Stephen",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "1998",
+  "isbn": "9780521576772",
+  "edition": "Reprint, digital printing 2001",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; Latin literature; Roman poetry; intertextuality; allusion; literary criticism; philology; Ovid; Virgil; Roman Literature and its Contexts; Cambridge University Press",
+  "description": "Cambridge University Press paperback in the Roman Literature and its Contexts series; first published 1998, this copy from the 2001 digital reprint. Trade softcover in black and turquoise laminated wrappers, no dust jacket as issued. Near-new apart from very slight bumping to the corners and a few light pencil markings in the text; the laminate is bright and unscuffed, the spine uncreased and unfaded, and the binding tight and square. All Latin and Greek is translated or closely paraphrased.",
+  "price": 47.95,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-HINDALLU/1.jpg",
+    "photos/NGP-HINDALLU/2.jpg",
+    "photos/NGP-HINDALLU/3.jpg",
+    "photos/NGP-HINDALLU/4.jpg",
+    "photos/NGP-HINDALLU/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521576772/used/?bi=s",
+    "method": "price set by Mark",
+    "comps_reference": {
+      "n_used": 5,
+      "mean_total": 43.3,
+      "min": 24.93,
+      "max": 56.39,
+      "note": "average buyer total (item + shipping), US/UK softcover, Very Good + Good"
+    }
+  },
+  "condition_points": [
+    "very slight bumping to the corners",
+    "a few light pencil markings in the text",
+    "laminated wrappers bright and unscuffed",
+    "spine uncreased, lettering unfaded",
+    "binding tight and square"
+  ],
+  "not_seen_in_photos": [
+    "text pages and the pencil markings",
+    "page edges"
+  ],
+  "condition_notes_from_mark": "Like new condition, except for very slight corner bumping and a few light pencil markings in the text."
+}
