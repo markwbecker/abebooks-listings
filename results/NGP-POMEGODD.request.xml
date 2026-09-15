@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-POMEGODD</vendorBookID>
+      <author>Pomeroy, Sarah B.</author>
+      <title>Goddesses, Whores, Wives, and Slaves: Women in Classical Antiquity</title>
+      <publisher>Schocken Books</publisher>
+      <subject>classical antiquity; ancient Greece; ancient Rome; women's history; women in antiquity; classics; social history; Greek and Roman women; feminism; Schocken Books</subject>
+      <price currency="USD">24.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Schocken Books hardcover, ninth printing (1984) of the 1975 first edition; with 18 illustrations. Dark cloth boards with bright gilt spine lettering, in the original cream pictorial dust jacket designed by Paul Bacon, not price-clipped ($17.95 intact on the front flap). A near fine copy: slight edge wear to the jacket and a few faint specks to the cream panels, the flaps tanned with age, and the head of the spine very lightly bumped. Text block clean, white and unmarked with only light toning to the page edges, the binding tight and square, and no ownership marks or library stamps. The standard survey of women's lives in Greece and Rome, and still a staple of classics and women's history courses.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Near Fine</jacketCondition>
+      <isbn>9780805235623</isbn>
+      <publishPlace>New York</publishPlace>
+      <publishYear>1975</publishYear>
+      <edition>Later Printing</edition>
+      <printing>9th ptg, 1984</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96ac35f13e4c876055a44a5b546cc915234b9745/photos/NGP-POMEGODD/9.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
