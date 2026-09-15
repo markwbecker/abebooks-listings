@@ -1,6 +1,6 @@
 {
   "sku": "NGP-EHREDITROAAT",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Documents Illustrating the Reigns of Augustus and Tiberius",
   "author": "Ehrenberg, Victor; Jones, A. H. M.",
   "publisher": "Oxford at the Clarendon Press",
@@ -65,5 +65,6 @@
     "rear panel of the dust jacket",
     "page edges / fore-edge"
   ],
-  "condition_notes_from_mark": "The book is in very good condition, the dust jacket is frayed and in fair condition. The binding is tight, the pages are clean with only a few light pencil markings."
+  "condition_notes_from_mark": "The book is in very good condition, the dust jacket is frayed and in fair condition. The binding is tight, the pages are clean with only a few light pencil markings.",
+  "pushed_at": "2026-09-15T21:14:59+00:00"
 }
