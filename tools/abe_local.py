@@ -15,10 +15,10 @@ Two transports, chosen automatically:
 
 Sub-commands
   check                          where am I, can I push, is the workflow present
-  sku     --author "Surname, First" --title "Title"   NGP- + letters of surname+title, unique (or --random)
+  sku     --author "Surname, First" --title "Title"   NGP- + 4 letters of surname + main-title initials, unique (or --random)
   photos  --sku SKU [--replace] f1 f2 ...   normalise photos -> photos/SKU/1.jpg ... ; later calls append
-  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--regions US,UK]
-          -> average buyer total (item + shipping) of U.S. and U.K. sellers in the same condition
+  price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--regions US,UK,CA]
+          -> average buyer total (item + shipping) of U.S., U.K. and Canadian sellers in the same condition
              (--method max-total-discount [--discount 0.20] or average-item for the older rules)
   validate listing.json          check fields / lengths, print normalised listing
   publish listing.json [--photos DIR] [--wait 300] [--skip-photos]
@@ -250,37 +250,31 @@ ARTICLES = ("THE ", "A ", "AN ", "LE ", "LA ", "LES ", "DER ", "DIE ", "DAS ", "
 
 
 def derive_sku(author: str | None, title: str | None, taken: set[str]) -> str:
-    """NGP- + 4 letters of the author's surname + letters of the title (8 in all), unique.
+    """NGP- + first 4 letters of the author's surname + first letter of every word of the main title.
 
-    'Wittgenstein, Ludwig' / 'Tractatus Logico-Philosophicus' -> NGP-WITTTRAC
-    'Hemingway, Ernest'    / 'The Old Man and the Sea'         -> NGP-HEMIOLDM
-    A second copy of the same book gets NGP-HEMIOLD2, then ...3, and so on.
+    'Wittgenstein, Ludwig' / 'Tractatus Logico-Philosophicus'         -> NGP-WITTTLP
+    'Hemingway, Ernest'    / 'The Old Man and the Sea'                 -> NGP-HEMITOMATS
+    'Feeney, D. C.'        / 'The Gods in Epic: Poets and Critics ...' -> NGP-FEENTGIE
+    Subtitle (after a colon) dropped; purely numeric title words kept whole (Orwell / 1984 -> NGP-ORWE1984).
+    Variable length; a second copy of the same book gets ...2, then ...3, and so on.
     """
     surname = ""
     if author:
         first = re.split(r"[;&]| and ", author)[0].strip()
         surname = first.split(",")[0].strip() if "," in first else (first.split()[-1] if first.split() else "")
-    main_title = re.split(r"[:;(\[]", title or "")[0].strip().upper()
-    for art in ARTICLES:
-        if main_title.startswith(art):
-            main_title = main_title[len(art):]
-            break
-    s, t = _alnum(surname, digits=False), _alnum(main_title, digits=True)
-    n_s = min(4, len(s))
-    core = s[:n_s] + t[: 8 - n_s]
-    if len(core) < 8:                      # short title: borrow more of the surname, then the rest of the title
-        core = (core + s[n_s:] + t[8 - n_s:])[:8]
-    if len(core) < 8:
-        core = (core + "".join(secrets.choice(SKU_ALPHABET) for _ in range(8)))[:8]
+    main_title = re.split(r"[:;(\[]", title or "")[0].strip()
+    words = [w for w in re.split(r"[\s\-\u2013\u2014/]+", main_title) if _alnum(w, digits=True)]
+    # first letter of each word; a purely numeric word (1984, 2001) is kept whole so the ID stays meaningful
+    initials = "".join(_alnum(w, digits=True) if _alnum(w, digits=True).isdigit() else _alnum(w, digits=True)[0] for w in words)
+    core = (_alnum(surname, digits=False)[:4] + initials)
+    if not core:
+        core = "".join(secrets.choice(SKU_ALPHABET) for _ in range(8))
+    core = core[: 40 - len(SKU_PREFIX) - 2]          # vendorBookID max 40 chars, leave room for a collision suffix
     cand = SKU_PREFIX + core
     if cand not in taken:
         return cand
-    for d in "23456789":
-        cand = SKU_PREFIX + core[:7] + d
-        if cand not in taken:
-            return cand
-    for d in range(10, 100):
-        cand = SKU_PREFIX + core[:6] + str(d)
+    for n in range(2, 100):
+        cand = f"{SKU_PREFIX}{core}{n}"
         if cand not in taken:
             return cand
     raise SystemExit("could not derive a unique SKU — pass --random")
@@ -377,13 +371,14 @@ def binding_kind(text: str | None) -> str | None:
 US_RE = re.compile(r"\bU\.?\s?S\.?\s?A?\.?\b|\bUnited States\b|\bUSA\b", re.I)
 US_STATES = set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC PR".split())
 UK_RE = re.compile(r"United Kingdom|Great Britain|\bU\.?K\.?\b|\bGB\b|\bEngland\b|\bScotland\b|\bWales\b|Northern Ireland", re.I)
-OTHER_RE = re.compile(r"\bIreland\b|Canada|Germany|France|Spain|Italy|Netherlands|Belgium|Australia|New Zealand|India|Japan|"
+CA_RE = re.compile(r"\bCanada\b", re.I)
+OTHER_RE = re.compile(r"\bIreland\b|Germany|France|Spain|Italy|Netherlands|Belgium|Australia|New Zealand|India|Japan|"
                       r"Austria|Switzerland|Sweden|Denmark|Norway|Finland|Poland|Portugal|Mexico|Brazil|Argentina|South Africa|"
                       r"Israel|Greece|Czech|Hungary|Romania|Turkey|China|Hong Kong|Singapore|Korea", re.I)
 
 
 def seller_region(location: str | None) -> str | None:
-    """'US', 'UK', 'other' from the seller location as AbeBooks shows it; None when unknown."""
+    """'US', 'UK', 'CA' or 'other' from the seller location as AbeBooks shows it; None when unknown."""
     if not location:
         return None
     loc = location.strip()
@@ -391,6 +386,8 @@ def seller_region(location: str | None) -> str | None:
         return "UK"
     if US_RE.search(loc):
         return "US"
+    if CA_RE.search(loc):
+        return "CA"
     if OTHER_RE.search(loc):
         return "other"
     parts = [x.strip() for x in loc.split(",")]
@@ -553,8 +550,8 @@ def normalise_listing(l: dict) -> tuple[dict, list[str]]:
     problems = []
     l = dict(l)
     l["sku"] = (l.get("sku") or "").strip().upper()
-    if not re.fullmatch(r"NGP-[A-Z0-9]{8}", l["sku"]):
-        problems.append(f"sku {l['sku']!r} must look like NGP-XXXXXXXX (8 letters/digits)")
+    if not re.fullmatch(r"NGP-[A-Z0-9]{2,36}", l["sku"]):
+        problems.append(f"sku {l['sku']!r} must be NGP- followed by 2-36 letters/digits")
     l["transaction"] = (l.get("transaction") or "add").lower()
     if l["transaction"] not in ("add", "update", "delete"):
         problems.append("transaction must be add, update or delete")
@@ -756,7 +753,7 @@ def main():
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)
     p.add_argument("--binding", choices=["hard", "soft", "any"], default="any"); p.add_argument("--new", action="store_true")
     p.add_argument("--method", choices=["avg-total", "max-total-discount", "average-item"], default="avg-total")
-    p.add_argument("--regions", default="US,UK", help="seller regions that count, comma-separated (default US,UK)")
+    p.add_argument("--regions", default="US,UK,CA", help="seller regions that count, comma-separated (default US,UK,CA)")
     p.add_argument("--discount", type=float, default=0.20, help="max-total-discount only: fraction below the top total")
     p.add_argument("--no-outlier-filter", action="store_true"); p.add_argument("--min-comps", type=int, default=1)
     p.set_defaults(fn=cmd_price)
