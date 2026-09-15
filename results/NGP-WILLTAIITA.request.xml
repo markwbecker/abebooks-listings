@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>add</transactionType>
+      <vendorBookID>NGP-WILLTAIITA</vendorBookID>
+      <author>Williams, Gordon</author>
+      <title>Technique and Ideas in the Aeneid</title>
+      <publisher>Yale University Press</publisher>
+      <subject>Virgil; Vergil; Aeneid; Latin literature; classical studies; classics; epic poetry; Roman poetry; literary criticism; Gordon Williams; Yale University Press</subject>
+      <price currency="USD">19.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Second printing of the Yale University Press paperback edition of Gordon Williams's study of Virgil's literary technique as a route to the meaning of the Aeneid; with bibliography and index. Trade softcover, cream wrappers with a line drawing of a Roman soldier to the front panel, protected by a clear plastic cover sealed over the wrappers; issued without dust jacket. The wrappers are bright and clean beneath that plastic cover, which has preserved them well, with one small brown spot to the lower front panel; the edges of the text block are toned, with a darker stain to the upper outer corner of the leaves. The binding is tight and unbroken and the text is clean and unmarked throughout. A very good copy.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780300034295</isbn>
+      <publishPlace>New Haven</publishPlace>
+      <publishYear>1983</publishYear>
+      <edition>Second Printing</edition>
+      <printing>2nd printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e697b4d842d1b7e2fd30a8c32ace97ba000c5600/photos/NGP-WILLTAIITA/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e697b4d842d1b7e2fd30a8c32ace97ba000c5600/photos/NGP-WILLTAIITA/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e697b4d842d1b7e2fd30a8c32ace97ba000c5600/photos/NGP-WILLTAIITA/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e697b4d842d1b7e2fd30a8c32ace97ba000c5600/photos/NGP-WILLTAIITA/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e697b4d842d1b7e2fd30a8c32ace97ba000c5600/photos/NGP-WILLTAIITA/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
