@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-HARDVIRG",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T03:04:55+00:00",
+  "trigger_sha": "154141953d474a28ab12fcb5fe677af131e55c20",
+  "run_id": "34923607901",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-HARDVIRG",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}

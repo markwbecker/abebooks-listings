@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HARDVIRG</vendorBookID>
+      <author>Hardie, Philip R.</author>
+      <title>Virgil's Aeneid: Cosmos and Imperium</title>
+      <publisher>Clarendon Press / Oxford University Press</publisher>
+      <subject>Virgil; Aeneid; Latin literature; classical studies; classical philology; Augustan Rome; epic poetry; Lucretius; Gigantomachy; Roman history; Clarendon Press; Oxford</subject>
+      <price currency="USD">225.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Clarendon Press reprint of 2003, printed digitally from the 1986 edition of Hardie's study of cosmological and Gigantomachic imagery in the Aeneid. Trade paperback in blue printed wrappers, no dust jacket as issued. Minor wear to the covers: light scuffing and fine scratching to the laminate, a faintly rubbed patch on the front panel, corners lightly bumped with slight fraying along the lower edge, and a short crease at the head. The interior is clean, bright and unmarked, with a tight binding and an uncreased spine. A near fine copy of a scholarly monograph that is hard to find in print.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780198146919</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>2003</publishYear>
+      <edition>Reprint</edition>
+      <printing>2003 reprint</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/154141953d474a28ab12fcb5fe677af131e55c20/photos/NGP-HARDVIRG/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/154141953d474a28ab12fcb5fe677af131e55c20/photos/NGP-HARDVIRG/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/154141953d474a28ab12fcb5fe677af131e55c20/photos/NGP-HARDVIRG/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/154141953d474a28ab12fcb5fe677af131e55c20/photos/NGP-HARDVIRG/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/154141953d474a28ab12fcb5fe677af131e55c20/photos/NGP-HARDVIRG/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
