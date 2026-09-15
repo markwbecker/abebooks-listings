@@ -1,0 +1,73 @@
+{
+  "sku": "NGP-HEINVET",
+  "transaction": "update",
+  "title": "Virgil's Epic Technique",
+  "author": "Heinze, Richard",
+  "publisher": "University of California Press",
+  "publishPlace": "Berkeley",
+  "publishYear": "1993",
+  "isbn": "9780520064447",
+  "edition": "First English Edition",
+  "firstEdition": true,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Near Fine",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Virgil; Vergil; Aeneid; Latin literature; classical studies; epic poetry; Roman literature; literary criticism; Virgils epische Technik; classics",
+  "description": "First English edition of Heinze's Virgils epische Technik, translated by Hazel and David Harvey and Fred Robertson, with a preface by Antonie Wlosok; University of California Press, 1993. Black cloth over boards, gilt lettering to the spine, in the original pictorial dust jacket (The Wooden Horse, a detail from Biagio di Antonio's The Siege of Troy). A previous reader has marked the first chapter in pencil, with light marginal lines and some underlining; the remainder of the text is clean and unmarked, and there is no ink, highlighting or annotation anywhere. Otherwise a near-fine copy: the cloth is clean and unfaded, the gilt bright, the binding tight and square, the endpapers unmarked and free of any owner's name. The jacket is near fine and unclipped, with no price printed to the flap, showing only very light rubbing and short creases at the edges and corners.",
+  "price": 59,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-HEINVET/1.jpg",
+    "photos/NGP-HEINVET/2.jpg",
+    "photos/NGP-HEINVET/3.jpg",
+    "photos/NGP-HEINVET/4.jpg",
+    "photos/NGP-HEINVET/5.jpg",
+    "photos/NGP-HEINVET/6.jpg",
+    "photos/NGP-HEINVET/7.jpg",
+    "photos/NGP-HEINVET/8.jpg",
+    "photos/NGP-HEINVET/9.jpg",
+    "photos/NGP-HEINVET/10.jpg",
+    "photos/NGP-HEINVET/11.jpg",
+    "photos/NGP-HEINVET/12.jpg",
+    "photos/NGP-HEINVET/13.jpg",
+    "photos/NGP-HEINVET/14.jpg",
+    "photos/NGP-HEINVET/15.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/virgils-epic-technique/author/heinze/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 3,
+    "by_region": {
+      "US": 0,
+      "UK": 1,
+      "CA": 2
+    },
+    "range_total": [
+      57.5,
+      61.36
+    ],
+    "raw_price": 58.79
+  },
+  "condition_points": [
+    "light pencil marginal lines and underlining in the first chapter (The Fall of Troy)",
+    "text clean and unmarked from chapter 2 onward; no ink or highlighting anywhere",
+    "cloth clean and unfaded, gilt spine lettering bright",
+    "boards clean and square under the jacket, corners sharp",
+    "binding tight and square, no lean to the spine",
+    "endpapers unmarked, no owner's name or bookplate",
+    "text block edges white and unspotted",
+    "dust jacket unclipped, no price printed to the flap",
+    "dust jacket with very light rubbing and short creases to edges and corners"
+  ],
+  "not_seen_in_photos": [
+    "pages not photographed; pencil marking is reported as confined to the first chapter"
+  ],
+  "condition_notes_from_mark": "Like new condition, only very minor wear to the edges of the dust jacket. Some light pencil marks in the first chapter of the text.",
+  "pushed_at": "2026-09-15T17:46:10+00:00"
+}
