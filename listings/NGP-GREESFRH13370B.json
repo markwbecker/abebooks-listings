@@ -1,0 +1,67 @@
+{
+  "sku": "NGP-GREESFRH13370B",
+  "transaction": "update",
+  "title": "Sources for Roman History 133-70 B.C.",
+  "author": "Greenidge, A. H. J.; Clay, A. M.; Gray, E. W.",
+  "publisher": "Oxford at the Clarendon Press",
+  "publishPlace": "Oxford",
+  "publishYear": "1960",
+  "edition": "Second Edition, Revised",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Fair",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Roman history; ancient history; Roman Republic; classics; classical studies; Latin sources; epigraphy; inscriptions; numismatics; Clarendon Press; Oxford University Press; Greenidge; Clay; E. W. Gray",
+  "description": "Second edition, revised by E. W. Gray of Christ Church, Oxford, of the standard source collection first published in 1903; Oxford at the Clarendon Press, 1960. Dark blue cloth hardcover, gilt lettering and Oxford crest to the spine, in the original unclipped dust jacket priced 21s. net. The book is very good: binding tight and square, boards clean and unfaded, text clean and unmarked throughout, though the paper has toned and the top and fore edges carry light scattered spotting. A previous owner's name is inked on the front free endpaper with small pencil notations, and the copyright leaf has a crease. The dust jacket is only fair, with chipping and small losses at the spine ends and along the edges, general edgewear and a brown spot to the lower front panel.",
+  "price": 30,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-GREESFRH13370B/1.jpg",
+    "photos/NGP-GREESFRH13370B/2.jpg",
+    "photos/NGP-GREESFRH13370B/3.jpg",
+    "photos/NGP-GREESFRH13370B/4.jpg",
+    "photos/NGP-GREESFRH13370B/5.jpg",
+    "photos/NGP-GREESFRH13370B/6.jpg",
+    "photos/NGP-GREESFRH13370B/7.jpg",
+    "photos/NGP-GREESFRH13370B/8.jpg",
+    "photos/NGP-GREESFRH13370B/9.jpg",
+    "photos/NGP-GREESFRH13370B/10.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/sources-for-roman-history/author/greenidge/?bi=h&cond=vg&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 3,
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 2
+    },
+    "range_total": [
+      24.5,
+      39.5
+    ],
+    "raw_price": 29.83
+  },
+  "condition_points": [
+    "binding tight and square, gilt on spine bright",
+    "text clean and unmarked throughout, no underlining or annotation",
+    "pages toned/yellowed; light scattered spotting to the top edge and fore-edge",
+    "boards clean and sound, dark blue cloth unfaded; light rubbing at the spine ends",
+    "previous owner's name inked on front free endpaper, with small pencil notations",
+    "crease to the copyright leaf",
+    "dust jacket chipped at spine ends and along edges, with small losses",
+    "brown spot to lower front panel of jacket; jacket toned and edge-worn",
+    "jacket not price-clipped (21s. net present)"
+  ],
+  "not_seen_in_photos": [
+    "rear panel of the dust jacket"
+  ],
+  "condition_notes_from_mark": "The book is in very good condition with the dust jacket in fair condition. The binding is tight, the pages are clean and unmarked, but yellowed somewhat.",
+  "pushed_at": "2026-09-15T21:50:18+00:00"
+}
