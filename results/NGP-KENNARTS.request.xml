@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-KENNARTS</vendorBookID>
+      <author>Kennedy, Duncan F.</author>
+      <title>The Arts of Love: Five Studies in the Discourse of Roman Love Elegy</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>classics; Latin literature; Roman love elegy; Ovid; Propertius; Tibullus; literary theory; literary criticism; Roman Literature and its Contexts; Duncan F. Kennedy; Barthes; Foucault; Paul Veyne; elegiac poetry; gender studies</subject>
+      <price currency="USD">27.95</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First edition, first printing, in the Cambridge series Roman Literature and its Contexts; five studies reading Tibullus, Propertius and Ovid through Veyne, Barthes and Foucault, with all Latin translated or closely paraphrased. Trade paperback in the series' black and green laminated wrappers; no dust jacket, as issued. Very good: slight wear to the covers, with light scuffing and surface scratches to the glossy black laminate and a faint crease along the front joint; one page carries a light grey discoloration. The text is clean and unmarked throughout and the binding is tight and square.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521407670</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>1993</publishYear>
+      <edition>First Edition</edition>
+      <printing>1st printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f8d335e3dbc27f92a56653e69698b25e6d2eef1c/photos/NGP-KENNARTS/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f8d335e3dbc27f92a56653e69698b25e6d2eef1c/photos/NGP-KENNARTS/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f8d335e3dbc27f92a56653e69698b25e6d2eef1c/photos/NGP-KENNARTS/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f8d335e3dbc27f92a56653e69698b25e6d2eef1c/photos/NGP-KENNARTS/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f8d335e3dbc27f92a56653e69698b25e6d2eef1c/photos/NGP-KENNARTS/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

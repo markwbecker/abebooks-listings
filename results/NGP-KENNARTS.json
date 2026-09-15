@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-KENNARTS",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T13:58:38+00:00",
+  "trigger_sha": "f8d335e3dbc27f92a56653e69698b25e6d2eef1c",
+  "run_id": "34978498275",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-KENNARTS",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
