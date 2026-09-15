@@ -1,0 +1,66 @@
+{
+  "sku": "NGP-PALMTLL",
+  "transaction": "update",
+  "title": "The Latin Language",
+  "author": "Palmer, L. R.",
+  "publisher": "University of Oklahoma Press",
+  "publishPlace": "Norman, OK",
+  "publishYear": "1988",
+  "isbn": "9780806121369",
+  "edition": "University of Oklahoma Press ed.",
+  "printing": "6th printing",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Near Fine",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Latin language; classical philology; comparative linguistics; Indo-European languages; historical grammar; Vulgar Latin; Christian Latin; Romance languages; Latin syntax; Latin morphology; Latin phonology; classics",
+  "description": "University of Oklahoma Press reprint of Palmer's 1954 Faber and Faber study, issued 1988; this copy a later printing from the number line. Trade paperback in white pictorial wrappers with blue and green lettering; no dust jacket, as issued. Near Fine and unread: wrappers clean and bright with sharp corners, spine uncreased, page edges clean and untoned, text block tight and unmarked throughout. The only flaw is the publisher's remainder mark, three strokes of black marker on the half title beside the recycled-paper device, with a small pencilled number at the corner of the same leaf. Part I gives an outline history of the language from its Italic beginnings through Vulgar and Christian Latin; Part II is a comparative-historical grammar, with an appendix of archaic Latin texts, a folding map, bibliography and indexes.",
+  "price": 25,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-PALMTLL/1.jpg",
+    "photos/NGP-PALMTLL/2.jpg",
+    "photos/NGP-PALMTLL/3.jpg",
+    "photos/NGP-PALMTLL/4.jpg",
+    "photos/NGP-PALMTLL/5.jpg",
+    "photos/NGP-PALMTLL/6.jpg",
+    "photos/NGP-PALMTLL/7.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780806121369/?bi=s&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 3,
+    "by_region": {
+      "US": 3,
+      "UK": 0,
+      "CA": 0
+    },
+    "range_total": [
+      7.65,
+      20.49
+    ],
+    "raw_price": 14.38,
+    "note": "no Near Fine softcover comps on AbeBooks; the rule widened one grade to Very Good (3 U.S. sellers, mean total $14.38). The two Used-As New comps average $44.95 total ($29.84 U.S., $60.05 U.K.). The marker proved to be a standard remainder mark rather than owner defacement, so the copy sits nearer the As New end than the $14 suggests.",
+    "chosen_price_note": "Mark set $25: below the $29.84 U.S. Used-As New comp, above the Very Good band, reflecting an unread copy whose only flaw is a publisher's remainder mark."
+  },
+  "condition_points": [
+    "publisher's remainder mark: three black marker strokes on the half title",
+    "small pencilled number at the upper corner of the half title",
+    "wrappers clean and bright, corners sharp",
+    "spine uncreased, binding tight and unread in appearance",
+    "page edges clean, untoned and free of foxing",
+    "text block clean and unmarked",
+    "faint short smudge to lower front wrapper"
+  ],
+  "not_seen_in_photos": [
+    "interior text pages beyond the contents leaf"
+  ],
+  "condition_notes_from_mark": "The book it's in as new condition except for some black marker, cross outs on the short title page.",
+  "pushed_at": "2026-09-15T18:53:13+00:00"
+}
