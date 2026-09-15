@@ -1,0 +1,62 @@
+{
+  "sku": "NGP-HARROXFO",
+  "transaction": "add",
+  "title": "Oxford Readings in Vergil's Aeneid",
+  "author": "Harrison, S. J. (editor)",
+  "publisher": "Oxford University Press",
+  "publishPlace": "Oxford",
+  "publishYear": "1990",
+  "isbn": "9780198143888",
+  "edition": "Paperback reprint",
+  "printing": "Later impression",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "bookCondition": "Very Good",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; classical studies; Latin literature; epic poetry; Virgil; Vergil; Aeneid; Roman poetry; literary criticism; Oxford Readings in Classical Studies; S. J. Harrison; Oxford University Press; Augustan literature",
+  "description": "Oxford University Press paperback reprint of Harrison's collection of twentieth-century critical essays on Vergil's Aeneid, first published in 1990 in the Oxford Readings in Classical Studies series; the number line on the copyright page indicates a later impression. Trade paperback in the dark blue laminate wrappers, no dust jacket as issued; the spine lettering is crisp and unfaded. A very good copy: the wrappers are rubbed and scuffed with light edge wear, the lower fore-corner of the front panel is bumped and creased, and there is a crease along the spine fold with light wear at the head and tail. A previous owner's name is written in pen on the inside cover, and the text is clean apart from light pencil markings. Binding sound and the text block complete, with the fore-edge clean and unspotted.",
+  "price": 61,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-HARROXFO/1.jpg",
+    "photos/NGP-HARROXFO/2.jpg",
+    "photos/NGP-HARROXFO/3.jpg",
+    "photos/NGP-HARROXFO/4.jpg",
+    "photos/NGP-HARROXFO/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780198143888/used/?bi=s",
+    "n_used": 1,
+    "mean_raw": 61.25,
+    "median": 61.25,
+    "min": 45.5,
+    "max": 219.15,
+    "method": "average buyer total (item + shipping) across US/UK sellers in the same condition; only 1 Very Good softcover comp on the page ($61.25 total), which also matches the $61.09 median of all 6 used copies. Thin market: 28 listings but only 6 used; the two 'As new' copies at $175.62 and $219.15 are algorithmically priced against the New copies and are not real comps.",
+    "set_by": "comps"
+  },
+  "condition_points": [
+    "Dark blue laminate wrappers rubbed and scuffed overall; sheen uneven across both panels",
+    "Lower fore-corner of the front panel bumped and creased, with the white board showing through",
+    "Crease running along the spine fold of the front wrapper, from reading",
+    "Light wear and slight fraying at the head and tail of the spine and at the head of the rear panel",
+    "Spine straight and uncocked; spine lettering crisp and unfaded, no sunning",
+    "Fore-edge clean and white, no foxing or spotting where shown",
+    "Previous owner's name in pen on the inside cover (per Mark; not photographed)",
+    "Text clean apart from light pencil markings (per Mark; not photographed)",
+    "Binding sound; text block complete and square"
+  ],
+  "not_seen_in_photos": [
+    "Inside covers and endpapers - the owner's name is described but not shown",
+    "The text pages beyond the copyright page - the extent of the pencil markings is unknown",
+    "Top and bottom edges of the text block"
+  ],
+  "condition_notes_from_mark": "A very good condition, cover wear and bumped corner, owners name in pen on the inside cover. The text is clean except for light pencil markings."
+}
