@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HARROXFO</vendorBookID>
+      <author>Harrison, S. J. (editor)</author>
+      <title>Oxford Readings in Vergil's Aeneid</title>
+      <publisher>Oxford University Press</publisher>
+      <subject>classics; classical studies; Latin literature; epic poetry; Virgil; Vergil; Aeneid; Roman poetry; literary criticism; Oxford Readings in Classical Studies; S. J. Harrison; Oxford University Press; Augustan literature</subject>
+      <price currency="USD">65.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Oxford University Press paperback reprint of Harrison's collection of twentieth-century critical essays on Vergil's Aeneid, first published in 1990 in the Oxford Readings in Classical Studies series; the number line on the copyright page indicates a later impression. Trade paperback in the dark blue laminate wrappers, no dust jacket as issued; the spine lettering is crisp and unfaded. A very good copy: the wrappers are rubbed and scuffed with light edge wear, the lower fore-corner of the front panel is bumped and creased, and there is a crease along the spine fold with light wear at the head and tail. A previous owner's name is written in pen on the inside cover and a previous reader has left faint pencil marginal lines in places, but the text is otherwise clean and the fore-edge unspotted. Binding sound and the text block complete, opening flat without cracking.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <isbn>9780198143888</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>1990</publishYear>
+      <edition>Paperback reprint</edition>
+      <printing>Later impression</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/b9efae3a82f11aae3090ec0a34ae11d95b4e9fe6/photos/NGP-HARROXFO/8.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
