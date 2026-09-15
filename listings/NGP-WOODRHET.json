@@ -1,6 +1,6 @@
 {
   "sku": "NGP-WOODRHET",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Rhetoric in Classical Historiography: Four Studies",
   "author": "Woodman, A. J.",
   "publisher": "Areopagitica Press / Croom Helm",
@@ -14,12 +14,12 @@
   "bindingType": "hard",
   "dustJacket": true,
   "jacketCondition": "Near Fine",
-  "bookCondition": "Near Fine",
+  "bookCondition": "Very Good",
   "size": "8vo",
   "language": "ENG",
   "subject": "classics; classical studies; ancient history; historiography; rhetoric; Roman history; Greek history; Thucydides; Cicero; Sallust; Livy; Tacitus; Latin literature; Croom Helm; Areopagitica Press",
-  "description": "First edition, 1988: the Areopagitica Press issue for the United States (ISBN 0-918400-07-4) of the Croom Helm printing, comprising Woodman's four studies on Thucydides, Cicero, Sallust and Livy, and Tacitus. Hardcover in black cloth with bright gilt lettering to the spine, in the original cream dust jacket, not price-clipped. The jacket has minor creasing at the head; the cloth at the head of the spine is lightly rubbed, the upper corners are slightly bumped, and there is light grey soiling to the top edge of the text block. Internally clean and unmarked, with no inscription or bookplate, and the binding tight and square.",
-  "price": 77,
+  "description": "First edition, 1988: the Areopagitica Press issue for the United States (ISBN 0-918400-07-4) of the Croom Helm printing, comprising Woodman's four studies on Thucydides, Cicero, Sallust and Livy, and Tacitus. Hardcover in black cloth with bright gilt lettering to the spine, in the original cream dust jacket, not price-clipped. A very good copy in a near fine dust jacket: the jacket is creased at the head but complete, with no chips or tears; the cloth at the head of the spine is lightly rubbed and beginning to fray, the upper corners are slightly bumped, and the top edge of the text block is lightly soiled along the joints. Internally clean and unmarked, with no inscription or bookplate, and the binding tight and square.",
+  "price": 72,
   "currency": "USD",
   "quantity": 1,
   "photos": [
@@ -41,7 +41,7 @@
     "min": 54.31,
     "max": 96.9,
     "method": "average of the buyer total (item + shipping) across US/UK sellers in the same condition, rounded to whole dollars",
-    "note": "at Near Fine (Mark's grade) the rule gives $77 from 3 comps; regraded Very Good it gives $67 from 2 comps. Neither ISBN is indexed on AbeBooks; all comps come from the title/author search."
+    "note": "Mark set $72 for the split grade (Very Good book in a Near Fine jacket): the rule gives $67 from 2 same-grade comps at Very Good and $77 from 3 at Near Fine. Neither ISBN is indexed on AbeBooks; all comps come from the title/author search."
   },
   "condition_points": [
     "minor creasing to the dust jacket at the head, heaviest at the top of the front panel and the front flap fold",
@@ -57,5 +57,6 @@
   "not_seen_in_photos": [
     "interior pages beyond the title and copyright pages"
   ],
-  "condition_notes_from_mark": "Near fine condition, minor creasing of dust jacket, and slightly bumped upper corners."
+  "condition_notes_from_mark": "Near fine condition, minor creasing of dust jacket, and slightly bumped upper corners. After the second batch of photos, agreed to grade the book Very Good in a Near Fine jacket and list at $72.",
+  "pushed_at": "2026-09-15T15:51:15+00:00"
 }
