@@ -1,6 +1,6 @@
 {
   "sku": "NGP-WILLTAIITA",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Technique and Ideas in the Aeneid",
   "author": "Williams, Gordon",
   "publisher": "Yale University Press",
@@ -63,5 +63,6 @@
     "rear pastedown and rear free endpaper"
   ],
   "condition_notes_from_mark": "Very good condition, the binding tight and unbroken, the pages clean and unmarked. There is stain on the upper right corner of the pages. The paper cover has been sealed with some kind of plastic book cover that has preserved it well.",
-  "bookType": ""
+  "bookType": "",
+  "pushed_at": "2026-09-15T20:07:21+00:00"
 }
