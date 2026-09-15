@@ -1,6 +1,6 @@
 {
   "sku": "NGP-GALIAUGU",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Augustan Culture: An Interpretive Introduction",
   "author": "Galinsky, Karl",
   "publisher": "Princeton University Press",
@@ -57,5 +57,6 @@
     "text block edges clean, no foxing or soiling"
   ],
   "not_seen_in_photos": [],
-  "condition_notes_from_mark": "Like new, except for bumped corners, 10 pages at bottom corner, spine unbroken, text unmarked."
+  "condition_notes_from_mark": "Like new, except for bumped corners, 10 pages at bottom corner, spine unbroken, text unmarked.",
+  "pushed_at": "2026-09-15T13:31:18+00:00"
 }
