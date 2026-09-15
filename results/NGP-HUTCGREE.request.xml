@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HUTCGREE</vendorBookID>
+      <author>Hutchinson, G. O.</author>
+      <title>Greek Lyric Poetry: A Commentary on Selected Larger Pieces</title>
+      <publisher>Oxford University Press</publisher>
+      <subject>Greek lyric poetry; classics; classical studies; ancient Greek literature; commentary; Alcman; Stesichorus; Sappho; Alcaeus; Ibycus; Anacreon; Simonides; Bacchylides; Pindar; Sophocles; Euripides; papyrology; textual criticism; Oxford University Press; Clarendon</subject>
+      <price currency="USD">56.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Oxford University Press paperback of Hutchinson's commentary on the major pieces of Greek lyric, from Alcman to Simonides, with a large poem each from Bacchylides and Pindar and two odes from tragedy. This copy is the 2011 reprint, digitally printed by the press in a standard specification, in the publisher's glossy pictorial wrappers; no dust jacket, as issued. A very good copy: wrappers rubbed and lightly scratched overall, corners bumped and creased, small nicks to the spine ends and a light crease to the front joint. The spine is uncracked and the binding tight; the text block is clean, white and square, but there are pencil markings in the text and a pencilled list of page references, partly struck through, on the front blank leaf.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780199265824</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>2011</publishYear>
+      <edition>Reprinted 2011; digitally printed</edition>
+      <printing>2011 reprint</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/25728c49bf6fc9ea53f9bab98b8cb9f290846ba7/photos/NGP-HUTCGREE/7.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
