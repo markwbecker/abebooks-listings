@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-BUDETCCTGL</vendorBookID>
+      <author>Budelmann, Felix</author>
+      <title>The Cambridge Companion to Greek Lyric</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>Greek lyric poetry; classics; classical studies; ancient Greek literature; Sappho; Pindar; Alcaeus; Anacreon; Bacchylides; Simonides; Stesichorus; archaic Greece; literary criticism; Cambridge Companions to Literature; Felix Budelmann</subject>
+      <price currency="USD">45.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Paperback issue in the Cambridge Companions to Literature series, edited by Felix Budelmann; twenty-one essays on Greek lyric from Sappho and Pindar to its later reception, illustrated with black-and-white figures of Attic vase painting, and with chronology, glossary and guide to editions. Trade paperback in pictorial wrappers, no dust jacket as issued. A former public library copy: Houston Public Library barcode label to the front wrapper, INFCW label to the rear wrapper, call-number label at the foot of the spine, and DISCARD struck over the library stamp on the top edge of the text block. Wrappers rubbed at the edges and corners with a small chip at the lower rear corner; spine uncreased and the binding tight. The text block is clean and unmarked throughout the pages examined, apart from light pencil markings to some leaves.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <bookType>Ex-Library</bookType>
+      <isbn>9780521614764</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>2009</publishYear>
+      <edition>First published 2009</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/8bee239278a1d646bb7e5e387310534cc1ef81ee/photos/NGP-BUDETCCTGL/9.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

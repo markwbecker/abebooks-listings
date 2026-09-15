@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-BUDETCCTGL",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T20:18:42+00:00",
+  "trigger_sha": "8bee239278a1d646bb7e5e387310534cc1ef81ee",
+  "run_id": "35018800078",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-BUDETCCTGL",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
