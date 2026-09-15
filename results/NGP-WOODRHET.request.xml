@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-WOODRHET</vendorBookID>
+      <author>Woodman, A. J.</author>
+      <title>Rhetoric in Classical Historiography: Four Studies</title>
+      <publisher>Areopagitica Press / Croom Helm</publisher>
+      <subject>classics; classical studies; ancient history; historiography; rhetoric; Roman history; Greek history; Thucydides; Cicero; Sallust; Livy; Tacitus; Latin literature; Croom Helm; Areopagitica Press</subject>
+      <price currency="USD">72.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First edition, 1988: the Areopagitica Press issue for the United States (ISBN 0-918400-07-4) of the Croom Helm printing, comprising Woodman's four studies on Thucydides, Cicero, Sallust and Livy, and Tacitus. Hardcover in black cloth with bright gilt lettering to the spine, in the original cream dust jacket, not price-clipped. A very good copy in a near fine dust jacket: the jacket is creased at the head but complete, with no chips or tears; the cloth at the head of the spine is lightly rubbed and beginning to fray, the upper corners are slightly bumped, and the top edge of the text block is lightly soiled along the joints. Internally clean and unmarked, with no inscription or bookplate, and the binding tight and square.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Near Fine</jacketCondition>
+      <isbn>9780918400074</isbn>
+      <publishPlace>Portland, Oregon; London &amp; Sydney</publishPlace>
+      <publishYear>1988</publishYear>
+      <edition>First Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f4cddb47d3fc55924d96d6c88852078f1673b7d/photos/NGP-WOODRHET/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
