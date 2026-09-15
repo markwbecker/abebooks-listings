@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-SHERROMA</vendorBookID>
+      <author>Sherwin-White, A. N.</author>
+      <title>The Roman Citizenship</title>
+      <publisher>Clarendon Press</publisher>
+      <subject>Roman history; ancient Rome; Roman law; citizenship; civitas; Roman Empire; Roman Republic; classics; classical studies; Latin rights; municipia; Constitutio Antoniniana; Clarendon Press; Oxford; Times Book Club</subject>
+      <price currency="USD">53.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="hard">Cloth</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First edition, Oxford: At the Clarendon Press, 1939 - Sherwin-White's standard study of the growth of Roman citizenship from the Latin League to the Constitutio Antoniniana. Publisher's dark blue-grey cloth with gilt spine lettering and the gilt Oxford arms at the foot; no dust jacket. A good, sound copy showing its age: the cloth is rubbed and lightly soiled with the corners bumped and worn through, the gilt is dulled and the cloth frayed at the spine ends, and both hinges have cracked and opened to expose the mull, though the binding holds and no leaves are loose. Endpapers are toned, with a pencilled date '11-39' and faint pencil notations, and the text block edges are yellowed; the text itself is clean and unmarked throughout. The original Times Book Club ticket (42 Wigmore Street, London) remains on the rear pastedown.</description>
+      <bookCondition>Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>1939</publishYear>
+      <edition>First Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7c6366715ba845162521310692ca1dc0e3baa900/photos/NGP-SHERROMA/9.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
