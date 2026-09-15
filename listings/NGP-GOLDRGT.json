@@ -1,6 +1,6 @@
 {
   "sku": "NGP-GOLDRGT",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Reading Greek Tragedy",
   "author": "Goldhill, Simon",
   "publisher": "Cambridge University Press",
@@ -20,7 +20,7 @@
   "language": "ENG",
   "subject": "Greek tragedy; classics; classical studies; Athenian drama; Aeschylus; Sophocles; Euripides; ancient Greek literature; literary criticism; Cambridge University Press",
   "description": "Cambridge University Press printing of 1994, reprinting Goldhill's 1986 critical introduction to Athenian tragedy. Trade paperback in black laminated wrappers with red and white lettering; issued without dust jacket. The laminate is chipped and creased at the upper outer corner of the front wrapper, the corners are bumped, and the wrappers show light rubbing along the edges; the page edges have toned evenly to cream. The binding is tight and square and the text is clean and unmarked throughout. A very good copy of a standard critical study of Aeschylus, Sophocles and Euripides.",
-  "price": 31,
+  "price": 18,
   "currency": "USD",
   "quantity": 1,
   "photos": [
@@ -33,10 +33,17 @@
   "pricing": {
     "url": "https://www.abebooks.com/book-search/isbn/9780521315791/?bi=s&cond=vg&sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
-    "n_used": 3,
-    "by_region": {"US": 1, "UK": 1, "CA": 1},
-    "range_total": [13.5, 56.96],
-    "raw_price": 30.65
+    "n_used": 2,
+    "by_region": {
+      "US": 1,
+      "CA": 1
+    },
+    "range_total": [
+      13.5,
+      21.5
+    ],
+    "raw_price": 17.5,
+    "set_aside": "WorldofBooks (UK) at $56.96 total - algorithmic pricing; same seller lists a Fair copy at the identical item price. Excluded at Mark's direction."
   },
   "condition_points": [
     "laminate chipped and creased at upper outer corner of front wrapper",
@@ -50,5 +57,6 @@
     "spine (no straight-on photo)",
     "interior beyond title and copyright pages"
   ],
-  "condition_notes_from_mark": "Good condition, binding tight, pages unmarked but yellowing slightly. Minor cover wear and bumped corners."
+  "condition_notes_from_mark": "Good condition, binding tight, pages unmarked but yellowing slightly. Minor cover wear and bumped corners.",
+  "pushed_at": "2026-09-15T19:54:16+00:00"
 }
