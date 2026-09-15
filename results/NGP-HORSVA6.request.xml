@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HORSVA6</vendorBookID>
+      <author>Horsfall, Nicholas</author>
+      <title>Virgil, Aeneid 6: A Commentary (2 volumes, complete)</title>
+      <publisher>De Gruyter</publisher>
+      <subject>Virgil; Vergil; Aeneid; Aeneid Book 6; Latin literature; classics; classical commentary; Nicholas Horsfall; De Gruyter; Roman epic; Latin text and translation; Eduard Norden; Sibyl; underworld</subject>
+      <price currency="USD">110.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Nicholas Horsfall's two-volume commentary on Aeneid 6, De Gruyter, Berlin/Boston, 2013: Volume 1 holds the preface, introduction, bibliography, praemonenda and the Latin text with translation; Volume 2 the commentary, three appendices and the Latin, English and name indices. The paperback issue, printed on demand in the USA, complete in both volumes, pale blue wrappers lettered in white and gilt over a brown panel. As new throughout: spines uncreased and square, corners sharp, wrappers unrubbed, text blocks white, tight and unmarked. Two points from the bindery rather than from use: the final leaf of Volume 1, the text volume, is slightly overcut and projects a little at the fore-edge, and a faint surface mark shows on the brown panel of the Volume 2 front wrapper.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9783110482416</isbn>
+      <publishPlace>Berlin/Boston</publishPlace>
+      <publishYear>2013</publishYear>
+      <edition>Paperback issue, print-on-demand</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/10.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/9dea119a9fed37430ee3c3e4a0ffaf661557c56a/photos/NGP-HORSVA6/11.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

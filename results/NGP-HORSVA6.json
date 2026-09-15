@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-HORSVA6",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T18:09:47+00:00",
+  "trigger_sha": "9dea119a9fed37430ee3c3e4a0ffaf661557c56a",
+  "run_id": "35005724279",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-HORSVA6",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
