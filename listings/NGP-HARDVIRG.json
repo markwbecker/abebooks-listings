@@ -1,0 +1,57 @@
+{
+  "sku": "NGP-HARDVIRG",
+  "transaction": "update",
+  "title": "Virgil's Aeneid: Cosmos and Imperium",
+  "author": "Hardie, Philip R.",
+  "publisher": "Clarendon Press / Oxford University Press",
+  "publishPlace": "Oxford",
+  "publishYear": "2003",
+  "isbn": "9780198146919",
+  "edition": "Reprint",
+  "printing": "2003 reprint",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Near Fine",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Virgil; Aeneid; Latin literature; classical studies; classical philology; Augustan Rome; epic poetry; Lucretius; Gigantomachy; Roman history; Clarendon Press; Oxford",
+  "description": "Clarendon Press reprint of 2003, printed digitally from the 1986 edition of Hardie's study of cosmological and Gigantomachic imagery in the Aeneid. Trade paperback in blue printed wrappers, no dust jacket as issued. Minor wear to the covers: light scuffing and fine scratching to the laminate, a faintly rubbed patch on the front panel, corners lightly bumped with slight fraying along the lower edge, and a short crease at the head. The interior is clean, bright and unmarked, with a tight binding and an uncreased spine. A near fine copy of a scholarly monograph that is hard to find in print.",
+  "price": 225,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-HARDVIRG/1.jpg",
+    "photos/NGP-HARDVIRG/2.jpg",
+    "photos/NGP-HARDVIRG/3.jpg",
+    "photos/NGP-HARDVIRG/4.jpg",
+    "photos/NGP-HARDVIRG/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/virgils-aeneid-cosmos-and-imperium/author/hardie/used/",
+    "n_used": 3,
+    "mean_raw": 145.1,
+    "min": 121.55,
+    "max": 187.05,
+    "method": "price set by Mark ($225); comps shown for reference — average buyer total (item + shipping) of used US/UK softcover copies was $145",
+    "set_by_mark": true
+  },
+  "condition_points": [
+    "covers lightly scuffed and finely scratched overall",
+    "faintly rubbed/darkened patch to the centre of the front cover",
+    "corners lightly bumped, slight fraying to the laminate along the lower edge",
+    "short crease at the head of the front cover",
+    "spine uncreased, lettering bright",
+    "text clean and unmarked, binding tight"
+  ],
+  "not_seen_in_photos": [
+    "rear cover",
+    "page edges and text block",
+    "endpapers"
+  ],
+  "condition_notes_from_mark": "Minor wear to cover but otherwise near fine.",
+  "pushed_at": "2026-09-15T03:04:41+00:00"
+}
