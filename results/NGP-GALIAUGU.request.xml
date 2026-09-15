@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GALIAUGU</vendorBookID>
+      <author>Galinsky, Karl</author>
+      <title>Augustan Culture: An Interpretive Introduction</title>
+      <publisher>Princeton University Press</publisher>
+      <subject>Ancient Rome; Roman history; Augustus Caesar; Roman art; art history; classical studies; Latin literature; Roman religion; Augustan age; Princeton University Press</subject>
+      <price currency="USD">35.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Princeton University Press paperback of Galinsky's interpretive introduction to the age of Augustus, being the second printing and first paperback printing of 1998 (first published 1996). Softcover in glossy pictorial wrappers; no dust jacket, as issued. Near fine: the corners are bumped, and about ten leaves in the central illustration section have the lower corner creased; otherwise the spine is uncreased, the binding tight, and the text clean and unmarked throughout. Wrappers bright with strong colour, colour plates clean and bright, text block edges free of foxing. Richly illustrated with figures and colour plates, with notes, bibliography and indexes.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780691058900</isbn>
+      <publishPlace>Princeton, NJ</publishPlace>
+      <publishYear>1998</publishYear>
+      <edition>First paperback printing</edition>
+      <printing>2nd printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5f7b8539842367d0ba106b568960d7ca5d8299cd/photos/NGP-GALIAUGU/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
