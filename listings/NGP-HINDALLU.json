@@ -1,6 +1,6 @@
 {
   "sku": "NGP-HINDALLU",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Allusion and Intertext: Dynamics of Appropriation in Roman Poetry",
   "author": "Hinds, Stephen",
   "publisher": "Cambridge University Press",
@@ -51,5 +51,6 @@
     "text pages and the pencil markings",
     "page edges"
   ],
-  "condition_notes_from_mark": "Like new condition, except for very slight corner bumping and a few light pencil markings in the text."
+  "condition_notes_from_mark": "Like new condition, except for very slight corner bumping and a few light pencil markings in the text.",
+  "pushed_at": "2026-09-15T13:40:35+00:00"
 }
