@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-EHREDITROAAT</vendorBookID>
+      <author>Ehrenberg, Victor; Jones, A. H. M.</author>
+      <title>Documents Illustrating the Reigns of Augustus and Tiberius</title>
+      <publisher>Oxford at the Clarendon Press</publisher>
+      <subject>ancient history; Roman history; Augustus; Tiberius; Roman Empire; early Principate; epigraphy; inscriptions; papyri; numismatics; Res Gestae Divi Augusti; classics; Victor Ehrenberg; A. H. M. Jones; Clarendon Press; Oxford</subject>
+      <price currency="USD">40.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Second (enlarged) edition, Oxford at the Clarendon Press, 1955, of the standard collection of inscriptions, papyri, coins and other contemporary documents dating from 43 B.C. to A.D. 37, including a synopsis of the Res Gestae Divi Augusti, the consular fasti and calendars, and an almost complete collection of laws and imperial edicts. Red cloth boards with gilt spine lettering and the Oxford arms, in the original printed dust jacket. The book itself is very good: binding tight and square, cloth bright, spine ends lightly rubbed, the text block clean and bright apart from a few light pencil markings and a previous owner's name in red ink on the front free endpaper. The dust jacket is only fair, being frayed and chipped with small losses at the head of the spine and along the top edge, the edges toned and rubbed, light spotting to the front panel, and the front flap corner clipped. A sound working copy of a collection long indispensable to students of the early Principate.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Fair</jacketCondition>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>1955</publishYear>
+      <edition>Second Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/57cc3aeb54e52838a7cf5ee8c8f210d4596d0382/photos/NGP-EHREDITROAAT/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

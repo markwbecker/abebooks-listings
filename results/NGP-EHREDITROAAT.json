@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-EHREDITROAAT",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T21:15:13+00:00",
+  "trigger_sha": "57cc3aeb54e52838a7cf5ee8c8f210d4596d0382",
+  "run_id": "35024508102",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-EHREDITROAAT",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
