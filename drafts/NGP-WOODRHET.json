@@ -3,10 +3,10 @@
   "transaction": "add",
   "title": "Rhetoric in Classical Historiography: Four Studies",
   "author": "Woodman, A. J.",
-  "publisher": "Croom Helm / Areopagitica Press",
-  "publishPlace": "London & Sydney; Portland, Oregon",
+  "publisher": "Areopagitica Press / Croom Helm",
+  "publishPlace": "Portland, Oregon; London & Sydney",
   "publishYear": "1988",
-  "isbn": "9780709952562",
+  "isbn": "9780918400074",
   "edition": "First Edition",
   "firstEdition": true,
   "signed": false,
@@ -17,8 +17,8 @@
   "bookCondition": "Near Fine",
   "size": "8vo",
   "language": "ENG",
-  "subject": "classics; classical studies; ancient history; historiography; rhetoric; Roman history; Greek history; Thucydides; Sallust; Livy; Tacitus; Latin literature; Croom Helm",
-  "description": "First edition, 1988, of Woodman's four studies on rhetoric and the writing of history in Greece and Rome, published by Croom Helm in London and Sydney and issued in the USA by Areopagitica Press, Portland. Hardcover in black cloth with gilt lettering to the spine, in the original unclipped cream dust jacket. A near fine copy: the jacket shows minor creasing at the head, and the upper corners of the boards are slightly bumped; the gilt is bright, the binding tight and square, and the text block clean with only light toning to the edges. Comprises studies on Thucydides, Sallust, Livy and Tacitus.",
+  "subject": "classics; classical studies; ancient history; historiography; rhetoric; Roman history; Greek history; Thucydides; Cicero; Sallust; Livy; Tacitus; Latin literature; Croom Helm; Areopagitica Press",
+  "description": "First edition, 1988: the Areopagitica Press issue for the United States (ISBN 0-918400-07-4) of the Croom Helm printing, comprising Woodman's four studies on Thucydides, Cicero, Sallust and Livy, and Tacitus. Hardcover in black cloth with bright gilt lettering to the spine, in the original cream dust jacket, not price-clipped. The jacket has minor creasing at the head; the cloth at the head of the spine is lightly rubbed, the upper corners are slightly bumped, and there is light grey soiling to the top edge of the text block. Internally clean and unmarked, with no inscription or bookplate, and the binding tight and square.",
   "price": 77,
   "currency": "USD",
   "quantity": 1,
@@ -27,7 +27,12 @@
     "photos/NGP-WOODRHET/2.jpg",
     "photos/NGP-WOODRHET/3.jpg",
     "photos/NGP-WOODRHET/4.jpg",
-    "photos/NGP-WOODRHET/5.jpg"
+    "photos/NGP-WOODRHET/5.jpg",
+    "photos/NGP-WOODRHET/6.jpg",
+    "photos/NGP-WOODRHET/7.jpg",
+    "photos/NGP-WOODRHET/8.jpg",
+    "photos/NGP-WOODRHET/9.jpg",
+    "photos/NGP-WOODRHET/10.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/title/rhetoric-in-classical-historiography/author/woodman/used/?bi=h",
@@ -35,20 +40,22 @@
     "mean_total": 77.27,
     "min": 54.31,
     "max": 96.9,
-    "method": "average of the buyer total (item + shipping) across US/UK sellers in the same condition, rounded to whole dollars"
+    "method": "average of the buyer total (item + shipping) across US/UK sellers in the same condition, rounded to whole dollars",
+    "note": "at Near Fine (Mark's grade) the rule gives $77 from 3 comps; regraded Very Good it gives $67 from 2 comps. Neither ISBN is indexed on AbeBooks; all comps come from the title/author search."
   },
   "condition_points": [
-    "minor creasing to dust jacket at the head",
+    "minor creasing to the dust jacket at the head, heaviest at the top of the front panel and the front flap fold",
+    "dust jacket not price-clipped; no chips or tears; rear panel clean apart from a few faint specks",
+    "cloth at the head of the spine lightly rubbed and just beginning to fray",
+    "light grey soiling to the top edge of the text block, heaviest along the joints",
     "upper corners slightly bumped",
-    "dust jacket unclipped, not price-clipped",
     "gilt spine lettering bright, spine unfaded",
-    "binding tight and square",
+    "boards clean, binding tight and square",
+    "endpapers clean; no inscription, bookplate or owner's name",
     "text block clean, light toning to the edges"
   ],
   "not_seen_in_photos": [
-    "rear of dust jacket and jacket flaps",
-    "interior pages beyond title and copyright pages",
-    "endpapers"
+    "interior pages beyond the title and copyright pages"
   ],
   "condition_notes_from_mark": "Near fine condition, minor creasing of dust jacket, and slightly bumped upper corners."
 }
