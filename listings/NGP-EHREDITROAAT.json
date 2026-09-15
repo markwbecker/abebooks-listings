@@ -17,7 +17,7 @@
   "size": "8vo",
   "language": "ENG",
   "subject": "ancient history; Roman history; Augustus; Tiberius; Roman Empire; early Principate; epigraphy; inscriptions; papyri; numismatics; Res Gestae Divi Augusti; classics; Victor Ehrenberg; A. H. M. Jones; Clarendon Press; Oxford",
-  "description": "Second (enlarged) edition, Oxford at the Clarendon Press, 1955, of the standard collection of inscriptions, papyri, coins and other contemporary documents dating from 43 B.C. to A.D. 37, including a synopsis of the Res Gestae Divi Augusti. Red cloth boards with gilt spine lettering and the Oxford arms, in the original printed dust jacket. The book itself is very good: binding tight and square, cloth bright, spine ends lightly rubbed, the text clean apart from a few light pencil markings and a previous owner's name in red ink on the front free endpaper. The dust jacket is only fair, being frayed and chipped with small losses at the head of the spine and along the top edge, the edges toned and rubbed, light spotting to the front panel, and the front flap corner clipped. A sound working copy of a collection long indispensable to students of the early Principate.",
+  "description": "Second (enlarged) edition, Oxford at the Clarendon Press, 1955, of the standard collection of inscriptions, papyri, coins and other contemporary documents dating from 43 B.C. to A.D. 37, including a synopsis of the Res Gestae Divi Augusti, the consular fasti and calendars, and an almost complete collection of laws and imperial edicts. Red cloth boards with gilt spine lettering and the Oxford arms, in the original printed dust jacket. The book itself is very good: binding tight and square, cloth bright, spine ends lightly rubbed, the text block clean and bright apart from a few light pencil markings and a previous owner's name in red ink on the front free endpaper. The dust jacket is only fair, being frayed and chipped with small losses at the head of the spine and along the top edge, the edges toned and rubbed, light spotting to the front panel, and the front flap corner clipped. A sound working copy of a collection long indispensable to students of the early Principate.",
   "price": 40,
   "currency": "USD",
   "quantity": 1,
@@ -26,21 +26,35 @@
     "photos/NGP-EHREDITROAAT/2.jpg",
     "photos/NGP-EHREDITROAAT/3.jpg",
     "photos/NGP-EHREDITROAAT/4.jpg",
-    "photos/NGP-EHREDITROAAT/5.jpg"
+    "photos/NGP-EHREDITROAAT/5.jpg",
+    "photos/NGP-EHREDITROAAT/6.jpg",
+    "photos/NGP-EHREDITROAAT/7.jpg",
+    "photos/NGP-EHREDITROAAT/8.jpg",
+    "photos/NGP-EHREDITROAAT/9.jpg",
+    "photos/NGP-EHREDITROAAT/10.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/title/documents-illustrating-the-reigns-of-augustus-and-tiberius/author/ehrenberg/?bi=h&cond=vg&sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 10,
-    "by_region": {"US": 0, "UK": 6, "CA": 4},
-    "range_total": [22.50, 67.77],
+    "by_region": {
+      "US": 0,
+      "UK": 6,
+      "CA": 4
+    },
+    "range_total": [
+      22.5,
+      67.77
+    ],
     "raw_price": 39.52
   },
   "condition_points": [
     "binding tight and square",
     "red cloth bright, gilt spine lettering and Oxford arms clear",
-    "spine ends lightly rubbed",
-    "text block clean, a few light pencil markings",
+    "spine ends lightly rubbed, small fray at the head of the spine fold",
+    "rear board clean and square, cloth faintly mottled in places",
+    "text block clean and bright, unmarked in the pages photographed; no foxing seen",
+    "a few light pencil markings (per the seller)",
     "previous owner's name in red ink on the front free endpaper",
     "pencil bookseller notations on the front free endpaper",
     "dust jacket frayed and chipped at the head of the spine and along the top edge, with small losses",
@@ -48,10 +62,8 @@
     "dust jacket front flap corner clipped"
   ],
   "not_seen_in_photos": [
-    "rear board",
     "rear panel of the dust jacket",
-    "page edges",
-    "text pages beyond the preface"
+    "page edges / fore-edge"
   ],
   "condition_notes_from_mark": "The book is in very good condition, the dust jacket is frayed and in fair condition. The binding is tight, the pages are clean with only a few light pencil markings."
 }
