@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-BAILRELI</vendorBookID>
+      <author>Bailey, Cyril</author>
+      <title>Religion in Virgil</title>
+      <publisher>Barnes &amp; Noble, Inc.</publisher>
+      <subject>Virgil; Vergil; Roman religion; classical studies; Latin literature; Aeneid; ancient religion; mythology; Cyril Bailey; Sather lectures; Oxford University Press; Barnes &amp; Noble reprint</subject>
+      <price currency="USD">39.50</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Barnes &amp; Noble reprint of 1969, first published in 1935 and issued here by permission of Oxford University Press; Cyril Bailey's study of magic and omen, the old Italian deities, the state-cult, the Graeco-Roman and Oriental gods, fate, and the underworld in Virgil. Green cloth over boards, lettered in gilt on the spine with a red title panel; no dust jacket. The upper corner is bumped, the spine cloth is lightly toned, and the cloth is slightly frayed at one board edge. Inside, the binding is tight and square, the endpapers are clean and unmarked, and the text block is bright and free of foxing apart from light pencil scoring in a few margins. A very good copy, with the publisher's printed erratum note at the foot of the contents leaf.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <publishPlace>New York</publishPlace>
+      <publishYear>1969</publishYear>
+      <edition>Reprint</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/d5370c8f482e6686d63849bb5140276a31e51cc3/photos/NGP-BAILRELI/8.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
