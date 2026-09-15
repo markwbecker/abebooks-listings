@@ -1,0 +1,66 @@
+{
+  "sku": "NGP-BAILRELI",
+  "transaction": "update",
+  "title": "Religion in Virgil",
+  "author": "Bailey, Cyril",
+  "publisher": "Barnes & Noble, Inc.",
+  "publishPlace": "New York",
+  "publishYear": "1969",
+  "edition": "Reprint",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Virgil; Vergil; Roman religion; classical studies; Latin literature; Aeneid; ancient religion; mythology; Cyril Bailey; Sather lectures; Oxford University Press; Barnes & Noble reprint",
+  "description": "Barnes & Noble reprint of 1969, first published in 1935 and issued here by permission of Oxford University Press; Cyril Bailey's study of magic and omen, the old Italian deities, the state-cult, the Graeco-Roman and Oriental gods, fate, and the underworld in Virgil. Green cloth over boards, lettered in gilt on the spine with a red title panel; no dust jacket. The upper corner is bumped, the spine cloth is lightly toned, and the cloth is slightly frayed at one board edge. Inside, the binding is tight and square, the endpapers are clean and unmarked, and the text block is bright and free of foxing apart from light pencil scoring in a few margins. A very good copy, with the publisher's printed erratum note at the foot of the contents leaf.",
+  "price": 39.5,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-BAILRELI/1.jpg",
+    "photos/NGP-BAILRELI/2.jpg",
+    "photos/NGP-BAILRELI/3.jpg",
+    "photos/NGP-BAILRELI/4.jpg",
+    "photos/NGP-BAILRELI/5.jpg",
+    "photos/NGP-BAILRELI/6.jpg",
+    "photos/NGP-BAILRELI/7.jpg",
+    "photos/NGP-BAILRELI/8.jpg"
+  ],
+  "pricing": {
+    "price_set_by": "Mark",
+    "url": "https://www.abebooks.com/book-search/title/religion-in-virgil/author/bailey/used/?bi=h",
+    "calculated_price": 56,
+    "method": "Mark set $39.50; the rule (average buyer total, item + shipping, across US/UK sellers in the same condition) gave $56",
+    "n_used": 4,
+    "mean_total": 56.23,
+    "median_total": 51.49,
+    "min_total": 39.5,
+    "max_total": 82.42,
+    "by_region": {
+      "US": 3,
+      "UK": 1
+    },
+    "dropped": "1 Canadian seller (1969 B&N, Very Good, $22 + $12 = $34); 1 UK Fair copy"
+  },
+  "condition_points": [
+    "upper corner bumped",
+    "spine cloth lightly toned",
+    "cloth slightly frayed at one board edge",
+    "binding tight and square",
+    "endpapers clean and unmarked, no owner's name or bookplate",
+    "text block bright, no foxing",
+    "light pencil scoring in a few margins",
+    "no dust jacket",
+    "no ex-library marks"
+  ],
+  "not_seen_in_photos": [
+    "front board"
+  ],
+  "condition_notes_from_mark": "Very good condition, upper right corner bumped, spine tight, text clean except for some light pencil markings. No dust jacket.",
+  "pushed_at": "2026-09-15T16:57:10+00:00"
+}
