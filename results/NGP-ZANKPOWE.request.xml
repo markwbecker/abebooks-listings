@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-ZANKPOWE</vendorBookID>
+      <author>Zanker, Paul</author>
+      <title>The Power of Images in the Age of Augustus</title>
+      <publisher>University of Michigan Press</publisher>
+      <subject>Roman art; Roman archaeology; Augustus; Ancient Rome; classical studies; Jerome Lectures; art history; Roman architecture; Paul Zanker; Alan Shapiro</subject>
+      <price currency="USD">45.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Jerome Lectures, Sixteenth Series. First paperback edition (1990) of Alan Shapiro's translation; a later printing, with the number line running down to 23. Trade paperback in glossy blue pictorial wrappers; no dust jacket, as issued. As new: wrappers bright and unmarked, corners square, spine uncreased, binding tight, text clean and unmarked; the only wear is a faint rub at the foot of the spine. Extensively illustrated with photographs of Augustan sculpture, coins, reliefs and architecture.</description>
+      <bookCondition>As New</bookCondition>
+      <size>Large 8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780472081240</isbn>
+      <publishPlace>Ann Arbor</publishPlace>
+      <publishYear>1990</publishYear>
+      <edition>First Paperback Edition</edition>
+      <printing>23rd printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/c8e581ce3aecacbe8fe6e1361dc759cca2fda255/photos/NGP-ZANKPOWE/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/c8e581ce3aecacbe8fe6e1361dc759cca2fda255/photos/NGP-ZANKPOWE/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/c8e581ce3aecacbe8fe6e1361dc759cca2fda255/photos/NGP-ZANKPOWE/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/c8e581ce3aecacbe8fe6e1361dc759cca2fda255/photos/NGP-ZANKPOWE/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/c8e581ce3aecacbe8fe6e1361dc759cca2fda255/photos/NGP-ZANKPOWE/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

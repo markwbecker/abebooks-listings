@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-ZANKPOWE",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T16:00:58+00:00",
+  "trigger_sha": "c8e581ce3aecacbe8fe6e1361dc759cca2fda255",
+  "run_id": "34992239246",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-ZANKPOWE",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
