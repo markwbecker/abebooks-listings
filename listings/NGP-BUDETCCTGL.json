@@ -1,0 +1,57 @@
+{
+  "sku": "NGP-BUDETCCTGL",
+  "transaction": "add",
+  "title": "The Cambridge Companion to Greek Lyric",
+  "author": "Budelmann, Felix",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "2009",
+  "isbn": "9780521614764",
+  "edition": "First published 2009",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "bookType": "Ex-Library",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Greek lyric poetry; classics; classical studies; ancient Greek literature; Sappho; Pindar; Alcaeus; Anacreon; Bacchylides; Simonides; Stesichorus; archaic Greece; literary criticism; Cambridge Companions to Literature; Felix Budelmann",
+  "description": "Paperback issue in the Cambridge Companions to Literature series, edited by Felix Budelmann; twenty-one essays on Greek lyric from Sappho and Pindar to its later reception, with chronology, glossary and guide to editions. Trade paperback in pictorial wrappers, no dust jacket as issued. A former public library copy: Houston Public Library barcode label to the front wrapper, INFCW label to the rear wrapper, call-number label at the foot of the spine, and DISCARD stamped on the top edge of the text block. Wrappers rubbed at the edges and corners with a small chip at the lower rear corner; spine uncreased and the binding tight. Pages unbroken and clean apart from light pencil markings to some leaves.",
+  "price": 45,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-BUDETCCTGL/1.jpg",
+    "photos/NGP-BUDETCCTGL/2.jpg",
+    "photos/NGP-BUDETCCTGL/3.jpg",
+    "photos/NGP-BUDETCCTGL/4.jpg",
+    "photos/NGP-BUDETCCTGL/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521614764/?bi=s&cond=vg&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 3,
+    "by_region": {"US": 2, "UK": 1, "CA": 0},
+    "range_total": [35.5, 58.7],
+    "raw_price": 44.73
+  },
+  "condition_points": [
+    "ex-library: Houston Public Library barcode label on front wrapper",
+    "INFCW label on rear wrapper",
+    "call-number label at foot of spine",
+    "DISCARD stamped on top edge of text block",
+    "wrappers rubbed at edges and corners",
+    "small chip to lower rear corner",
+    "spine uncreased, binding tight",
+    "pages unbroken and clean apart from light pencil markings to some leaves"
+  ],
+  "not_seen_in_photos": [
+    "interior pages beyond title, copyright and contents",
+    "the pencil markings",
+    "the DISCARD stamp on the top edge"
+  ],
+  "condition_notes_from_mark": "An excellent library book in very good condition, pages unbroken and clean, except for light pencil markings on some pages. The cover shows some wear at the edges and corners. Discard is stamped on the top edge of the text."
+}
