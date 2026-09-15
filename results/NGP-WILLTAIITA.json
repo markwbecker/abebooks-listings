@@ -1,10 +1,10 @@
 {
   "sku": "NGP-WILLTAIITA",
-  "transaction": "add",
+  "transaction": "update",
   "auth_mode": "classic",
-  "sent_at": "2026-09-15T20:06:43+00:00",
-  "trigger_sha": "e697b4d842d1b7e2fd30a8c32ace97ba000c5600",
-  "run_id": "35017614233",
+  "sent_at": "2026-09-15T20:07:35+00:00",
+  "trigger_sha": "7c7e99f394c0311b7666555271c76a6f008e3fe0",
+  "run_id": "35017697950",
   "endpoint": "https://inventoryupdate.abebooks.com:10027/",
   "ok": true,
   "http_status": 200,
@@ -15,7 +15,7 @@
       "vendorBookID": "NGP-WILLTAIITA",
       "code": "600",
       "message": "Book added or updated",
-      "transactionType": "add"
+      "transactionType": "update"
     }
   ],
   "book_code": "600",
