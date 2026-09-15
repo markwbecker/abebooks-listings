@@ -19,7 +19,7 @@
   "size": "8vo",
   "language": "ENG",
   "subject": "Latin literature; classical philology; textual criticism; palaeography; manuscript transmission; medieval manuscripts; classics; Oxford University Press; Clarendon Press; L. D. Reynolds; Michael Winterbottom; M. D. Reeve; R. J. Tarrant; reference",
-  "description": "The 1986 Clarendon Press reprint with corrections of the standard survey of the manuscript transmission of the Latin classics, edited by L. D. Reynolds with contributions from P. K. Marshall, M. D. Reeve, R. H. Rouse, R. J. Tarrant, M. Winterbottom and others. Hardcover in dark blue cloth with gilt spine lettering and the Oxford device, in the original pale blue dust jacket. A very good copy in a good jacket: the jacket has a small tear and light chipping at the upper left corner of the front panel, with light soiling and a faint crease to the rear panel; the cloth is clean and the spine ends are only lightly rubbed. Internally the text is clean and unmarked and the binding is tight, with light yellowing to the page edges and a previous owner's name inked on the free endpaper.",
+  "description": "The 1986 Clarendon Press reprint with corrections of the standard survey of the manuscript transmission of the Latin classics, edited by L. D. Reynolds with contributions from P. K. Marshall, M. D. Reeve, R. H. Rouse, R. J. Tarrant, M. Winterbottom and others. Hardcover in dark blue cloth with gilt spine lettering and the Oxford device, in the original pale blue dust jacket. A very good copy in a good jacket: the jacket has a small tear and light chipping at the upper left corner of the front panel, light soiling and a faint crease to the rear panel, and noticeable tanning along the flap folds and turn-ins. Internally the text is clean and unmarked throughout and the binding is tight and square, with light toning and a few small spots to the top edge; a previous owner has signed and dated the front free endpaper in ink (16.9.86), with a small pencilled shelf notation alongside.",
   "price": 243,
   "currency": "USD",
   "quantity": 1,
@@ -28,31 +28,43 @@
     "photos/NGP-REYNTAT/2.jpg",
     "photos/NGP-REYNTAT/3.jpg",
     "photos/NGP-REYNTAT/4.jpg",
-    "photos/NGP-REYNTAT/5.jpg"
+    "photos/NGP-REYNTAT/5.jpg",
+    "photos/NGP-REYNTAT/6.jpg",
+    "photos/NGP-REYNTAT/7.jpg",
+    "photos/NGP-REYNTAT/8.jpg",
+    "photos/NGP-REYNTAT/9.jpg",
+    "photos/NGP-REYNTAT/10.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/isbn/9780198144564/?bi=h&cond=vg&sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 2,
-    "by_region": {"US": 2, "UK": 0, "CA": 0},
-    "range_total": [185.50, 299.95],
+    "by_region": {
+      "US": 2,
+      "UK": 0,
+      "CA": 0
+    },
+    "range_total": [
+      185.5,
+      299.95
+    ],
     "raw_price": 242.72,
     "notes": "Only two used Very Good hardcover copies on AbeBooks; remaining 17 results are new/print-on-demand stock at $331-$984 total, excluded as condition mismatch."
   },
   "condition_points": [
     "small tear with light chipping to upper left corner of dust jacket front panel",
     "dust jacket lightly soiled with a faint crease to the rear panel",
+    "noticeable tanning to the dust jacket flap folds and turn-ins",
     "cloth boards clean, gilt spine lettering bright",
     "spine ends lightly rubbed",
-    "binding tight",
-    "text clean and unmarked",
-    "light yellowing to page edges",
-    "previous owner's name inked on free endpaper"
+    "binding tight and square",
+    "text clean and unmarked throughout",
+    "light toning and a few small spots to the top edge",
+    "previous owner's signature in ink dated 16.9.86 on the front free endpaper",
+    "small pencilled shelf notation beside the signature"
   ],
   "not_seen_in_photos": [
-    "free endpaper with owner's name",
-    "page edges",
-    "interior text pages beyond the front matter"
+    "rear board beneath the jacket"
   ],
   "condition_notes_from_mark": "Very good condition, pages clean and unmarked, spine tight. Has dust jacket with slight tear in the upper left. Yellowing on page edges. Owner's name written in pen on the fly leaf."
 }
