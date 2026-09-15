@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-GREESFRH13370B",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T21:50:31+00:00",
+  "trigger_sha": "1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90",
+  "run_id": "35027829523",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-GREESFRH13370B",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}

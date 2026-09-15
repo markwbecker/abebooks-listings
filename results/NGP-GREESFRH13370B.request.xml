@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GREESFRH13370B</vendorBookID>
+      <author>Greenidge, A. H. J.; Clay, A. M.; Gray, E. W.</author>
+      <title>Sources for Roman History 133-70 B.C.</title>
+      <publisher>Oxford at the Clarendon Press</publisher>
+      <subject>Roman history; ancient history; Roman Republic; classics; classical studies; Latin sources; epigraphy; inscriptions; numismatics; Clarendon Press; Oxford University Press; Greenidge; Clay; E. W. Gray</subject>
+      <price currency="USD">30.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Second edition, revised by E. W. Gray of Christ Church, Oxford, of the standard source collection first published in 1903; Oxford at the Clarendon Press, 1960. Dark blue cloth hardcover, gilt lettering and Oxford crest to the spine, in the original unclipped dust jacket priced 21s. net. The book is very good: binding tight and square, boards clean and unfaded, text clean and unmarked throughout, though the paper has toned and the top and fore edges carry light scattered spotting. A previous owner's name is inked on the front free endpaper with small pencil notations, and the copyright leaf has a crease. The dust jacket is only fair, with chipping and small losses at the spine ends and along the edges, general edgewear and a brown spot to the lower front panel.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Fair</jacketCondition>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>1960</publishYear>
+      <edition>Second Edition, Revised</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1d5dfbc1a1be3ccba6ba2873a9b5ff9538e8ce90/photos/NGP-GREESFRH13370B/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
