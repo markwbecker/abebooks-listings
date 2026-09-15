@@ -1,0 +1,56 @@
+{
+  "sku": "NGP-KENNARTS",
+  "transaction": "update",
+  "title": "The Arts of Love: Five Studies in the Discourse of Roman Love Elegy",
+  "author": "Kennedy, Duncan F.",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "1993",
+  "isbn": "9780521407670",
+  "edition": "First Edition",
+  "printing": "1st printing",
+  "firstEdition": true,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; Latin literature; Roman love elegy; Ovid; Propertius; Tibullus; literary theory; literary criticism; Roman Literature and its Contexts; Duncan F. Kennedy; Barthes; Foucault; Paul Veyne; elegiac poetry; gender studies",
+  "description": "First edition, first printing, in the Cambridge series Roman Literature and its Contexts; five studies reading Tibullus, Propertius and Ovid through Veyne, Barthes and Foucault, with all Latin translated or closely paraphrased. Trade paperback in the series' black and green laminated wrappers; no dust jacket, as issued. Very good: slight wear to the covers, with light scuffing and surface scratches to the glossy black laminate and a faint crease along the front joint; one page carries a light grey discoloration. The text is clean and unmarked throughout and the binding is tight and square.",
+  "price": 27.95,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-KENNARTS/1.jpg",
+    "photos/NGP-KENNARTS/2.jpg",
+    "photos/NGP-KENNARTS/3.jpg",
+    "photos/NGP-KENNARTS/4.jpg",
+    "photos/NGP-KENNARTS/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521407670/used/?bi=s",
+    "n_used": 2,
+    "mean_total": 34.07,
+    "min": 25.5,
+    "max": 42.64,
+    "method": "price set by Mark at $27.95; comps for reference: average of the buyer total (item + shipping) across US/UK softcover copies in the same condition was $34"
+  },
+  "condition_points": [
+    "slight cover wear",
+    "light scuffing and surface scratches to the glossy black laminate of the wrappers",
+    "faint crease along the front joint",
+    "light grey discoloration to one page",
+    "text clean and unmarked",
+    "binding tight and square"
+  ],
+  "not_seen_in_photos": [
+    "spine",
+    "page edges",
+    "the bulk of the interior"
+  ],
+  "condition_notes_from_mark": "Slight cover wear, a discoloration on one page, otherwise very good condition, text clean and unmarked.",
+  "pushed_at": "2026-09-15T13:58:23+00:00"
+}
