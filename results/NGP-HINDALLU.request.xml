@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HINDALLU</vendorBookID>
+      <author>Hinds, Stephen</author>
+      <title>Allusion and Intertext: Dynamics of Appropriation in Roman Poetry</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>classics; Latin literature; Roman poetry; intertextuality; allusion; literary criticism; philology; Ovid; Virgil; Roman Literature and its Contexts; Cambridge University Press</subject>
+      <price currency="USD">47.95</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Cambridge University Press paperback in the Roman Literature and its Contexts series; first published 1998, this copy from the 2001 digital reprint. Trade softcover in black and turquoise laminated wrappers, no dust jacket as issued. Near-new apart from very slight bumping to the corners and a few light pencil markings in the text; the laminate is bright and unscuffed, the spine uncreased and unfaded, and the binding tight and square. All Latin and Greek is translated or closely paraphrased.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521576772</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>1998</publishYear>
+      <edition>Reprint, digital printing 2001</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0592c0bfdacfff2e0ecc6c737e942951a025dcad/photos/NGP-HINDALLU/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0592c0bfdacfff2e0ecc6c737e942951a025dcad/photos/NGP-HINDALLU/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0592c0bfdacfff2e0ecc6c737e942951a025dcad/photos/NGP-HINDALLU/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0592c0bfdacfff2e0ecc6c737e942951a025dcad/photos/NGP-HINDALLU/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0592c0bfdacfff2e0ecc6c737e942951a025dcad/photos/NGP-HINDALLU/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
