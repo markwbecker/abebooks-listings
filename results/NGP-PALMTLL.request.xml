@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-PALMTLL</vendorBookID>
+      <author>Palmer, L. R.</author>
+      <title>The Latin Language</title>
+      <publisher>University of Oklahoma Press</publisher>
+      <subject>Latin language; classical philology; comparative linguistics; Indo-European languages; historical grammar; Vulgar Latin; Christian Latin; Romance languages; Latin syntax; Latin morphology; Latin phonology; classics</subject>
+      <price currency="USD">25.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>University of Oklahoma Press reprint of Palmer's 1954 Faber and Faber study, issued 1988; this copy a later printing from the number line. Trade paperback in white pictorial wrappers with blue and green lettering; no dust jacket, as issued. Near Fine and unread: wrappers clean and bright with sharp corners, spine uncreased, page edges clean and untoned, text block tight and unmarked throughout. The only flaw is the publisher's remainder mark, three strokes of black marker on the half title beside the recycled-paper device, with a small pencilled number at the corner of the same leaf. Part I gives an outline history of the language from its Italic beginnings through Vulgar and Christian Latin; Part II is a comparative-historical grammar, with an appendix of archaic Latin texts, a folding map, bibliography and indexes.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780806121369</isbn>
+      <publishPlace>Norman, OK</publishPlace>
+      <publishYear>1988</publishYear>
+      <edition>University of Oklahoma Press ed.</edition>
+      <printing>6th printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/5119abd67b3757b7a723f66f5cfd59281493febd/photos/NGP-PALMTLL/7.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
