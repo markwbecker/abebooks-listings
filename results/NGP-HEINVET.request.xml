@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-HEINVET</vendorBookID>
+      <author>Heinze, Richard</author>
+      <title>Virgil's Epic Technique</title>
+      <publisher>University of California Press</publisher>
+      <subject>Virgil; Vergil; Aeneid; Latin literature; classical studies; epic poetry; Roman literature; literary criticism; Virgils epische Technik; classics</subject>
+      <price currency="USD">59.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First English edition of Heinze's Virgils epische Technik, translated by Hazel and David Harvey and Fred Robertson, with a preface by Antonie Wlosok; University of California Press, 1993. Black cloth over boards, gilt lettering to the spine, in the original pictorial dust jacket (The Wooden Horse, a detail from Biagio di Antonio's The Siege of Troy). A previous reader has marked the first chapter in pencil, with light marginal lines and some underlining; the remainder of the text is clean and unmarked, and there is no ink, highlighting or annotation anywhere. Otherwise a near-fine copy: the cloth is clean and unfaded, the gilt bright, the binding tight and square, the endpapers unmarked and free of any owner's name. The jacket is near fine and unclipped, with no price printed to the flap, showing only very light rubbing and short creases at the edges and corners.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Near Fine</jacketCondition>
+      <isbn>9780520064447</isbn>
+      <publishPlace>Berkeley</publishPlace>
+      <publishYear>1993</publishYear>
+      <edition>First English Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/10.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/11.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/12.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/13.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/14.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/97f5364131799728b47f3c8b8549c4365c4974f3/photos/NGP-HEINVET/15.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

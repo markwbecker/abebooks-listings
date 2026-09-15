@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-HEINVET",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-15T17:46:23+00:00",
+  "trigger_sha": "97f5364131799728b47f3c8b8549c4365c4974f3",
+  "run_id": "35003327679",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-HEINVET",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
