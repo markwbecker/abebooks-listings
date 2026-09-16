@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-JANKHHATH</vendorBookID>
+      <author>Janko, Richard</author>
+      <title>Homer, Hesiod and the Hymns: Diachronic Development in Epic Diction</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>classics; ancient Greek literature; Homer; Hesiod; Homeric Hymns; Greek epic; oral poetry; epic diction; Greek philology; Cambridge Classical Studies</subject>
+      <price currency="USD">69.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Cambridge University Press paperback re-issue of Richard Janko's 1982 study of the ancient Greek oral epic tradition, digitally printed in 2007; in the Cambridge Classical Studies series. Trade paperback in the publisher's pale blue wrappers with purple Cambridge panels; no dust jacket, as issued. As new throughout: wrappers clean and bright, corners sharp, spine uncreased and unrolled, binding tight and square. Text block is clean and unmarked, with no ownership names, underlining or shelf wear. With tables and figures, eight appendices, notes, bibliography and indices.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521035651</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>2007</publishYear>
+      <edition>Paperback re-issue, 2007</edition>
+      <printing>2007 digital reprint</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/48d4c9c72656372ab2a23c3319b36783f00eab78/photos/NGP-JANKHHATH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/48d4c9c72656372ab2a23c3319b36783f00eab78/photos/NGP-JANKHHATH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/48d4c9c72656372ab2a23c3319b36783f00eab78/photos/NGP-JANKHHATH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/48d4c9c72656372ab2a23c3319b36783f00eab78/photos/NGP-JANKHHATH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/48d4c9c72656372ab2a23c3319b36783f00eab78/photos/NGP-JANKHHATH/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
