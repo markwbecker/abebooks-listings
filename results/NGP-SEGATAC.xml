@@ -4,7 +4,7 @@
     <Abebook>
       <code>600</code>
       <message lang="en">Book added or updated</message>
-      <transactionType>add</transactionType>
+      <transactionType>update</transactionType>
       <vendorBookID>NGP-SEGATAC</vendorBookID>
     </Abebook>
   </AbebookList>

@@ -6,7 +6,7 @@
   </action>
   <AbebookList>
     <Abebook>
-      <transactionType>add</transactionType>
+      <transactionType>update</transactionType>
       <vendorBookID>NGP-SEGATAC</vendorBookID>
       <author>Segal, Charles</author>
       <title>Tragedy and Civilization: An Interpretation of Sophocles</title>
@@ -18,7 +18,7 @@
       <binding type="hard">Hardcover</binding>
       <firstEdition>false</firstEdition>
       <signed>false</signed>
-      <description>Second printing of Charles Segal's structuralist study of the seven surviving plays, issued for Oberlin College by Harvard University Press in 1981 as volume 26 of the Martin Classical Lectures. Quarter-bound in tan cloth with dark boards and a black spine panel lettered in white; no dust jacket. A good copy: corners bumped, cloth frayed at the head of the spine, page edges lightly toned, and light pencil marginal lines and brackets scattered through the text. The printed text itself is unmarked and unhighlighted, the binding is sound and the text block clean and complete.</description>
+      <description>Second printing of Charles Segal's structuralist study of the seven surviving plays, issued for Oberlin College by Harvard University Press in 1981 as volume 26 of the Martin Classical Lectures. Quarter-bound in tan cloth with dark boards and a black spine panel lettered in white; no dust jacket. A good copy: corners bumped, cloth frayed at the head of the spine, boards lightly scuffed with a few small pale marks, and light pencil lines and brackets in the margins of the text. Endpapers are clean with no inscription, bookplate or library marks; the printed text is unmarked and unhighlighted, the binding sound and the text block clean and complete.</description>
       <bookCondition>Good</bookCondition>
       <size>8vo</size>
       <jacketCondition>No Jacket</jacketCondition>
@@ -29,12 +29,17 @@
       <printing>2nd printing</printing>
       <quantity amount="1"></quantity>
       <pictureList>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/1.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/2.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/3.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/4.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/5.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/869d2dd2a91a4008c8565a58c2efbeddf7e727b1/photos/NGP-SEGATAC/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/10.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b/photos/NGP-SEGATAC/11.jpg</pictureURL>
       </pictureList>
     </Abebook>
   </AbebookList>

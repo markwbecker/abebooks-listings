@@ -1,10 +1,10 @@
 {
   "sku": "NGP-SEGATAC",
-  "transaction": "add",
+  "transaction": "update",
   "auth_mode": "classic",
-  "sent_at": "2026-09-16T18:41:13+00:00",
-  "trigger_sha": "869d2dd2a91a4008c8565a58c2efbeddf7e727b1",
-  "run_id": "35135915240",
+  "sent_at": "2026-09-16T18:44:43+00:00",
+  "trigger_sha": "e381e3dbc9a6eb9e65ce7ad9c82cacd0e236279b",
+  "run_id": "35136280349",
   "endpoint": "https://inventoryupdate.abebooks.com:10027/",
   "ok": true,
   "http_status": 200,
@@ -15,7 +15,7 @@
       "vendorBookID": "NGP-SEGATAC",
       "code": "600",
       "message": "Book added or updated",
-      "transactionType": "add"
+      "transactionType": "update"
     }
   ],
   "book_code": "600",
