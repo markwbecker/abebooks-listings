@@ -1,0 +1,56 @@
+{
+  "sku": "NGP-PUTNTPOTA",
+  "transaction": "add",
+  "title": "The Poetry of the Aeneid: Four Studies in Imaginative Unity and Design",
+  "author": "Putnam, Michael C. J.",
+  "publisher": "Harvard University Press",
+  "publishPlace": "Cambridge, MA",
+  "publishYear": "1966",
+  "edition": "Second Printing",
+  "printing": "2nd printing",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Fair",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Virgil; Aeneid; classics; classical studies; Latin literature; literary criticism; Roman poetry; epic poetry; Harvard University Press; Michael C. J. Putnam",
+  "description": "Second printing of Putnam's four studies in the imaginative unity and design of Virgil's Aeneid, published by Harvard University Press in 1966 (copyright 1965; Library of Congress catalog card number 65-12787). Green cloth over boards, black spine lettering, in the original pictorial dust jacket illustrating the Trojan Horse. A very good copy: the binding is tight and square despite the book's age, the text is clean and unmarked throughout, and the cloth is bright with only light fraying at the head of the spine; the top edge is discolored. The dust jacket is in fair condition only, with chipping and small losses along the spine head and top edge, nicks and fraying to the corners and edges, and soiling along the front flap fold.",
+  "price": 36,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-PUTNTPOTA/1.jpg",
+    "photos/NGP-PUTNTPOTA/2.jpg",
+    "photos/NGP-PUTNTPOTA/3.jpg",
+    "photos/NGP-PUTNTPOTA/4.jpg",
+    "photos/NGP-PUTNTPOTA/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/the-poetry-of-the-aeneid/author/michael-putnam/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {"US": 2, "UK": 0, "CA": 0},
+    "range_total": [35.41, 37.41],
+    "raw_price": 36.41,
+    "note": "AbeBooks lists only 4 copies of this title worldwide, all the 1989 Cornell paperback reprint; no hardcover of the Harvard printing is on offer. Comps used are the two U.S. used (Fair) paperback copies; the two New paperbacks at $52.00 and $129.99 were dropped as new-vs-used."
+  },
+  "condition_points": [
+    "binding tight and square",
+    "text clean and unmarked",
+    "cloth bright, light fraying at head of spine",
+    "top edge discolored",
+    "dust jacket chipped with small losses at spine head and top edge",
+    "jacket corners and edges nicked and frayed",
+    "soiling along the front flap fold of the jacket"
+  ],
+  "not_seen_in_photos": [
+    "rear board and rear jacket panel",
+    "endpapers",
+    "interior pages beyond the title and copyright pages"
+  ],
+  "condition_notes_from_mark": "Very good condition. Considering its age, the binding is tight. The pages are clean and unmarked. Discoloration on the top edge. Dust jacket is only fair condition."
+}
