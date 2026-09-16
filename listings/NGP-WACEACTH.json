@@ -1,0 +1,66 @@
+{
+  "sku": "NGP-WACEACTH",
+  "transaction": "add",
+  "title": "A Companion to Homer",
+  "author": "Wace, Alan J. B.; Stubbings, Frank H.",
+  "publisher": "Macmillan Press",
+  "publishPlace": "London",
+  "publishYear": "1974",
+  "isbn": "9780333071137",
+  "edition": "Reprint",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Homer; Iliad; Odyssey; classical studies; Greek literature; Homeric poems; Mycenaean archaeology; Linear B; ancient Greece; Wace; Stubbings; Macmillan",
+  "description": "Macmillan reprint (1974) of the 1962 first edition, edited by Alan J. B. Wace and Frank H. Stubbings; the standard collaborative handbook to the Iliad and the Odyssey, covering the poems, the language, Mycenaean archaeology and the decipherment of Linear B, with numerous black-and-white plates. Blue cloth hardcover with gilt spine lettering; no dust jacket. A good copy: the cloth is sunned and faded toward the top of the boards, rubbed and scuffed overall with the corners bumped and the cloth worn along the lower edges, and the spine ends are frayed with a small loss of cloth at the head. Endpapers are toned with light foxing and a small pencil notation at the lower corner; the page edges are yellowed and the top edge lightly dust-soiled. Internally clean and unmarked with the plates clear, the text block square and the binding tight.",
+  "price": 69,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-WACEACTH/1.jpg",
+    "photos/NGP-WACEACTH/2.jpg",
+    "photos/NGP-WACEACTH/3.jpg",
+    "photos/NGP-WACEACTH/4.jpg",
+    "photos/NGP-WACEACTH/5.jpg",
+    "photos/NGP-WACEACTH/6.jpg",
+    "photos/NGP-WACEACTH/7.jpg",
+    "photos/NGP-WACEACTH/8.jpg",
+    "photos/NGP-WACEACTH/9.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/a-companion-to-homer/author/wace/?bi=h&cond=good&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 4,
+    "by_region": {
+      "US": 3,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      58.1,
+      81.24
+    ],
+    "raw_price": 68.83
+  },
+  "condition_points": [
+    "cloth sunned and faded toward the top of both boards",
+    "boards rubbed and scuffed, corners bumped",
+    "cloth worn and frayed along the lower board edges",
+    "spine ends frayed with a small loss of cloth at the head",
+    "endpapers toned with light foxing; small pencil notation at lower corner of front free endpaper",
+    "page edges yellowed, the top edge lightly dust-soiled",
+    "text block sound and square; binding tight, hinges firm",
+    "text clean and unmarked; plates present and clear",
+    "no dust jacket"
+  ],
+  "not_seen_in_photos": [
+    "rear board"
+  ],
+  "condition_notes_from_mark": "Cover and pages are in good condition with wear to the cover that is shown and yellowing and papers and page edges. No dust jacket."
+}
