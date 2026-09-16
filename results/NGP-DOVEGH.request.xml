@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-DOVEGH</vendorBookID>
+      <author>Dover, K. J.</author>
+      <title>Greek Homosexuality</title>
+      <publisher>Vintage Books / Random House</publisher>
+      <subject>classical studies; ancient Greece; Greek history; homosexuality; sexuality; gender studies; LGBT history; intellectual history; Plato; Aristophanes; Greek vase painting; K. J. Dover; Vintage Books</subject>
+      <price currency="USD">14.95</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>First Vintage Books edition, February 1980, of Kenneth Dover's landmark 1978 study of homosexual behavior and sentiment among the ancient Greeks, drawing on vase painting, poetry, the lawcourts, Plato and Aristophanes; illustrated with plates of Attic vases. Trade paperback in pictorial wrappers; no dust jacket, as issued. Please note that the paper has yellowed heavily: the pages are toned a uniform deep yellow-tan throughout, as is common for this printing, though the text is clean and unmarked and the binding is tight and square. The covers are in very good condition, bright and clean, with only light rubbing, a shallow crease to the lower fore-corner of the front cover, a few small surface marks near the foot and lightly bumped corners; the spine is uncreased with the lettering unfaded. A very good copy with notably yellowed pages.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>0394742249</isbn>
+      <publishPlace>New York</publishPlace>
+      <publishYear>1980</publishYear>
+      <edition>First Vintage Books Edition</edition>
+      <printing>Feb 1980</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/624a79dc686a099bdf15034835d90075a44e4d5c/photos/NGP-DOVEGH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/624a79dc686a099bdf15034835d90075a44e4d5c/photos/NGP-DOVEGH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/624a79dc686a099bdf15034835d90075a44e4d5c/photos/NGP-DOVEGH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/624a79dc686a099bdf15034835d90075a44e4d5c/photos/NGP-DOVEGH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/624a79dc686a099bdf15034835d90075a44e4d5c/photos/NGP-DOVEGH/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-DOVEGH",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-16T15:45:32+00:00",
+  "trigger_sha": "624a79dc686a099bdf15034835d90075a44e4d5c",
+  "run_id": "35117398271",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-DOVEGH",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
