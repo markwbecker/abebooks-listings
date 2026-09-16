@@ -1,6 +1,6 @@
 {
   "sku": "NGP-DUCKNRC",
-  "transaction": "add",
+  "transaction": "update",
   "title": "The Nature of Roman Comedy: A Study in Popular Entertainment",
   "author": "Duckworth, George E.",
   "publisher": "University of Oklahoma Press",
@@ -33,8 +33,15 @@
     "url": "https://www.abebooks.com/book-search/isbn/9780806126203/?bi=s&cond=vg&sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 2,
-    "by_region": {"US": 1, "UK": 0, "CA": 1},
-    "range_total": [34.33, 55.97],
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 1
+    },
+    "range_total": [
+      34.33,
+      55.97
+    ],
     "raw_price": 45.15
   },
   "condition_points": [
@@ -49,5 +56,6 @@
     "page edges / fore-edge",
     "interior beyond title, copyright and foreword pages"
   ],
-  "condition_notes_from_mark": "Cover and pages of book in very good condition, spine unbroken, page is clean and unmarked, minor wear to cover."
+  "condition_notes_from_mark": "Cover and pages of book in very good condition, spine unbroken, page is clean and unmarked, minor wear to cover.",
+  "pushed_at": "2026-09-16T17:44:55+00:00"
 }
