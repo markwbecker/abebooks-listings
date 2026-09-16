@@ -16,9 +16,9 @@ Ground rules:
 
 * Work on the branch the session gives you and push it with the helper; the workflow
   fast-forwards `main` itself. Do not open pull requests for listings.
-* SKUs are `NGP-` + the first 4 letters of the author's surname + the initials of the main
-  title's words, variable length (`python3 tools/abe_local.py sku --author ... --title ...`),
-  never reused. Grade the condition from the photos and list the
+* SKUs are `NGP-` + the first 4 letters of the author's surname + up to 4 title initials — every
+  word's initial when that fits in 4, otherwise the major words only (`NGP-BAILRIV`,
+  `NGP-DETIMTAG`); use `python3 tools/abe_local.py sku --author ... --title ...`, never reused. Grade the condition from the photos and list the
   specific points you see; Mark can override the grade.
 * Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
   wait for "go" before `publish`. He often sends photos in several batches — the photos command

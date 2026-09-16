@@ -15,7 +15,7 @@ Two transports, chosen automatically:
 
 Sub-commands
   check                          where am I, can I push, is the workflow present
-  sku     --author "Surname, First" --title "Title"   NGP- + 4 letters of surname + main-title initials, unique (or --random)
+  sku     --author "Surname, First" --title "Title"   NGP- + 4 letters of surname + <=4 title initials, unique (or --random)
   photos  --sku SKU [--replace] f1 f2 ...   normalise photos -> photos/SKU/1.jpg ... ; later calls append
   price   --comps comps.json --condition "Very Good" [--binding hard|soft|any] [--new] [--regions US,UK,CA]
           -> average buyer total (item + shipping) of U.S., U.K. and Canadian sellers in the same condition
@@ -246,30 +246,65 @@ def _alnum(text: str, digits: bool) -> str:
     return re.sub(f"[^{keep}]", "", flat.upper())
 
 
-ARTICLES = ("THE ", "A ", "AN ", "LE ", "LA ", "LES ", "DER ", "DIE ", "DAS ", "EL ", "LOS ")
+# Words that carry no weight in a title: articles, conjunctions and prepositions, English plus the
+# handful of foreign ones that turn up in scholarly titles. Used only when the full set of initials
+# is too long for the SKU's 4-character title slot.
+MINOR_TITLE_WORDS = {
+    "a", "an", "the",
+    "and", "but", "or", "nor", "for", "yet", "so", "as", "than", "if", "that", "whether",
+    "at", "by", "down", "from", "in", "into", "near", "of", "off", "on", "onto", "out", "over",
+    "per", "to", "up", "upon", "via", "with", "within", "without", "about", "above", "across",
+    "after", "against", "along", "among", "around", "before", "behind", "below", "beneath",
+    "beside", "between", "beyond", "during", "except", "inside", "outside", "since", "through",
+    "throughout", "toward", "towards", "under", "until", "versus", "vs",
+    "le", "la", "les", "un", "une", "des", "du", "de", "der", "die", "das", "den", "dem", "ein",
+    "eine", "und", "von", "zu", "im", "el", "los", "las", "y", "del", "il", "lo", "gli", "e",
+    "dei", "della", "nel", "et", "en", "op", "van", "het",
+}
+
+
+def _word_token(word: str) -> str:
+    """One title word -> its SKU contribution: its first letter, or the whole thing if it is a number."""
+    a = _alnum(word, digits=True)
+    return a if a.isdigit() else a[:1]
+
+
+def title_code(main_title: str, limit: int = 4) -> str:
+    """Initials of the main title, capped at `limit` characters.
+
+    Every word counts when the initials already fit (Bailey / 'Religion in Vergil' -> RIV). When they
+    don't, the minor words drop out and only the major ones are left ('The Masters of Truth in Archaic
+    Greece' -> MTAG), because those are the words a reader would use to recognise the book. A title
+    with more than `limit` major words is cut to the first `limit`.
+    """
+    words = [w for w in re.split(r"[\s\-\u2013\u2014/]+", main_title) if _alnum(w, digits=True)]
+    if not words:
+        return ""
+    full = "".join(_word_token(w) for w in words)
+    if len(full) <= limit:
+        return full
+    major = [w for w in words if _alnum(w, digits=True).lower() not in MINOR_TITLE_WORDS]
+    code = "".join(_word_token(w) for w in (major or words))
+    return code[:limit]
 
 
 def derive_sku(author: str | None, title: str | None, taken: set[str]) -> str:
-    """NGP- + first 4 letters of the author's surname + first letter of every word of the main title.
+    """NGP- + first 4 letters of the author's surname + up to 4 characters of title initials.
 
-    'Wittgenstein, Ludwig' / 'Tractatus Logico-Philosophicus'         -> NGP-WITTTLP
-    'Hemingway, Ernest'    / 'The Old Man and the Sea'                 -> NGP-HEMITOMATS
-    'Feeney, D. C.'        / 'The Gods in Epic: Poets and Critics ...' -> NGP-FEENTGIE
-    Subtitle (after a colon) dropped; purely numeric title words kept whole (Orwell / 1984 -> NGP-ORWE1984).
-    Variable length; a second copy of the same book gets ...2, then ...3, and so on.
+    'Bailey, Cyril'    / 'Religion in Vergil'                  -> NGP-BAILRIV    (3 initials, all words fit)
+    'Detienne, Marcel' / 'The Masters of Truth in Archaic ...'  -> NGP-DETIMTAG   (7 would be too long -> major words)
+    'Hemingway, Ernest'/ 'The Old Man and the Sea'              -> NGP-HEMIOMS
+    'Orwell, George'   / '1984'                                 -> NGP-ORWE1984   (a numeric word is kept whole)
+    Subtitle after a colon is ignored. A second copy of the same book gets ...2, then ...3.
     """
     surname = ""
     if author:
         first = re.split(r"[;&]| and ", author)[0].strip()
         surname = first.split(",")[0].strip() if "," in first else (first.split()[-1] if first.split() else "")
     main_title = re.split(r"[:;(\[]", title or "")[0].strip()
-    words = [w for w in re.split(r"[\s\-\u2013\u2014/]+", main_title) if _alnum(w, digits=True)]
-    # first letter of each word; a purely numeric word (1984, 2001) is kept whole so the ID stays meaningful
-    initials = "".join(_alnum(w, digits=True) if _alnum(w, digits=True).isdigit() else _alnum(w, digits=True)[0] for w in words)
-    core = (_alnum(surname, digits=False)[:4] + initials)
+    core = _alnum(surname, digits=False)[:4] + title_code(main_title)
     if not core:
         core = "".join(secrets.choice(SKU_ALPHABET) for _ in range(8))
-    core = core[: 40 - len(SKU_PREFIX) - 2]          # vendorBookID max 40 chars, leave room for a collision suffix
     cand = SKU_PREFIX + core
     if cand not in taken:
         return cand
