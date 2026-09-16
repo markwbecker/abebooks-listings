@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-REHMGTT</vendorBookID>
+      <author>Rehm, Rush</author>
+      <title>Greek Tragic Theatre (Theatre Production Studies)</title>
+      <publisher>Routledge</publisher>
+      <subject>Greek tragedy; classical drama; theatre history; ancient Athens; Aeschylus; Oresteia; Sophocles; Oedipus Tyrannus; Euripides; Suppliant Women; Ion; Theatre of Dionysus; performance studies; Theatre Production Studies; Routledge; John Russell Brown</subject>
+      <price currency="USD">25.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>First paperback edition (1994) of Rush Rehm's study of Greek tragedy in performance, published in Routledge's Theatre Production Studies series under general editor John Russell Brown; first published in hardback in 1992. Trade paperback in cream pictorial wrappers with a black spine, issued without dust jacket. Corners lightly bumped and the wrapper edges show slight handling wear; the spine is uncreased and unbroken, the binding tight and square. Text clean and unmarked throughout, with no previous owner's marks. A near fine copy.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780415118941</isbn>
+      <publishPlace>London and New York</publishPlace>
+      <publishYear>1994</publishYear>
+      <edition>First Paperback Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a95fe681b95d121063cf9b9965b8406aec9c87b/photos/NGP-REHMGTT/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a95fe681b95d121063cf9b9965b8406aec9c87b/photos/NGP-REHMGTT/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a95fe681b95d121063cf9b9965b8406aec9c87b/photos/NGP-REHMGTT/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a95fe681b95d121063cf9b9965b8406aec9c87b/photos/NGP-REHMGTT/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a95fe681b95d121063cf9b9965b8406aec9c87b/photos/NGP-REHMGTT/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
