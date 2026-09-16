@@ -1,0 +1,67 @@
+{
+  "sku": "NGP-PARRMHV",
+  "transaction": "update",
+  "title": "The Making of Homeric Verse: The Collected Papers of Milman Parry",
+  "author": "Parry, Milman; Parry, Adam",
+  "publisher": "Oxford University Press (Clarendon Press)",
+  "publishPlace": "London",
+  "publishYear": "1971",
+  "edition": "First Edition",
+  "firstEdition": true,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Good",
+  "bookCondition": "Very Good",
+  "bookType": "Ex-Library",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Homer; Homeric studies; classics; Greek literature; oral poetry; oral-formulaic theory; Milman Parry; Adam Parry; epic; metre; Serbo-Croatian heroic song; philology",
+  "description": "First edition, Oxford University Press, 1971: Adam Parry's collected edition of his father Milman Parry's papers on oral poetry, including English translations of the two French dissertations and extracts from the Jugoslavian journal. Dark blue cloth, the spine lettered in gilt with the Oxford device at the foot, in the original dust jacket under a cellophane library wrapper. An ex-library copy: call-number label and reinforcing tape at the spine, \"Michigan State Library\" stamped on the top edge of the text block, a RELEASED stamp and adhesive residue from a removed pocket on the rear endpapers, and light pencil marginal marks in the introduction; the jacket is rubbed and toned with the tape showing at the spine ends. The boards are clean and square, the binding tight, and the text block clean and bright throughout the Greek, a very good copy in a good jacket, unclipped at 6.00 pounds net.",
+  "price": 175,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-PARRMHV/1.jpg",
+    "photos/NGP-PARRMHV/2.jpg",
+    "photos/NGP-PARRMHV/3.jpg",
+    "photos/NGP-PARRMHV/4.jpg",
+    "photos/NGP-PARRMHV/5.jpg",
+    "photos/NGP-PARRMHV/6.jpg",
+    "photos/NGP-PARRMHV/7.jpg",
+    "photos/NGP-PARRMHV/8.jpg",
+    "photos/NGP-PARRMHV/9.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/the-making-of-homeric-verse/author/parry/?bi=h&cond=vg&sortby=1",
+    "method": "price set by Mark at $175; comps: average U.S./U.K./Canadian same-condition total (item + shipping) gave $171",
+    "n_used": 1,
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 0
+    },
+    "range_total": [
+      171.0,
+      171.0
+    ],
+    "raw_price": 171.0
+  },
+  "condition_points": [
+    "ex-library: spine call-number label (883.1 H7zp) and brown reinforcing tape at head and tail of spine",
+    "\"Michigan State Library\" stamped along the top edge of the text block",
+    "dust jacket in a cellophane library wrapper, rubbed and toned, not price-clipped (6.00 pounds net)",
+    "\"Michigan State Library RELEASED\" stamp on rear free endpaper",
+    "adhesive residue on rear pastedown where a card pocket was removed",
+    "light pencil marginal marks in the introduction; pencil call number on contents page",
+    "dark blue cloth boards clean and square, gilt spine lettering bright, no bumping seen",
+    "binding tight, hinges sound, text block clean and unmarked in the body of the book"
+  ],
+  "not_seen_in_photos": [
+    "title page",
+    "fore-edge and lower edge in detail"
+  ],
+  "condition_notes_from_mark": "Ex-library book, cover, and pages are in very good condition. Dust jacket is protected by cellophane wrapper. Only light pencil markings on some of the pages.",
+  "pushed_at": "2026-09-16T19:04:27+00:00"
+}
