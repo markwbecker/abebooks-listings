@@ -1,0 +1,55 @@
+{
+  "sku": "NGP-REHMGTT",
+  "transaction": "add",
+  "title": "Greek Tragic Theatre (Theatre Production Studies)",
+  "author": "Rehm, Rush",
+  "publisher": "Routledge",
+  "publishPlace": "London and New York",
+  "publishYear": "1994",
+  "isbn": "9780415118941",
+  "edition": "First Paperback Edition",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Near Fine",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Greek tragedy; classical drama; theatre history; ancient Athens; Aeschylus; Oresteia; Sophocles; Oedipus Tyrannus; Euripides; Suppliant Women; Ion; Theatre of Dionysus; performance studies; Theatre Production Studies; Routledge; John Russell Brown",
+  "description": "First paperback edition (1994) of Rush Rehm's study of Greek tragedy in performance, published in Routledge's Theatre Production Studies series under general editor John Russell Brown; first published in hardback in 1992. Trade paperback in cream pictorial wrappers with a black spine, issued without dust jacket. Corners lightly bumped and the wrapper edges show slight handling wear; the spine is uncreased and unbroken, the binding tight and square. Text clean and unmarked throughout, with no previous owner's marks. A near fine copy.",
+  "price": 25,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-REHMGTT/1.jpg",
+    "photos/NGP-REHMGTT/2.jpg",
+    "photos/NGP-REHMGTT/3.jpg",
+    "photos/NGP-REHMGTT/4.jpg",
+    "photos/NGP-REHMGTT/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780415118941/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 7,
+    "by_region": {"US": 4, "UK": 2, "CA": 1},
+    "range_total": [14.26, 50.45],
+    "raw_price": 24.86,
+    "note": "no Near Fine copies on offer; widened to the nearest grade (Very Good) softcover copies"
+  },
+  "condition_points": [
+    "wrappers clean and bright, colours unfaded",
+    "corners lightly bumped",
+    "slight handling wear to wrapper edges",
+    "spine uncreased and unbroken",
+    "binding tight and square",
+    "text clean and unmarked"
+  ],
+  "not_seen_in_photos": [
+    "page edges / text block fore-edge",
+    "interior beyond title, series and copyright pages",
+    "rear free endpaper"
+  ],
+  "condition_notes_from_mark": "Cover, spine, and book text are in excellent condition. Spine unbroken, pages clean unmarked. Slight bumping to corners of book."
+}
