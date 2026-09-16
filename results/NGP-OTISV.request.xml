@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-OTISV</vendorBookID>
+      <author>Otis, Brooks</author>
+      <title>Virgil: A Study in Civilized Poetry</title>
+      <publisher>University of Oklahoma Press</publisher>
+      <subject>classics; Latin poetry; Virgil; Vergil; Aeneid; Georgics; Bucolics; Roman literature; classical studies; literary criticism; Oklahoma Series in Classical Culture; Brooks Otis; Ward W. Briggs Jr</subject>
+      <price currency="USD">25.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Oklahoma Paperbacks edition of Brooks Otis's classic study, first published by the Clarendon Press in 1964, here with a new foreword by Ward W. Briggs, Jr.; Volume 20 in the Oklahoma Series in Classical Culture. Trade paperback in pictorial wrappers, no dust jacket as issued. A very good copy: corners lightly bumped, the fore-edge lightly soiled with a few small dark spots, and the rear wrapper yellowed; light pencil markings in the margins of some pages. The spine is uncreased and square with the lettering bright, and the text block is clean and tight, the pages unbrowned.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780806127828</isbn>
+      <publishPlace>Norman</publishPlace>
+      <publishYear>1995</publishYear>
+      <edition>Oklahoma Paperbacks Edition</edition>
+      <printing>1st printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/0f611ebdfd52f4ad326651b2aa67f6cb09e5dcf7/photos/NGP-OTISV/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
