@@ -1,0 +1,65 @@
+{
+  "sku": "NGP-NORDPVMABV",
+  "transaction": "update",
+  "title": "P. Vergilius Maro: Aeneis Buch VI",
+  "author": "Norden, Eduard",
+  "publisher": "Wissenschaftliche Buchgesellschaft",
+  "publishPlace": "Darmstadt",
+  "publishYear": "1976",
+  "edition": "Sixth Edition (6. Auflage)",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "As New",
+  "size": "8vo",
+  "language": "GER",
+  "subject": "classics; Latin literature; Vergil; Virgil; Aeneid; Aeneis; Book VI; commentary; Kommentar; Eduard Norden; Wissenschaftliche Buchgesellschaft; Teubner; classical philology; Latin poetry; eschatology; hexameter; German",
+  "description": "Norden's classic commentary on the sixth book of the Aeneid: introduction on the eschatology of Book VI and its sources, Latin text with German translation, full commentary, eleven stylistic and metrical appendices, Nachtraege and index. Sixth, unaltered edition of 1976, a slightly reduced photomechanical reprint of the fourth edition of 1957, whose text was collated afresh against the second edition of 1916. Publisher's light blue cloth over boards with gilt lettering to the spine; no dust jacket. The book is over fifty years old but presents as new: cloth bright and clean, corners square, spine gilt bright and the spine uncocked, endpapers and text unmarked throughout, binding tight; the only wear is a slight bump to the upper outer corner of a few leaves. Text in German with the Latin of Aeneid VI.",
+  "price": 55,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-NORDPVMABV/1.jpg",
+    "photos/NGP-NORDPVMABV/2.jpg",
+    "photos/NGP-NORDPVMABV/3.jpg",
+    "photos/NGP-NORDPVMABV/4.jpg",
+    "photos/NGP-NORDPVMABV/5.jpg",
+    "photos/NGP-NORDPVMABV/6.jpg",
+    "photos/NGP-NORDPVMABV/7.jpg",
+    "photos/NGP-NORDPVMABV/8.jpg",
+    "photos/NGP-NORDPVMABV/9.jpg",
+    "photos/NGP-NORDPVMABV/10.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/aeneis-buch-vi/author/norden/?bi=h&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping); no same-grade comp exists for this edition, so priced at the top of the like-for-like Very Good band",
+    "n_used": 4,
+    "by_region": {
+      "US": 2,
+      "UK": 1,
+      "CA": 1
+    },
+    "range_total": [
+      34.9,
+      56.49
+    ],
+    "raw_price": 46.09
+  },
+  "condition_points": [
+    "cloth bright, clean and unmarked, front and rear boards",
+    "corners of the boards square, no bumping",
+    "spine gilt bright, spine straight and uncocked",
+    "endpapers clean and unmarked; no owner's name, bookplate or inscription",
+    "text clean and unmarked throughout, no underlining or notes; binding tight and square",
+    "upper outer corner of a few leaves slightly bumped",
+    "no dust jacket"
+  ],
+  "not_seen_in_photos": [
+    "fore-edge and top edge of the text block straight on"
+  ],
+  "condition_notes_from_mark": "The book is over 50 years old, but the text and binding are in as new condition. No dust jacket. The upper right corner on a few pages is slightly bumped.",
+  "pushed_at": "2026-09-16T00:46:27+00:00"
+}
