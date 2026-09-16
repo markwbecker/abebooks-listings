@@ -1,0 +1,57 @@
+{
+  "sku": "NGP-DOVEGH",
+  "transaction": "add",
+  "title": "Greek Homosexuality",
+  "author": "Dover, K. J.",
+  "publisher": "Vintage Books / Random House",
+  "publishPlace": "New York",
+  "publishYear": "1980",
+  "isbn": "0394742249",
+  "edition": "First Vintage Books Edition",
+  "printing": "Feb 1980",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classical studies; ancient Greece; Greek history; homosexuality; sexuality; gender studies; LGBT history; intellectual history; Plato; Aristophanes; Greek vase painting; K. J. Dover; Vintage Books",
+  "description": "First Vintage Books edition, February 1980, of Kenneth Dover's landmark 1978 study of homosexual behavior and sentiment among the ancient Greeks, drawing on vase painting, poetry, the lawcourts, Plato and Aristophanes; illustrated with plates of Attic vases. Trade paperback in pictorial wrappers; no dust jacket, as issued. The wrappers are bright and clean with only light rubbing and a shallow crease to the lower fore-corner of the front cover and a few small surface marks near the foot; spine uncreased with the lettering unfaded, corners lightly bumped. The paper has toned heavily to a uniform yellow-tan throughout, as is usual for this printing, though the text is clean and unmarked and the binding remains tight and square. A good copy with a very good cover.",
+  "price": 12,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-DOVEGH/1.jpg",
+    "photos/NGP-DOVEGH/2.jpg",
+    "photos/NGP-DOVEGH/3.jpg",
+    "photos/NGP-DOVEGH/4.jpg",
+    "photos/NGP-DOVEGH/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/0394742249/?bi=s&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 6,
+    "by_region": {"US": 6, "UK": 0, "CA": 0},
+    "range_total": [10.84, 17.0],
+    "raw_price": 12.17
+  },
+  "condition_points": [
+    "pages heavily toned/yellowed throughout",
+    "text clean and unmarked",
+    "binding tight and square",
+    "wrappers bright and clean, lightly rubbed",
+    "shallow crease to lower fore-corner of front cover",
+    "a few small surface marks near foot of front cover",
+    "spine uncreased, lettering unfaded",
+    "corners lightly bumped"
+  ],
+  "not_seen_in_photos": [
+    "page edges",
+    "endpapers",
+    "body of the text block beyond the front matter"
+  ],
+  "condition_notes_from_mark": "The book cover is in very good condition, but the pages are very yellowed."
+}
