@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-PUTNTPOTA</vendorBookID>
+      <author>Putnam, Michael C. J.</author>
+      <title>The Poetry of the Aeneid: Four Studies in Imaginative Unity and Design</title>
+      <publisher>Harvard University Press</publisher>
+      <subject>Virgil; Aeneid; classics; classical studies; Latin literature; literary criticism; Roman poetry; epic poetry; Harvard University Press; Michael C. J. Putnam</subject>
+      <price currency="USD">95.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Second printing of Putnam's four studies in the imaginative unity and design of Virgil's Aeneid, published by Harvard University Press in 1966 (copyright 1965; Library of Congress catalog card number 65-12787). Green cloth over boards, black spine lettering, in the original pictorial dust jacket illustrating the Trojan Horse. A very good copy: the binding is tight and square despite the book's age, the text is clean and unmarked throughout, and the cloth is bright with only light fraying at the head of the spine; the top edge is discolored and a faint pencil notation appears on the front free endpaper. The dust jacket is in fair condition only, with chipping and small losses along the spine head and top edge, nicks and fraying to the corners and edges, and soiling along the front flap fold.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Fair</jacketCondition>
+      <publishPlace>Cambridge, MA</publishPlace>
+      <publishYear>1966</publishYear>
+      <edition>Second Printing</edition>
+      <printing>2nd printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1ae697012494796031b76191af85cc5ed5e73aab/photos/NGP-PUTNTPOTA/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
