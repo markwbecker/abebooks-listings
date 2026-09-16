@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-DETITMOTIAG</vendorBookID>
+      <author>Detienne, Marcel</author>
+      <title>The Masters of Truth in Archaic Greece</title>
+      <publisher>Zone Books</publisher>
+      <subject>ancient Greek philosophy; classical studies; archaic Greece; aletheia; truth; Greek religion; mythology; Jean-Pierre Vernant school; Paris school; structuralism; Zone Books; Janet Lloyd translation; Pierre Vidal-Naquet</subject>
+      <price currency="USD">27.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Zone Books' English translation by Janet Lloyd of Les Maitres de verite dans la Grece archaique, with a foreword by Pierre Vidal-Naquet; first paperback edition, 1999 printing, distributed by The MIT Press. Trade paperback in pictorial wrappers, no dust jacket as issued. A very good copy: spine unbroken and uncreased, covers bright, with slight bumping to the upper right corner and light rubbing along the board edges. Page edges are clean and evenly toned with no foxing or soiling; the text is clean apart from very light pencil marks alongside some paragraphs, and the binding is tight and square.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780942299861</isbn>
+      <publishPlace>New York</publishPlace>
+      <publishYear>1999</publishYear>
+      <edition>First Paperback Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/1c760885b06655b986b31c680c7c1ab1aca0487f/photos/NGP-DETITMOTIAG/7.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
