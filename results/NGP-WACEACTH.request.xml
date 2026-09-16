@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-WACEACTH</vendorBookID>
+      <author>Wace, Alan J. B.; Stubbings, Frank H.</author>
+      <title>A Companion to Homer</title>
+      <publisher>Macmillan Press</publisher>
+      <subject>Homer; Iliad; Odyssey; classical studies; Greek literature; Homeric poems; Mycenaean archaeology; Linear B; ancient Greece; Wace; Stubbings; Macmillan</subject>
+      <price currency="USD">69.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Macmillan reprint (1974) of the 1962 first edition, edited by Alan J. B. Wace and Frank H. Stubbings; the standard collaborative handbook to the Iliad and the Odyssey, covering the poems, the language, Mycenaean archaeology and the decipherment of Linear B, with numerous black-and-white plates. Blue cloth hardcover with gilt spine lettering; no dust jacket. A good copy: the cloth is sunned and faded toward the top of the boards, rubbed and scuffed overall with the corners bumped and the cloth worn along the lower edges, and the spine ends are frayed with a small loss of cloth at the head. Endpapers are toned with light foxing and a small pencil notation at the lower corner; the page edges are yellowed and the top edge lightly dust-soiled. Internally clean and unmarked with the plates clear, the text block square and the binding tight.</description>
+      <bookCondition>Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780333071137</isbn>
+      <publishPlace>London</publishPlace>
+      <publishYear>1974</publishYear>
+      <edition>Reprint</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2348d3b7abc109170b98c49e8203cb2b58849d07/photos/NGP-WACEACTH/9.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
