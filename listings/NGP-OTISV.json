@@ -1,0 +1,67 @@
+{
+  "sku": "NGP-OTISV",
+  "transaction": "update",
+  "title": "Virgil: A Study in Civilized Poetry",
+  "author": "Otis, Brooks",
+  "publisher": "University of Oklahoma Press",
+  "publishPlace": "Norman",
+  "publishYear": "1995",
+  "isbn": "9780806127828",
+  "edition": "Oklahoma Paperbacks Edition",
+  "printing": "1st printing",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; Latin poetry; Virgil; Vergil; Aeneid; Georgics; Bucolics; Roman literature; classical studies; literary criticism; Oklahoma Series in Classical Culture; Brooks Otis; Ward W. Briggs Jr",
+  "description": "Oklahoma Paperbacks edition of Brooks Otis's classic study, first published by the Clarendon Press in 1964, here with a new foreword by Ward W. Briggs, Jr.; Volume 20 in the Oklahoma Series in Classical Culture. Trade paperback in pictorial wrappers, no dust jacket as issued. A very good copy: corners lightly bumped, the fore-edge lightly soiled with a few small dark spots, and the rear wrapper yellowed; light pencil markings in the margins of some pages. The spine is uncreased and square with the lettering bright, and the text block is clean and tight, the pages unbrowned.",
+  "price": 25,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-OTISV/1.jpg",
+    "photos/NGP-OTISV/2.jpg",
+    "photos/NGP-OTISV/3.jpg",
+    "photos/NGP-OTISV/4.jpg",
+    "photos/NGP-OTISV/5.jpg",
+    "photos/NGP-OTISV/6.jpg",
+    "photos/NGP-OTISV/7.jpg",
+    "photos/NGP-OTISV/8.jpg",
+    "photos/NGP-OTISV/9.jpg",
+    "photos/NGP-OTISV/10.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780806127828/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping); no Very Good copies on the market, widened to the nearest grade (Good)",
+    "n_used": 3,
+    "by_region": {
+      "US": 2,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      17.86,
+      37.28
+    ],
+    "raw_price": 25.29
+  },
+  "condition_points": [
+    "corners lightly bumped",
+    "fore-edge lightly soiled, with a few small dark spots; top edge toned",
+    "rear wrapper yellowed",
+    "light pencil markings in the margins of some pages",
+    "spine uncreased and square, lettering bright",
+    "text block clean and tight, pages unbrowned"
+  ],
+  "not_seen_in_photos": [],
+  "condition_notes_from_mark": "The cover and the pages of the text are in very good condition, with minor corner bumping, some discoloration to the page edges, and yellowing on the back cover. Pages are clean, except for light pencil markings in the margins of some pages.",
+  "pushed_at": "2026-09-16T21:32:35+00:00"
+}
