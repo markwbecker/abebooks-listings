@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-LOBEPLF</vendorBookID>
+      <author>Lobel, Edgar; Page, Denys</author>
+      <title>Poetarum Lesbiorum Fragmenta</title>
+      <publisher>Oxford University Press / Clarendon Press</publisher>
+      <subject>classics; ancient Greek literature; Greek lyric poetry; Sappho; Alcaeus; Lesbian poets; Aeolic Greek; fragments; textual criticism; papyrology; Clarendon Press; Oxford Classical Texts; Edgar Lobel; Denys Page</subject>
+      <price currency="USD">125.00</price>
+      <languageIsoCode>GRE</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Oxford's standard critical edition of the fragments of Sappho and Alcaeus, edited by Edgar Lobel and Denys Page: first published 1955, reprinted 1963, and reissued in 1997 as a special edition for Sandpiper Books. Greek text with Latin apparatus criticus and Latin editorial matter. Hardcover in dark blue cloth with gilt lettering and the Oxford arms to the spine, in the original green photographic dust jacket, kept under a clear cellophane protector. The book itself is as new: boards clean with sharp corners, binding tight and square, endpapers blank and unmarked, and the text block clean throughout. The jacket is near fine, its one fault a sunned spine panel; it is otherwise unchipped, untorn, uncreased and not price-clipped.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Near Fine</jacketCondition>
+      <isbn>9780198141372</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>1997</publishYear>
+      <edition>1997 Sandpiper reissue of 1963 reprint</edition>
+      <printing>Reprinted 1963</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cda00eef83d0961e85844ac60fed19f93015b5a2/photos/NGP-LOBEPLF/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
