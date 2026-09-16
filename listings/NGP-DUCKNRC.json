@@ -1,0 +1,53 @@
+{
+  "sku": "NGP-DUCKNRC",
+  "transaction": "add",
+  "title": "The Nature of Roman Comedy: A Study in Popular Entertainment",
+  "author": "Duckworth, George E.",
+  "publisher": "University of Oklahoma Press",
+  "publishPlace": "Norman, OK",
+  "publishYear": "1994",
+  "isbn": "9780806126203",
+  "edition": "Second Edition",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Roman comedy; Latin drama; Plautus; Terence; classics; classical studies; ancient theater; Latin literature; Richard Hunter; University of Oklahoma Press",
+  "description": "Second edition of Duckworth's standard study of Plautus and Terence, first published by Princeton in 1952, reissued by the University of Oklahoma Press in 1994 with a foreword and bibliographical appendix by Richard Hunter. Trade paperback in glossy black wrappers; no dust jacket, as issued. A very good copy: the glossy front wrapper carries light surface scratches and scuffing, there is a small crease at the head of the spine, and the cover edges and corners show light rubbing with a few faint marks to the rear wrapper. The spine is uncreased and the binding tight; the text is clean and unmarked throughout. Includes eight plates of scenes and characters from the comedies.",
+  "price": 45,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-DUCKNRC/1.jpg",
+    "photos/NGP-DUCKNRC/2.jpg",
+    "photos/NGP-DUCKNRC/3.jpg",
+    "photos/NGP-DUCKNRC/4.jpg",
+    "photos/NGP-DUCKNRC/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780806126203/?bi=s&cond=vg&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {"US": 1, "UK": 0, "CA": 1},
+    "range_total": [34.33, 55.97],
+    "raw_price": 45.15
+  },
+  "condition_points": [
+    "glossy black wrappers with light surface scratches and scuffing to the front",
+    "small crease at the head of the spine",
+    "light rubbing and whitening to cover edges and corners",
+    "a few faint marks to the rear wrapper",
+    "spine uncreased, binding tight",
+    "text clean and unmarked"
+  ],
+  "not_seen_in_photos": [
+    "page edges / fore-edge",
+    "interior beyond title, copyright and foreword pages"
+  ],
+  "condition_notes_from_mark": "Cover and pages of book in very good condition, spine unbroken, page is clean and unmarked, minor wear to cover."
+}
