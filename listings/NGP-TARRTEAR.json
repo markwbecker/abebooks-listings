@@ -1,0 +1,63 @@
+{
+  "sku": "NGP-TARRTEAR",
+  "transaction": "update",
+  "title": "Texts, Editors, and Readers: Methods and Problems in Latin Textual Criticism",
+  "author": "Tarrant, Richard",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "2016",
+  "isbn": "9780521158992",
+  "edition": "First Edition",
+  "firstEdition": true,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Near Fine",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Latin literature; textual criticism; classical scholarship; Roman literature; manuscripts; palaeography; scholarly editing; critical apparatus; conjecture; Roman Literature and its Contexts; Cambridge University Press; Richard Tarrant; classics",
+  "description": "First edition, paperback issue, in the Cambridge series Roman Literature and its Contexts; the copyright page reads 'First published 2016'. Trade paperback in the publisher's black and pink pictorial wrappers; no dust jacket, as issued. Near fine: slight creasing to the covers and very light pencil marks in the margins, otherwise the wrappers are bright and the spine uncreased and square, and the text block is clean and tight. Includes an appendix offering practical guidance in reading a critical apparatus, with all Latin texts translated.",
+  "price": 36,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-TARRTEAR/1.jpg",
+    "photos/NGP-TARRTEAR/2.jpg",
+    "photos/NGP-TARRTEAR/3.jpg",
+    "photos/NGP-TARRTEAR/4.jpg",
+    "photos/NGP-TARRTEAR/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521158992/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {
+      "US": 1,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      42.96,
+      65.58
+    ],
+    "raw_price": 54.27,
+    "note": "Rule-derived average was $54.27 from only two same-region used comps, both 'Used - As new' and both from the GreatBookPrices group (US and UK arms of one company); no Near Fine copies were offered. That sat above several new copies' totals ($39.99-$42.64), so Mark set the price at $36 to undercut the cheapest new stock. 17 listings dropped as new-vs-used mismatches.",
+    "mark_override": 36
+  },
+  "condition_points": [
+    "slight creasing to the covers",
+    "very light pencil marks in the margins",
+    "wrappers bright, spine uncreased and square",
+    "text block clean and tight",
+    "no previous owner's name or bookplate seen"
+  ],
+  "not_seen_in_photos": [
+    "interior text pages beyond the title and copyright pages",
+    "page edges",
+    "extent of the marginal pencil (Mark's report)"
+  ],
+  "condition_notes_from_mark": "As new condition except for some slight cover creasing, and very light pencil marks in the margins.",
+  "pushed_at": "2026-09-16T16:52:08+00:00"
+}
