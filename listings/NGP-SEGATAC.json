@@ -1,6 +1,6 @@
 {
   "sku": "NGP-SEGATAC",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Tragedy and Civilization: An Interpretation of Sophocles",
   "author": "Segal, Charles",
   "publisher": "Harvard University Press",
@@ -19,7 +19,7 @@
   "size": "8vo",
   "language": "ENG",
   "subject": "Sophocles; Greek tragedy; classical studies; ancient Greek literature; classics; literary criticism; Martin Classical Lectures; Oberlin College; structuralism; Antigone; Oedipus; Philoctetes; Ajax; Electra; Trachiniae",
-  "description": "Second printing of Charles Segal's structuralist study of the seven surviving plays, issued for Oberlin College by Harvard University Press in 1981 as volume 26 of the Martin Classical Lectures. Quarter-bound in tan cloth with dark boards and a black spine panel lettered in white; no dust jacket. A good copy: corners bumped, cloth frayed at the head of the spine, page edges lightly toned, and light pencil marginal lines and brackets scattered through the text. The printed text itself is unmarked and unhighlighted, the binding is sound and the text block clean and complete.",
+  "description": "Second printing of Charles Segal's structuralist study of the seven surviving plays, issued for Oberlin College by Harvard University Press in 1981 as volume 26 of the Martin Classical Lectures. Quarter-bound in tan cloth with dark boards and a black spine panel lettered in white; no dust jacket. A good copy: corners bumped, cloth frayed at the head of the spine, boards lightly scuffed with a few small pale marks, and light pencil lines and brackets in the margins of the text. Endpapers are clean with no inscription, bookplate or library marks; the printed text is unmarked and unhighlighted, the binding sound and the text block clean and complete.",
   "price": 57,
   "currency": "USD",
   "quantity": 1,
@@ -29,7 +29,12 @@
     "photos/NGP-SEGATAC/3.jpg",
     "photos/NGP-SEGATAC/4.jpg",
     "photos/NGP-SEGATAC/5.jpg",
-    "photos/NGP-SEGATAC/6.jpg"
+    "photos/NGP-SEGATAC/6.jpg",
+    "photos/NGP-SEGATAC/7.jpg",
+    "photos/NGP-SEGATAC/8.jpg",
+    "photos/NGP-SEGATAC/9.jpg",
+    "photos/NGP-SEGATAC/10.jpg",
+    "photos/NGP-SEGATAC/11.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/isbn/9780674902060/?bi=h&cond=good&sortby=1",
@@ -49,15 +54,13 @@
   "condition_points": [
     "corners bumped",
     "cloth frayed at head of spine",
+    "dark cloth boards lightly scuffed, a few small pale surface marks",
     "page edges lightly toned",
-    "light pencil marginal lines and brackets scattered through the text",
+    "light pencil lines and brackets in the margins of the text",
     "printed text itself unmarked; no underlining or highlighting",
+    "endpapers clean: no inscription, bookplate or ex-library marks",
     "no dust jacket",
     "binding sound, text block clean and complete"
-  ],
-  "not_seen_in_photos": [
-    "rear board",
-    "endpapers"
   ],
   "condition_notes_from_mark": "The cover and the pages are in good to very good condition, corner bumping to the cover and pencil markings in the margins of the text. No dust jacket."
 }
