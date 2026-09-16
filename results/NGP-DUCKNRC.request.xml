@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-DUCKNRC</vendorBookID>
+      <author>Duckworth, George E.</author>
+      <title>The Nature of Roman Comedy: A Study in Popular Entertainment</title>
+      <publisher>University of Oklahoma Press</publisher>
+      <subject>Roman comedy; Latin drama; Plautus; Terence; classics; classical studies; ancient theater; Latin literature; Richard Hunter; University of Oklahoma Press</subject>
+      <price currency="USD">45.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Second edition of Duckworth's standard study of Plautus and Terence, first published by Princeton in 1952, reissued by the University of Oklahoma Press in 1994 with a foreword and bibliographical appendix by Richard Hunter. Trade paperback in glossy black wrappers; no dust jacket, as issued. A very good copy: the glossy front wrapper carries light surface scratches and scuffing, there is a small crease at the head of the spine, and the cover edges and corners show light rubbing with a few faint marks to the rear wrapper. The spine is uncreased and the binding tight; the text is clean and unmarked throughout. Includes eight plates of scenes and characters from the comedies.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780806126203</isbn>
+      <publishPlace>Norman, OK</publishPlace>
+      <publishYear>1994</publishYear>
+      <edition>Second Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/695637c340e095105bc0dce45a98a593831b390a/photos/NGP-DUCKNRC/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/695637c340e095105bc0dce45a98a593831b390a/photos/NGP-DUCKNRC/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/695637c340e095105bc0dce45a98a593831b390a/photos/NGP-DUCKNRC/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/695637c340e095105bc0dce45a98a593831b390a/photos/NGP-DUCKNRC/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/695637c340e095105bc0dce45a98a593831b390a/photos/NGP-DUCKNRC/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
