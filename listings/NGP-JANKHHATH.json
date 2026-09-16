@@ -1,0 +1,64 @@
+{
+  "sku": "NGP-JANKHHATH",
+  "transaction": "update",
+  "title": "Homer, Hesiod and the Hymns: Diachronic Development in Epic Diction",
+  "author": "Janko, Richard",
+  "publisher": "Cambridge University Press",
+  "publishPlace": "Cambridge",
+  "publishYear": "2007",
+  "isbn": "9780521035651",
+  "edition": "Paperback re-issue, 2007",
+  "printing": "2007 digital reprint",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "As New",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; ancient Greek literature; Homer; Hesiod; Homeric Hymns; Greek epic; oral poetry; epic diction; Greek philology; Cambridge Classical Studies",
+  "description": "Cambridge University Press paperback re-issue of Richard Janko's 1982 study of the ancient Greek oral epic tradition, digitally printed in 2007; in the Cambridge Classical Studies series. Trade paperback in the publisher's pale blue wrappers with purple Cambridge panels; no dust jacket, as issued. As new throughout: wrappers clean and bright, corners sharp, spine uncreased and unrolled, binding tight and square. Text block is clean and unmarked, with no ownership names, underlining or shelf wear. With tables and figures, eight appendices, notes, bibliography and indices.",
+  "price": 69,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-JANKHHATH/1.jpg",
+    "photos/NGP-JANKHHATH/2.jpg",
+    "photos/NGP-JANKHHATH/3.jpg",
+    "photos/NGP-JANKHHATH/4.jpg",
+    "photos/NGP-JANKHHATH/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780521035651/?bi=s&cond=an&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {
+      "US": 1,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      58.49,
+      80.15
+    ],
+    "raw_price": 69.32
+  },
+  "condition_points": [
+    "wrappers clean and bright, no rubbing or scuffing",
+    "corners sharp, no bumping",
+    "spine uncreased and unrolled, lettering unfaded",
+    "binding tight and square",
+    "text block clean and unmarked; no ownership names or underlining seen"
+  ],
+  "not_seen_in_photos": [
+    "interior beyond the front matter (title page, copyright page, contents)",
+    "close-up of the page edges"
+  ],
+  "condition_notes_from_mark": "Cover and pages are in as new condition.",
+  "pushed_at": "2026-09-16T16:27:17+00:00"
+}
