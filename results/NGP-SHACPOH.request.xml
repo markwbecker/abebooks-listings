@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-SHACPOH</vendorBookID>
+      <author>Shackleton Bailey, D. R.</author>
+      <title>Profile of Horace</title>
+      <publisher>Harvard University Press</publisher>
+      <subject>Horace; Quintus Horatius Flaccus; classics; Latin literature; Latin poetry; classical scholarship; Roman poetry; literary criticism; Odes; Satires; Epistles; Epodes; Richard Bentley; textual criticism; Harvard University Press</subject>
+      <price currency="USD">30.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First Harvard University Press edition, 1982; the copyright page carries no later printing statement. Red cloth hardcover with gilt spine lettering, in the original unclipped dust jacket. A clean, tight copy: boards square, bright and unmarked front and rear, gilt bright, text block white and unfoxed, jacket bright with only faint edge rubbing and no chips or tears. Light pencil brackets and marginal lines appear on scattered pages throughout the text; the text itself is unmarked, with no underlining, inscription, bookplate or ex-library marks. Includes the appendices on Horatiana and on Bentley and Horace, Latin texts, and indexes.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Near Fine</jacketCondition>
+      <isbn>9780674713253</isbn>
+      <publishPlace>Cambridge, Massachusetts</publishPlace>
+      <publishYear>1982</publishYear>
+      <edition>First Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/ef6103691c84a5a5a191699c755c60b61e078c7c/photos/NGP-SHACPOH/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
