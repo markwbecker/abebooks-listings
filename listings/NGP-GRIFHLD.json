@@ -1,0 +1,65 @@
+{
+  "sku": "NGP-GRIFHLD",
+  "transaction": "update",
+  "title": "Homer on Life and Death",
+  "author": "Griffin, Jasper",
+  "publisher": "Oxford University Press (Clarendon Paperbacks)",
+  "publishPlace": "Oxford",
+  "publishYear": "2009",
+  "isbn": "9780198140269",
+  "edition": "Clarendon Paperbacks",
+  "printing": "Reprinted 2009",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Homer; Iliad; Odyssey; Greek literature; classical studies; epic poetry; Homeric scholarship; ancient Greece; Jasper Griffin; Clarendon Paperbacks",
+  "description": "Clarendon Paperbacks issue of Griffin's 1980 study of the Homeric poems, digitally reprinted by Oxford University Press in 2009. Trade paperback in the dark blue pictorial wrappers; no dust jacket, as issued. Covers show light creasing and handling marks; there is very light pencil marginalia, chiefly brackets and marginal lines with the occasional short note. The spine is uncreased and unfaded, the binding tight and square, and the text block clean apart from those pencil markings. A very good copy of a standard work on the Iliad and Odyssey.",
+  "price": 58,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-GRIFHLD/1.jpg",
+    "photos/NGP-GRIFHLD/2.jpg",
+    "photos/NGP-GRIFHLD/3.jpg",
+    "photos/NGP-GRIFHLD/4.jpg",
+    "photos/NGP-GRIFHLD/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780198140269/?bi=s&cond=vg&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 3,
+    "by_region": {
+      "US": 0,
+      "UK": 3,
+      "CA": 0
+    },
+    "range_total": [
+      50.83,
+      68.9
+    ],
+    "raw_price": 58.27
+  },
+  "condition_points": [
+    "light creasing to front and rear wrappers",
+    "light rubbing and handling marks to the covers",
+    "spine uncreased, unfaded and square",
+    "very light pencil marginalia - brackets, marginal lines, occasional short note",
+    "text block clean, no foxing or toning to the edges",
+    "binding tight, no dust jacket as issued"
+  ],
+  "not_seen_in_photos": [
+    "title page and front free endpaper",
+    "full extent of the pencil marking through the text"
+  ],
+  "condition_notes_from_mark": "Book cover and pages are in very good/as new condition, aside from minor cover creasing and very light pencil markings in the margins.",
+  "pushed_at": "2026-09-16T17:36:17+00:00"
+}
