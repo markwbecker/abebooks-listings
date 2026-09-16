@@ -1,0 +1,61 @@
+{
+  "sku": "NGP-DETITMOTIAG",
+  "transaction": "update",
+  "title": "The Masters of Truth in Archaic Greece",
+  "author": "Detienne, Marcel",
+  "publisher": "Zone Books",
+  "publishPlace": "New York",
+  "publishYear": "1999",
+  "isbn": "9780942299861",
+  "edition": "First Paperback Edition",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "Very Good",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "ancient Greek philosophy; classical studies; archaic Greece; aletheia; truth; Greek religion; mythology; Jean-Pierre Vernant school; Paris school; structuralism; Zone Books; Janet Lloyd translation; Pierre Vidal-Naquet",
+  "description": "Zone Books' English translation by Janet Lloyd of Les Maitres de verite dans la Grece archaique, with a foreword by Pierre Vidal-Naquet; first paperback edition, 1999 printing, distributed by The MIT Press. Trade paperback in pictorial wrappers, no dust jacket as issued. A very good copy: spine unbroken and uncreased, covers bright, with slight bumping to the upper right corner and light rubbing along the board edges. Page edges are clean and evenly toned with no foxing or soiling; the text is clean apart from very light pencil marks alongside some paragraphs, and the binding is tight and square.",
+  "price": 27,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-DETITMOTIAG/1.jpg",
+    "photos/NGP-DETITMOTIAG/2.jpg",
+    "photos/NGP-DETITMOTIAG/3.jpg",
+    "photos/NGP-DETITMOTIAG/4.jpg",
+    "photos/NGP-DETITMOTIAG/5.jpg",
+    "photos/NGP-DETITMOTIAG/6.jpg",
+    "photos/NGP-DETITMOTIAG/7.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780942299861/?sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 4,
+    "by_region": {
+      "US": 3,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      14.0,
+      48.69
+    ],
+    "raw_price": 27.18,
+    "note": "No Very Good copies offered; the four used U.S./U.K. copies are graded As New or Fine, so the helper fell back to the nearest grade. Median total $23.01; the $48.69 U.K. total is inflated by $20.21 shipping."
+  },
+  "condition_points": [
+    "covers bright and clean, only light surface wear",
+    "spine unbroken and uncreased",
+    "slight bumping to upper right corner; light rubbing along the board edges",
+    "page edges clean and evenly toned, no foxing, soiling or dog-ears",
+    "text block clean; very light pencil marks alongside some paragraphs (Mark's note)",
+    "binding tight and square, no previous owner's name or bookplate seen"
+  ],
+  "not_seen_in_photos": [],
+  "condition_notes_from_mark": "The cover and the text are in very good condition, pages clean, except for very light pencil markings alongside some paragraphs. Spine is unbroken, there's slight corner bumping at the upper right.",
+  "pushed_at": "2026-09-16T15:58:32+00:00"
+}
