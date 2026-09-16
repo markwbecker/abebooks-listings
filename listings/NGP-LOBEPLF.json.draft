@@ -1,0 +1,55 @@
+{
+  "sku": "NGP-LOBEPLF",
+  "transaction": "add",
+  "title": "Poetarum Lesbiorum Fragmenta",
+  "author": "Lobel, Edgar; Page, Denys",
+  "publisher": "Oxford University Press / Clarendon Press",
+  "publishPlace": "Oxford",
+  "publishYear": "1997",
+  "isbn": "9780198141372",
+  "edition": "1997 Sandpiper reissue of 1963 reprint",
+  "printing": "Reprinted 1963",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "As New",
+  "bookCondition": "As New",
+  "size": "8vo",
+  "language": "GRE",
+  "subject": "classics; ancient Greek literature; Greek lyric poetry; Sappho; Alcaeus; Lesbian poets; Aeolic Greek; fragments; textual criticism; papyrology; Clarendon Press; Oxford Classical Texts; Edgar Lobel; Denys Page",
+  "description": "Oxford's standard critical edition of the fragments of Sappho and Alcaeus, edited by Edgar Lobel and Denys Page: first published 1955, reprinted 1963, and reissued in 1997 as a special edition for Sandpiper Books. Hardcover in dark blue cloth with gilt lettering and the Oxford arms to the spine, in the original photographic dust jacket, which has been kept under a clear cellophane protector. As new throughout: binding tight and square, gilt bright, text block clean and unmarked, and the jacket unfaded, unchipped and untorn. Greek text with Latin apparatus criticus and Latin editorial matter.",
+  "price": 75,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-LOBEPLF/1.jpg",
+    "photos/NGP-LOBEPLF/2.jpg",
+    "photos/NGP-LOBEPLF/3.jpg",
+    "photos/NGP-LOBEPLF/4.jpg",
+    "photos/NGP-LOBEPLF/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780198141372/?bi=h&cond=an&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {"US": 1, "UK": 1, "CA": 0},
+    "range_total": [38.0, 112.89],
+    "raw_price": 75.44
+  },
+  "condition_points": [
+    "dust jacket kept under a cellophane protector; unfaded, no chips, tears or creases",
+    "jacket not price-clipped; ISBN barcode label intact to rear panel",
+    "dark blue cloth spine bright and square, gilt lettering and Oxford arms unrubbed",
+    "boards clean, corners sharp",
+    "text block clean and unmarked",
+    "faint handwriting shows through the title leaf from the preceding page"
+  ],
+  "not_seen_in_photos": [
+    "the leaf facing the title page, where the show-through handwriting appears to be",
+    "page edges",
+    "main text pages"
+  ],
+  "condition_notes_from_mark": "The book and dust jacket are in as new condition, the dust jacket has been protected by a cellophane wrapper."
+}
