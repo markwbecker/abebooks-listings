@@ -1,6 +1,6 @@
 {
   "sku": "NGP-REHMGTT",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Greek Tragic Theatre (Theatre Production Studies)",
   "author": "Rehm, Rush",
   "publisher": "Routledge",
@@ -33,8 +33,15 @@
     "url": "https://www.abebooks.com/book-search/isbn/9780415118941/?sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 7,
-    "by_region": {"US": 4, "UK": 2, "CA": 1},
-    "range_total": [14.26, 50.45],
+    "by_region": {
+      "US": 4,
+      "UK": 2,
+      "CA": 1
+    },
+    "range_total": [
+      14.26,
+      50.45
+    ],
     "raw_price": 24.86,
     "note": "no Near Fine copies on offer; widened to the nearest grade (Very Good) softcover copies"
   },
@@ -51,5 +58,6 @@
     "interior beyond title, series and copyright pages",
     "rear free endpaper"
   ],
-  "condition_notes_from_mark": "Cover, spine, and book text are in excellent condition. Spine unbroken, pages clean unmarked. Slight bumping to corners of book."
+  "condition_notes_from_mark": "Cover, spine, and book text are in excellent condition. Spine unbroken, pages clean unmarked. Slight bumping to corners of book.",
+  "pushed_at": "2026-09-16T21:44:29+00:00"
 }
