@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-GRIFHLD",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-16T17:36:35+00:00",
+  "trigger_sha": "7a14a2126e059d6c6f2e4b3600b26ded7f89eda8",
+  "run_id": "35129228902",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-GRIFHLD",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}

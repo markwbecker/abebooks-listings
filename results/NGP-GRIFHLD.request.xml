@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GRIFHLD</vendorBookID>
+      <author>Griffin, Jasper</author>
+      <title>Homer on Life and Death</title>
+      <publisher>Oxford University Press (Clarendon Paperbacks)</publisher>
+      <subject>Homer; Iliad; Odyssey; Greek literature; classical studies; epic poetry; Homeric scholarship; ancient Greece; Jasper Griffin; Clarendon Paperbacks</subject>
+      <price currency="USD">58.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Clarendon Paperbacks issue of Griffin's 1980 study of the Homeric poems, digitally reprinted by Oxford University Press in 2009. Trade paperback in the dark blue pictorial wrappers; no dust jacket, as issued. Covers show light creasing and handling marks; there is very light pencil marginalia, chiefly brackets and marginal lines with the occasional short note. The spine is uncreased and unfaded, the binding tight and square, and the text block clean apart from those pencil markings. A very good copy of a standard work on the Iliad and Odyssey.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780198140269</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>2009</publishYear>
+      <edition>Clarendon Paperbacks</edition>
+      <printing>Reprinted 2009</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7a14a2126e059d6c6f2e4b3600b26ded7f89eda8/photos/NGP-GRIFHLD/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7a14a2126e059d6c6f2e4b3600b26ded7f89eda8/photos/NGP-GRIFHLD/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7a14a2126e059d6c6f2e4b3600b26ded7f89eda8/photos/NGP-GRIFHLD/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7a14a2126e059d6c6f2e4b3600b26ded7f89eda8/photos/NGP-GRIFHLD/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/7a14a2126e059d6c6f2e4b3600b26ded7f89eda8/photos/NGP-GRIFHLD/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
