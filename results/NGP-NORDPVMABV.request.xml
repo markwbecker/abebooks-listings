@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-NORDPVMABV</vendorBookID>
+      <author>Norden, Eduard</author>
+      <title>P. Vergilius Maro: Aeneis Buch VI</title>
+      <publisher>Wissenschaftliche Buchgesellschaft</publisher>
+      <subject>classics; Latin literature; Vergil; Virgil; Aeneid; Aeneis; Book VI; commentary; Kommentar; Eduard Norden; Wissenschaftliche Buchgesellschaft; Teubner; classical philology; Latin poetry; eschatology; hexameter; German</subject>
+      <price currency="USD">55.00</price>
+      <languageIsoCode>GER</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Norden's classic commentary on the sixth book of the Aeneid: introduction on the eschatology of Book VI and its sources, Latin text with German translation, full commentary, eleven stylistic and metrical appendices, Nachtraege and index. Sixth, unaltered edition of 1976, a slightly reduced photomechanical reprint of the fourth edition of 1957, whose text was collated afresh against the second edition of 1916. Publisher's light blue cloth over boards with gilt lettering to the spine; no dust jacket. The book is over fifty years old but presents as new: cloth bright and clean, corners square, spine gilt bright and the spine uncocked, endpapers and text unmarked throughout, binding tight; the only wear is a slight bump to the upper outer corner of a few leaves. Text in German with the Latin of Aeneid VI.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <publishPlace>Darmstadt</publishPlace>
+      <publishYear>1976</publishYear>
+      <edition>Sixth Edition (6. Auflage)</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/88d25af47d7fd479993ca5626b077a0ace74de6f/photos/NGP-NORDPVMABV/10.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

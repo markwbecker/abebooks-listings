@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-NORDPVMABV",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-16T00:46:45+00:00",
+  "trigger_sha": "88d25af47d7fd479993ca5626b077a0ace74de6f",
+  "run_id": "35041392907",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-NORDPVMABV",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
