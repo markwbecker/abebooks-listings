@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-TARRTEAR</vendorBookID>
+      <author>Tarrant, Richard</author>
+      <title>Texts, Editors, and Readers: Methods and Problems in Latin Textual Criticism</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>Latin literature; textual criticism; classical scholarship; Roman literature; manuscripts; palaeography; scholarly editing; critical apparatus; conjecture; Roman Literature and its Contexts; Cambridge University Press; Richard Tarrant; classics</subject>
+      <price currency="USD">36.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First edition, paperback issue, in the Cambridge series Roman Literature and its Contexts; the copyright page reads 'First published 2016'. Trade paperback in the publisher's black and pink pictorial wrappers; no dust jacket, as issued. Near fine: slight creasing to the covers and very light pencil marks in the margins, otherwise the wrappers are bright and the spine uncreased and square, and the text block is clean and tight. Includes an appendix offering practical guidance in reading a critical apparatus, with all Latin texts translated.</description>
+      <bookCondition>Near Fine</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521158992</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>2016</publishYear>
+      <edition>First Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085/photos/NGP-TARRTEAR/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085/photos/NGP-TARRTEAR/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085/photos/NGP-TARRTEAR/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085/photos/NGP-TARRTEAR/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085/photos/NGP-TARRTEAR/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

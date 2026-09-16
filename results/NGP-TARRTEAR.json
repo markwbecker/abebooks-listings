@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-TARRTEAR",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-16T16:52:31+00:00",
+  "trigger_sha": "3a1881edacad9af1cbc27f9fa4b9c8cc87ea7085",
+  "run_id": "35124631206",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-TARRTEAR",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
