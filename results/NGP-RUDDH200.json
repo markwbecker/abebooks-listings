@@ -1,10 +1,10 @@
 {
   "sku": "NGP-RUDDH200",
-  "transaction": "add",
+  "transaction": "update",
   "auth_mode": "classic",
-  "sent_at": "2026-09-17T02:23:49+00:00",
-  "trigger_sha": "2efd366940508aaade87d4e7f791e590aea29783",
-  "run_id": "35174242876",
+  "sent_at": "2026-09-17T02:30:54+00:00",
+  "trigger_sha": "f0b58d5a9328a18fb28974db39ba0af32fc548b2",
+  "run_id": "35174697439",
   "endpoint": "https://inventoryupdate.abebooks.com:10027/",
   "ok": true,
   "http_status": 200,
@@ -15,7 +15,7 @@
       "vendorBookID": "NGP-RUDDH200",
       "code": "600",
       "message": "Book added or updated",
-      "transactionType": "add"
+      "transactionType": "update"
     }
   ],
   "book_code": "600",

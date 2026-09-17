@@ -6,19 +6,19 @@
   </action>
   <AbebookList>
     <Abebook>
-      <transactionType>add</transactionType>
+      <transactionType>update</transactionType>
       <vendorBookID>NGP-RUDDH200</vendorBookID>
       <author>Rudd, Niall</author>
       <title>Horace 2000: A Celebration: Essays for the Bimillennium</title>
       <publisher>The University of Michigan Press</publisher>
-      <subject>Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; literary criticism; Niall Rudd; University of Michigan Press</subject>
-      <price currency="USD">41.00</price>
+      <subject>Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; Augustus; literary criticism; Niall Rudd; University of Michigan Press; first edition; illustrated</subject>
+      <price currency="USD">45.00</price>
       <languageIsoCode>ENG</languageIsoCode>
       <dustJacket>true</dustJacket>
       <binding type="hard">Hardcover</binding>
-      <firstEdition>false</firstEdition>
+      <firstEdition>true</firstEdition>
       <signed>false</signed>
-      <description>Collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie. Hardcover in the original pictorial dust jacket, now in a mylar protector; jacket is bright and unfaded with no chips or tears. A former library copy: call-number label to the spine, a blank label to the lower front cover, ownership stamps of the William F. Maag Library, Youngstown State University to the front flyleaf and title page, a red WITHDRAWN stamp to the title page, library marks stamped on the edges of the text block, and tape residue at the front flyleaf where the pocket was removed. Apart from the library markings the book is excellent - boards square and tight, spine unfaded, text clean and unmarked - and the publisher's errata slip is still tipped in at the front.</description>
+      <description>First edition, first printing (number line 4 3 2 1) of this collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie; illustrated with a section of black-and-white plates. Black cloth over boards with gilt spine lettering, in the original pictorial dust jacket, now in a mylar protector; the jacket is bright and unfaded with no chips or tears. A former academic library copy, plainly little used: call-number label to the spine, a blank label to the lower front cover, William F. Maag Library, Youngstown State University stamps to the front flyleaf, contents page and title page, a red WITHDRAWN stamp to the title page, the library name stamped on the top and fore edges of the text block, a barcode label and an unused date-due slip pasted to the rear pastedown, and yellowed tape residue at the endpapers where the jacket was secured. Apart from the library markings the book is excellent - boards square, binding tight, spine unfaded, pages bright and free of underlining or marginalia throughout - and the publisher's errata slip is still laid in at the front.</description>
       <bookCondition>Very Good</bookCondition>
       <size>8vo</size>
       <jacketCondition>Very Good</jacketCondition>
@@ -26,13 +26,23 @@
       <isbn>9780472104901</isbn>
       <publishPlace>Ann Arbor</publishPlace>
       <publishYear>1993</publishYear>
+      <edition>First Edition</edition>
+      <printing>1st printing</printing>
       <quantity amount="1"></quantity>
       <pictureList>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/1.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/2.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/3.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/4.jpg</pictureURL>
-        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/7.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/8.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/9.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/10.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/11.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/12.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/f0b58d5a9328a18fb28974db39ba0af32fc548b2/photos/NGP-RUDDH200/13.jpg</pictureURL>
       </pictureList>
     </Abebook>
   </AbebookList>
