@@ -1,0 +1,51 @@
+{
+  "sku": "NGP-ANGESSWI",
+  "quoted_at": "2026-09-17",
+  "author": "Angelo, Valenti",
+  "title": "The Song of Songs Which Is Solomon's",
+  "publisher": "The Heritage Press",
+  "publishPlace": "New York",
+  "publishYear": "1935",
+  "isbn": "",
+  "illustrator": "Angelo, Valenti",
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": false,
+  "bookCondition": "Very Good",
+  "condition_points": [
+    "black cloth-grain boards, gilt spine lettering bright and complete",
+    "light surface scuffing and a few faint impressions to the board",
+    "board edges lightly rubbed",
+    "patterned yellow endpapers bright and clean, no foxing or toning seen",
+    "frontispiece and title page clean",
+    "small pencil notation in the margin beside the title panel"
+  ],
+  "not_seen_in_photos": [
+    "slipcase (Heritage Press issued this title in one)",
+    "rear board",
+    "spine ends",
+    "page edges and text block",
+    "interior pages and plates beyond the title opening"
+  ],
+  "condition_notes_from_mark": "Very Good",
+  "price": 53,
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/song-of-songs-which-is-solomons/author/angelo/?bi=h&cond=vg&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 6,
+    "by_region": {"US": 5, "UK": 0, "CA": 1},
+    "range_total": [24.0, 99.99],
+    "raw_price": 53.41,
+    "median_total": 40.5,
+    "comps": [
+      {"seller": "Bailey Bonzo Books", "location": "Zionsville, IN, U.S.A.", "condition": "Very Good", "price": 99.99, "shipping": 0.0, "total": 99.99},
+      {"seller": "George Strange's Bookmart", "location": "Brandon, MB, Canada", "condition": "Very Good", "price": 35.0, "shipping": 42.5, "total": 77.5},
+      {"seller": "Lectern Books", "location": "Brooklyn, NY, U.S.A.", "condition": "Very Good", "price": 35.0, "shipping": 6.0, "total": 41.0},
+      {"seller": "Ann Open Book", "location": "Lansing, MI, U.S.A.", "condition": "Very Good", "price": 35.0, "shipping": 5.0, "total": 40.0},
+      {"seller": "Booked Up, Inc.", "location": "Archer City, TX, U.S.A.", "condition": "Very Good", "price": 35.0, "shipping": 3.0, "total": 38.0},
+      {"seller": "Village Booksmith", "location": "Hudson Falls, NY, U.S.A.", "condition": "Very Good", "price": 15.0, "shipping": 9.0, "total": 24.0}
+    ],
+    "set_aside": [],
+    "notes": "All 6 Very Good hardcover copies AbeBooks shows; none excluded. The mean is pulled well above the median ($40.50) by two high totals: a $99.99 asking price and a Canadian copy with $42.50 shipping."
+  }
+}
