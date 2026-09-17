@@ -1,13 +1,15 @@
 {
   "sku": "NGP-RUDDH200",
-  "transaction": "add",
+  "transaction": "update",
   "title": "Horace 2000: A Celebration: Essays for the Bimillennium",
   "author": "Rudd, Niall",
   "publisher": "The University of Michigan Press",
   "publishPlace": "Ann Arbor",
   "publishYear": "1993",
   "isbn": "9780472104901",
-  "firstEdition": false,
+  "edition": "First Edition",
+  "printing": "1st printing",
+  "firstEdition": true,
   "signed": false,
   "binding": "Hardcover",
   "bindingType": "hard",
@@ -17,9 +19,9 @@
   "bookType": "Ex-Library",
   "size": "8vo",
   "language": "ENG",
-  "subject": "Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; literary criticism; Niall Rudd; University of Michigan Press",
-  "description": "Collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie. Hardcover in the original pictorial dust jacket, now in a mylar protector; jacket is bright and unfaded with no chips or tears. A former library copy: call-number label to the spine, a blank label to the lower front cover, ownership stamps of the William F. Maag Library, Youngstown State University to the front flyleaf and title page, a red WITHDRAWN stamp to the title page, library marks stamped on the edges of the text block, and tape residue at the front flyleaf where the pocket was removed. Apart from the library markings the book is excellent - boards square and tight, spine unfaded, text clean and unmarked - and the publisher's errata slip is still tipped in at the front.",
-  "price": 41,
+  "subject": "Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; Augustus; literary criticism; Niall Rudd; University of Michigan Press; first edition; illustrated",
+  "description": "First edition, first printing (number line 4 3 2 1) of this collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie; illustrated with a section of black-and-white plates. Black cloth over boards with gilt spine lettering, in the original pictorial dust jacket, now in a mylar protector; the jacket is bright and unfaded with no chips or tears. A former academic library copy, plainly little used: call-number label to the spine, a blank label to the lower front cover, William F. Maag Library, Youngstown State University stamps to the front flyleaf, contents page and title page, a red WITHDRAWN stamp to the title page, the library name stamped on the top and fore edges of the text block, a barcode label and an unused date-due slip pasted to the rear pastedown, and yellowed tape residue at the endpapers where the jacket was secured. Apart from the library markings the book is excellent - boards square, binding tight, spine unfaded, pages bright and free of underlining or marginalia throughout - and the publisher's errata slip is still laid in at the front.",
+  "price": 45,
   "currency": "USD",
   "quantity": 1,
   "photos": [
@@ -27,29 +29,44 @@
     "photos/NGP-RUDDH200/2.jpg",
     "photos/NGP-RUDDH200/3.jpg",
     "photos/NGP-RUDDH200/4.jpg",
-    "photos/NGP-RUDDH200/5.jpg"
+    "photos/NGP-RUDDH200/5.jpg",
+    "photos/NGP-RUDDH200/6.jpg",
+    "photos/NGP-RUDDH200/7.jpg",
+    "photos/NGP-RUDDH200/8.jpg",
+    "photos/NGP-RUDDH200/9.jpg",
+    "photos/NGP-RUDDH200/10.jpg",
+    "photos/NGP-RUDDH200/11.jpg",
+    "photos/NGP-RUDDH200/12.jpg",
+    "photos/NGP-RUDDH200/13.jpg"
   ],
   "pricing": {
     "url": "https://www.abebooks.com/book-search/isbn/9780472104901/?bi=h&sortby=1",
     "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
     "n_used": 2,
-    "by_region": {"US": 1, "UK": 0, "CA": 1},
-    "range_total": [40.0, 41.18],
-    "raw_price": 40.59
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 1
+    },
+    "range_total": [
+      40.0,
+      41.18
+    ],
+    "raw_price": 40.59,
+    "set_by_mark": 45
   },
   "condition_points": [
+    "first edition, first printing: number line 1996 1995 1994 1993 / 4 3 2 1",
     "ex-library: call-number label (PA 6411 .H59 1993) on spine, blank label on lower front cover",
-    "library stamps on front flyleaf and title page; red WITHDRAWN stamp on title page",
-    "library marks stamped on the edges of the text block",
-    "tape residue on the front flyleaf where the pocket was removed",
+    "library stamps on front flyleaf, contents page and title page; red WITHDRAWN stamp on title page",
+    "library name stamped on the top and fore edges of the text block",
+    "barcode label and unused date-due slip on the rear pastedown; SEP 29 1993 accession stamp",
+    "yellowed tape residue at the endpapers where the jacket was secured",
     "dust jacket bright and unfaded, no chips or tears, in mylar protector",
-    "boards square, spine straight and unfaded",
-    "text clean and unmarked; publisher's errata slip present"
+    "black cloth boards square, gilt spine lettering bright, binding tight",
+    "text pages bright and clean, no underlining or marginalia; plate section clean",
+    "publisher's errata slip present"
   ],
-  "not_seen_in_photos": [
-    "rear flyleaf",
-    "copyright page / number line",
-    "interior text pages"
-  ],
+  "not_seen_in_photos": [],
   "condition_notes_from_mark": "A former library book, but the cover, spine, and pages are in excellent condition. The usual library markings are present on the front and back fly leaves and stamped onto the edges of the book."
 }
