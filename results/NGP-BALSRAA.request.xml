@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-BALSRAA</vendorBookID>
+      <author>Balsdon, John Percy Vyvian Dacre</author>
+      <title>Romans and Aliens</title>
+      <publisher>Gerald Duckworth &amp; Co. Ltd</publisher>
+      <subject>ancient Rome; Roman history; Roman social history; classical studies; Roman Empire; Roman citizenship; slavery in antiquity; acculturation; foreigners in Rome; xenophobia; ancient world; Balsdon; Duckworth</subject>
+      <price currency="USD">33.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Duckworth's 1979 edition of Balsdon's study of Roman attitudes to foreigners, with bibliographies and index; the copyright page carries no printing statement or number line. Navy cloth hardcover, gilt titling to the spine and front board, in the original teal photographic dust jacket. The jacket is chipped with paper loss along the top edge, heaviest at the head of the spine, and torn and frayed at the edges with a few nicks to the fore-edge. The cloth is clean and the gilt bright, with the corners lightly bumped and faint discolouration to the board edges; the text block is clean and unmarked throughout, the binding tight and square, the page edges lightly toned. A very good copy in a fair dust jacket.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Fair</jacketCondition>
+      <isbn>0807813834</isbn>
+      <publishPlace>London</publishPlace>
+      <publishYear>1979</publishYear>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/5.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/6.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/cfd2cc33e9cd74effc9e505446ec8b2419e0d318/photos/NGP-BALSRAA/7.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
