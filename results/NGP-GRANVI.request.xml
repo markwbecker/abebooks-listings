@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-GRANVI</vendorBookID>
+      <author>Gransden, K. W.</author>
+      <title>Virgil's Iliad: An Essay on Epic Narrative</title>
+      <publisher>Cambridge University Press</publisher>
+      <subject>Virgil; Aeneid; Homer; Iliad; epic poetry; classical studies; Latin literature; literary criticism; classics; Cambridge University Press</subject>
+      <price currency="USD">25.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Cambridge University Press paperback, the 1991 reprint of the 1984 first edition. Trade softcover in navy laminated wrappers with yellow and cream lettering; issued without dust jacket. The wrappers show minor wear, with light rubbing and surface scuffing, a short crease near the head of the front cover, and slight discoloration along the top edge; the page edges are evenly toned. Spine uncreased and unbroken, binding tight, text clean and unmarked throughout. Gransden's study reads Aeneid VII-XII as a continuous epic narrative answering Homer's Iliad, and needs no Latin of its reader.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780521287562</isbn>
+      <publishPlace>Cambridge</publishPlace>
+      <publishYear>1991</publishYear>
+      <edition>1991 reprint of the 1984 first ed.</edition>
+      <printing>1991 reprint</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2a67933bf66c1316ac09a75791128ea27be8ae3a/photos/NGP-GRANVI/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2a67933bf66c1316ac09a75791128ea27be8ae3a/photos/NGP-GRANVI/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2a67933bf66c1316ac09a75791128ea27be8ae3a/photos/NGP-GRANVI/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2a67933bf66c1316ac09a75791128ea27be8ae3a/photos/NGP-GRANVI/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2a67933bf66c1316ac09a75791128ea27be8ae3a/photos/NGP-GRANVI/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

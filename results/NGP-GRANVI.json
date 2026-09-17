@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-GRANVI",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-17T02:05:25+00:00",
+  "trigger_sha": "2a67933bf66c1316ac09a75791128ea27be8ae3a",
+  "run_id": "35173049599",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-GRANVI",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
