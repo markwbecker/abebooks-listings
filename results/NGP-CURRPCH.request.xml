@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-CURRPCH</vendorBookID>
+      <author>Currie, Bruno</author>
+      <title>Pindar and the Cult of Heroes</title>
+      <publisher>Oxford University Press</publisher>
+      <subject>classics; Greek literature; Pindar; hero cult; Greek religion; victory odes; epinician poetry; ancient Greece; Oxford Classical Monographs; classical studies; heroization; fifth century BC</subject>
+      <price currency="USD">45.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>First paperback issue (2010) of Currie's 2005 Oxford monograph, published in the Oxford Classical Monographs series. Softcover in dark green pictorial laminated wrappers reproducing a Syracusan silver decadrachm; no dust jacket, as issued. As new: the spine is unbroken and uncreased, the wrappers bright and unrubbed, and the text block is entirely clean and unmarked; the only wear is very slight bumping to the corners. A study of hero cult in Archaic and Classical Greece and of its bearing on Pindar's epinicians, with five odes interpreted in detail.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780199586707</isbn>
+      <publishPlace>Oxford</publishPlace>
+      <publishYear>2010</publishYear>
+      <edition>First paperback edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0/photos/NGP-CURRPCH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0/photos/NGP-CURRPCH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0/photos/NGP-CURRPCH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0/photos/NGP-CURRPCH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0/photos/NGP-CURRPCH/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>

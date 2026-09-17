@@ -1,0 +1,24 @@
+{
+  "sku": "NGP-CURRPCH",
+  "transaction": "update",
+  "auth_mode": "classic",
+  "sent_at": "2026-09-17T20:35:54+00:00",
+  "trigger_sha": "96a31e52f5e2d477567ce41a3e8e5a3c2a9259d0",
+  "run_id": "35271745573",
+  "endpoint": "https://inventoryupdate.abebooks.com:10027/",
+  "ok": true,
+  "http_status": 200,
+  "code": "600",
+  "message": "Updates completed normally",
+  "books": [
+    {
+      "vendorBookID": "NGP-CURRPCH",
+      "code": "600",
+      "message": "Book added or updated",
+      "transactionType": "update"
+    }
+  ],
+  "book_code": "600",
+  "book_message": "Book added or updated",
+  "hint": "Successful transaction"
+}
