@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventoryUpdateResponse version="1.0">
+  <AbebookList>
+    <Abebook>
+      <code>600</code>
+      <message lang="en">Book added or updated</message>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-SHARMR</vendorBookID>
+    </Abebook>
+  </AbebookList>
+  <code>600</code>
+  <message lang="en">Updates completed normally</message>
+</inventoryUpdateResponse>
+
