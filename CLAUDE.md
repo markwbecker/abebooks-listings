@@ -20,6 +20,10 @@ Ground rules:
   word's initial when that fits in 4, otherwise the major words only (`NGP-BAILRIV`,
   `NGP-DETIMTAG`); use `python3 tools/abe_local.py sku --author ... --title ...`, never reused. Grade the condition from the photos and list the
   specific points you see; Mark can override the grade.
+* Sessions Mark starts from his phone are all auto-titled "Book condition assessment". You can't
+  rename a session yourself, so as soon as you know the book, put `/rename SURNAME Main Title`
+  (surname in capitals, no subtitle) on its own line at the top of your first reply for him to
+  copy and send.
 * Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
   wait for "go" before `publish`. He often sends photos in several batches — the photos command
   appends, so keep collecting until he says go (AbeBooks keeps up to 20). Prices follow his rule:
