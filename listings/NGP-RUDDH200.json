@@ -1,0 +1,55 @@
+{
+  "sku": "NGP-RUDDH200",
+  "transaction": "add",
+  "title": "Horace 2000: A Celebration: Essays for the Bimillennium",
+  "author": "Rudd, Niall",
+  "publisher": "The University of Michigan Press",
+  "publishPlace": "Ann Arbor",
+  "publishYear": "1993",
+  "isbn": "9780472104901",
+  "firstEdition": false,
+  "signed": false,
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Very Good",
+  "bookCondition": "Very Good",
+  "bookType": "Ex-Library",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; literary criticism; Niall Rudd; University of Michigan Press",
+  "description": "Collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie. Hardcover in the original pictorial dust jacket, now in a mylar protector; jacket is bright and unfaded with no chips or tears. A former library copy: call-number label to the spine, a blank label to the lower front cover, ownership stamps of the William F. Maag Library, Youngstown State University to the front flyleaf and title page, a red WITHDRAWN stamp to the title page, library marks stamped on the edges of the text block, and tape residue at the front flyleaf where the pocket was removed. Apart from the library markings the book is excellent - boards square and tight, spine unfaded, text clean and unmarked - and the publisher's errata slip is still tipped in at the front.",
+  "price": 41,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-RUDDH200/1.jpg",
+    "photos/NGP-RUDDH200/2.jpg",
+    "photos/NGP-RUDDH200/3.jpg",
+    "photos/NGP-RUDDH200/4.jpg",
+    "photos/NGP-RUDDH200/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780472104901/?bi=h&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {"US": 1, "UK": 0, "CA": 1},
+    "range_total": [40.0, 41.18],
+    "raw_price": 40.59
+  },
+  "condition_points": [
+    "ex-library: call-number label (PA 6411 .H59 1993) on spine, blank label on lower front cover",
+    "library stamps on front flyleaf and title page; red WITHDRAWN stamp on title page",
+    "library marks stamped on the edges of the text block",
+    "tape residue on the front flyleaf where the pocket was removed",
+    "dust jacket bright and unfaded, no chips or tears, in mylar protector",
+    "boards square, spine straight and unfaded",
+    "text clean and unmarked; publisher's errata slip present"
+  ],
+  "not_seen_in_photos": [
+    "rear flyleaf",
+    "copyright page / number line",
+    "interior text pages"
+  ],
+  "condition_notes_from_mark": "A former library book, but the cover, spine, and pages are in excellent condition. The usual library markings are present on the front and back fly leaves and stamped onto the edges of the book."
+}
