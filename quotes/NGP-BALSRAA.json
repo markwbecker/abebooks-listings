@@ -1,0 +1,61 @@
+{
+  "sku": "NGP-BALSRAA",
+  "quoted_at": "2026-09-17",
+  "author": "Balsdon, John Percy Vyvian Dacre",
+  "title": "Romans and Aliens",
+  "publisher": "Gerald Duckworth & Co. Ltd",
+  "publishPlace": "London",
+  "publishYear": "1979",
+  "isbn": "0807813834",
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Fair",
+  "bookCondition": "Very Good",
+  "condition_points": [
+    "dust jacket chipped with paper loss along the top edge, heaviest at the head of the spine and the spine/front-panel fold",
+    "short closed tears and creasing to jacket head",
+    "a few small nicks and light rubbing to the lower edge of the jacket",
+    "teal photographic jacket still bright, no significant sunning or fading",
+    "copyright page clean and unmarked, no owner's names or library stamps"
+  ],
+  "not_seen_in_photos": [
+    "spine",
+    "rear board and rear jacket panel",
+    "jacket flaps (price-clipping not verified)",
+    "boards under the jacket",
+    "page edges",
+    "title page and interior beyond the copyright page"
+  ],
+  "condition_notes_from_mark": "very good condition with dust jacket in fair condition",
+  "price": 33,
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/romans-and-aliens/author/balsdon/?bi=h&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 9,
+    "by_region": {"US": 7, "UK": 1, "CA": 1},
+    "range_total": [17.96, 71.73],
+    "raw_price": 33.41,
+    "median_total": 25.75,
+    "comps": [
+      {"seller": "Kisharon Langdon New Chapters", "location": "HARROW, United Kingdom", "condition": "Very Good", "price": 58.36, "shipping": 13.37, "total": 71.73},
+      {"seller": "Books Tell You Why - ABAA/ILAB", "location": "Summerville, SC, U.S.A.", "condition": "Very Good", "price": 60.0, "shipping": 0.0, "total": 60.0},
+      {"seller": "gearbooks", "location": "The Bronx, NY, U.S.A.", "condition": "Very Good", "price": 22.22, "shipping": 6.49, "total": 28.71},
+      {"seller": "Jerry Merkel", "location": "XENIA, OH, U.S.A.", "condition": "Very Good", "price": 22.5, "shipping": 5.5, "total": 28.0},
+      {"seller": "The Book Bin", "location": "Salem, OR, U.S.A.", "condition": "Very Good", "price": 20.0, "shipping": 5.75, "total": 25.75},
+      {"seller": "Murphy-Brookfield Books", "location": "Iowa City SE, IA, U.S.A.", "condition": "Very Good", "price": 20.0, "shipping": 5.5, "total": 25.5},
+      {"seller": "Ancient World Books", "location": "Toronto, ON, Canada", "condition": "Very Good", "price": 15.0, "shipping": 7.5, "total": 22.5},
+      {"seller": "Murphy-Brookfield Books", "location": "Iowa City SE, IA, U.S.A.", "condition": "Very Good", "price": 15.0, "shipping": 5.5, "total": 20.5},
+      {"seller": "Wonder Book", "location": "Frederick, MD, U.S.A.", "condition": "Very Good", "price": 17.96, "shipping": 0.0, "total": 17.96}
+    ],
+    "set_aside": [
+      "no statistical outliers (none above 4x the median)",
+      "17 U.S./U.K./Canadian copies in other grades (Fine, Near Fine, As New, Good, Fair, unspecified Used)",
+      "2 copies offered as New",
+      "1 softcover copy",
+      "1 seller in Italy"
+    ],
+    "note": "mean $33.41 sits well above the median $25.75; two high U.S./U.K. asks ($71.73, $60.00) pull the average up"
+  },
+  "notes": "Jacket and title page read 'Romans & Aliens'; Library of Congress cataloguing on the copyright page gives 'Romans and aliens'. Duckworth 1979 imprint page carries ISBN 0-8078-1383-4, a University of North Carolina Press number, so this is the Duckworth printing of the UNC co-publication. Not verified as a first edition from the photos (no printing statement seen)."
+}
