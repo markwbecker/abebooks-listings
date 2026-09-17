@@ -34,6 +34,13 @@ Ground rules:
   keywords are written. Quotes are inert, since the workflow only fires on `listings/*.json`.
   When he later sends more photos and says list it, re-grade from the whole set and re-price if the
   grade moved — the quote is a starting point, not a settled answer. See `quotes/README.md`.
+* **Antiquarian and collectible books** (Mark says "antiquarian"; roughly pre-1875) follow the
+  **abebooks-antiquarian** skill on top of this one: a full bibliographical description (format,
+  collation in plain type, binding, condition in trade vocabulary, provenance, references, note),
+  `NGA-` SKUs from `sku --antiquarian --publisher ... --year ...` (surname 4 + title initials +
+  publisher 4 + year), and the comparable-copies price rule — `price --method comparable` — just
+  under the nearest equal-or-better copy of the same edition, auctions as a floor, and no price
+  without Mark's say when no copy of the edition is on the market. `validate` enforces the record.
 * Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
   wait for "go" before `publish`. He often sends photos in several batches — the photos command
   appends, so keep collecting until he says go (AbeBooks keeps up to 20). Prices follow his rule:

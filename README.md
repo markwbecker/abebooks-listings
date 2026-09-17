@@ -30,6 +30,8 @@ Optional repository *variables*: `PHOTO_URL_BASE` (default `https://raw.githubus
 ## Manual operations
 
 * Re-send one listing: Actions → Publish to AbeBooks → *Run workflow* → enter the SKU.
+* Antiquarian books use `NGA-` SKUs (`sku --antiquarian`), a full bibliographical record (see
+  `schema/listing.schema.json`) and `price --method comparable`; the abebooks-antiquarian skill drives them.
 * Delete a listing: set `"transaction": "delete"` in its JSON and push (or ask Claude: "delete NGP-…").
 * Change a price: edit `price` in the JSON, set `"transaction": "update"`, push. Updates must carry the
   full record — AbeBooks clears any field you leave out.

@@ -4,56 +4,283 @@
   "title": "AbeBooks listing record (listings/<SKU>.json)",
   "description": "One book. tools/abe_publish.py turns this into a single <Abebook> element of an inventoryUpdateRequest. Full-record rule: every add/update must carry the complete record, because AbeBooks clears any field that is omitted.",
   "type": "object",
-  "required": ["sku", "transaction"],
+  "required": [
+    "sku",
+    "transaction"
+  ],
   "properties": {
-    "sku": { "type": "string", "pattern": "^NGP-[A-Z0-9]{2,36}$", "description": "vendorBookID: NGP- + first 4 letters of the author surname + up to 4 title initials (all words if they fit, else major words only). Unique forever; never reuse." },
-    "transaction": { "type": "string", "enum": ["add", "update", "delete"] },
-    "title": { "type": "string", "maxLength": 750 },
-    "author": { "type": "string", "maxLength": 750, "description": "Surname, First; Surname, First" },
-    "publisher": { "type": "string", "maxLength": 750 },
-    "publishPlace": { "type": "string", "maxLength": 50 },
-    "publishYear": { "type": "string", "pattern": "^[0-9]{4}$" },
-    "isbn": { "type": "string", "maxLength": 15 },
-    "edition": { "type": "string", "maxLength": 40 },
-    "printing": { "type": "string", "maxLength": 20 },
-    "firstEdition": { "type": "boolean" },
-    "signed": { "type": "boolean" },
-    "inscriptionType": { "type": "string", "maxLength": 50 },
-    "illustrator": { "type": "string", "maxLength": 254 },
-    "binding": { "type": "string", "maxLength": 30, "description": "Keyword: Hardcover, Softcover, Leather, Cloth ..." },
-    "bindingType": { "type": "string", "enum": ["hard", "soft"] },
-    "dustJacket": { "type": "boolean" },
-    "jacketCondition": { "type": "string", "enum": ["New", "As New", "Fine", "Near Fine", "Very Good", "Good", "Fair", "Poor", "No Jacket"] },
-    "bookCondition": { "type": "string", "enum": ["New", "As New", "Fine", "Near Fine", "Very Good", "Good", "Fair", "Poor"] },
-    "bookType": { "type": "string", "maxLength": 30, "description": "e.g. Ex-Library, Advance Reading Copy" },
-    "size": { "type": "string", "maxLength": 50 },
-    "language": { "type": "string", "pattern": "^[A-Za-z]{3}$", "default": "ENG" },
-    "subject": { "type": "string", "maxLength": 2000, "description": "Search keywords, semicolon separated" },
-    "description": { "type": "string", "maxLength": 4000 },
-    "catalogue": { "type": "string", "maxLength": 750, "description": "booksellerCatalogue" },
-    "price": { "type": "number", "exclusiveMinimum": 0 },
-    "currency": { "type": "string", "pattern": "^[A-Z]{3}$", "default": "USD" },
-    "quantity": { "type": "integer", "minimum": 0, "maximum": 999, "default": 1 },
-    "shippingTemplateID": { "type": "string", "maxLength": 40 },
-    "weight": { "type": "object", "properties": { "value": { "type": "number" }, "unit": { "type": "string", "enum": ["GRAMS", "KILOGRAMS", "OUNCES", "POUNDS"] } } },
+    "sku": {
+      "type": "string",
+      "pattern": "^NG[PA]-[A-Z0-9]{2,36}$",
+      "description": "vendorBookID. NGP- + first 4 letters of the author surname + up to 4 title initials (all words if they fit, else major words only). Antiquarian and collectible books: NGA- + the same 4+4 + first 4 letters of the printer/publisher's name as catalogued + 4-digit year (an estimate is fine). Unique forever; never reuse."
+    },
+    "transaction": {
+      "type": "string",
+      "enum": [
+        "add",
+        "update",
+        "delete"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 750
+    },
+    "author": {
+      "type": "string",
+      "maxLength": 750,
+      "description": "Surname, First; Surname, First"
+    },
+    "publisher": {
+      "type": "string",
+      "maxLength": 750
+    },
+    "publishPlace": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "publishYear": {
+      "type": "string",
+      "pattern": "^[0-9]{4}$"
+    },
+    "isbn": {
+      "type": "string",
+      "maxLength": 15
+    },
+    "edition": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "printing": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "firstEdition": {
+      "type": "boolean"
+    },
+    "signed": {
+      "type": "boolean"
+    },
+    "inscriptionType": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "illustrator": {
+      "type": "string",
+      "maxLength": 254
+    },
+    "binding": {
+      "type": "string",
+      "maxLength": 30,
+      "description": "Keyword: Hardcover, Softcover, Leather, Cloth ..."
+    },
+    "bindingType": {
+      "type": "string",
+      "enum": [
+        "hard",
+        "soft"
+      ]
+    },
+    "dustJacket": {
+      "type": "boolean"
+    },
+    "jacketCondition": {
+      "type": "string",
+      "enum": [
+        "New",
+        "As New",
+        "Fine",
+        "Near Fine",
+        "Very Good",
+        "Good",
+        "Fair",
+        "Poor",
+        "No Jacket"
+      ]
+    },
+    "bookCondition": {
+      "type": "string",
+      "enum": [
+        "New",
+        "As New",
+        "Fine",
+        "Near Fine",
+        "Very Good",
+        "Good",
+        "Fair",
+        "Poor"
+      ]
+    },
+    "bookType": {
+      "type": "string",
+      "maxLength": 30,
+      "description": "e.g. Ex-Library, Advance Reading Copy"
+    },
+    "size": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{3}$",
+      "default": "ENG"
+    },
+    "subject": {
+      "type": "string",
+      "maxLength": 2000,
+      "description": "Search keywords, semicolon separated"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 4000
+    },
+    "catalogue": {
+      "type": "string",
+      "maxLength": 750,
+      "description": "booksellerCatalogue"
+    },
+    "price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "default": "USD"
+    },
+    "quantity": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 999,
+      "default": 1
+    },
+    "shippingTemplateID": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "weight": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "GRAMS",
+            "KILOGRAMS",
+            "OUNCES",
+            "POUNDS"
+          ]
+        }
+      }
+    },
     "photos": {
-      "type": "array", "maxItems": 20,
-      "items": { "type": "string" },
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "string"
+      },
       "description": "Repo-relative paths (photos/<SKU>/1.jpg) or full URLs; the workflow turns paths into raw.githubusercontent.com URLs."
     },
-    "pricing": { "type": "object", "description": "How the price was derived (comps used, url, method). Not sent to AbeBooks." },
-    "condition_points": { "type": "array", "items": { "type": "string" }, "description": "Specific condition points observed in the photos. Not sent as a field; they are written into the description." },
-    "not_seen_in_photos": { "type": "array", "items": { "type": "string" }, "description": "Parts of the book the photos did not show. Not sent." },
-    "condition_notes_from_mark": { "type": "string", "description": "Mark's own words. Not sent." },
-    "pushed_at": { "type": "string" },
-    "deleted_at": { "type": "string" }
+    "pricing": {
+      "type": "object",
+      "description": "How the price was derived. Not sent to AbeBooks. Regular books: the avg-total block. Antiquarian: the 'comparable' block from tools/abe_local.py price --method comparable — anchor, competitive band, realized floor, flags, the comps with kind/match/quality, and a 'rationale' in words (required)."
+    },
+    "condition_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific condition points observed in the photos. Not sent as a field; they are written into the description."
+    },
+    "not_seen_in_photos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Parts of the book the photos did not show. Not sent."
+    },
+    "condition_notes_from_mark": {
+      "type": "string",
+      "description": "Mark's own words. Not sent."
+    },
+    "format": {
+      "type": "string",
+      "description": "Antiquarian: bibliographical format — folio, 4to, 8vo, 12mo, ... (also goes into size with the leaf height)."
+    },
+    "collation": {
+      "type": "string",
+      "description": "Antiquarian: signature formula and pagination, e.g. 'A-Z4 Aa-Ff4; [8], 226, [6] pp.' — or 'not collated'."
+    },
+    "collation_verified": {
+      "type": "boolean",
+      "description": "Antiquarian: true only if the collation was checked leaf by leaf against a reference (ESTC, USTC, VD16...) or a digitised copy. False means the description must say 'not collated'."
+    },
+    "completeness": {
+      "type": "string",
+      "description": "Antiquarian: 'complete', 'apparently complete, not collated', or exactly what is lacking or supplied."
+    },
+    "binding_description": {
+      "type": "string",
+      "description": "Antiquarian: period, material, decoration, edges, endpapers, repairs — the full sentence that also appears in the description."
+    },
+    "provenance": {
+      "type": "string",
+      "description": "Antiquarian: inscriptions, bookplates, stamps, sale records — with dates where legible."
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Antiquarian: bibliographical references found — 'ESTC S123456', 'USTC 123456', 'VD16 P 1234', 'Adams P1234', 'Brunet IV, 716', 'Wing L1234'. Empty list if none traced; say so in the description."
+    },
+    "history_note": {
+      "type": "string",
+      "description": "Antiquarian: 2-5 sentences on the work, the edition and why it matters — evidenced, no puffery."
+    },
+    "pushed_at": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "string"
+    }
   },
   "allOf": [
     {
-      "if": { "properties": { "transaction": { "enum": ["add", "update"] } } },
+      "if": {
+        "properties": {
+          "transaction": {
+            "enum": [
+              "add",
+              "update"
+            ]
+          }
+        }
+      },
       "then": {
-        "required": ["price", "bookCondition"],
-        "anyOf": [ { "required": ["author"] }, { "required": ["title"] }, { "required": ["publisher"] } ]
+        "required": [
+          "price",
+          "bookCondition"
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "author"
+            ]
+          },
+          {
+            "required": [
+              "title"
+            ]
+          },
+          {
+            "required": [
+              "publisher"
+            ]
+          }
+        ]
       }
     }
   ]

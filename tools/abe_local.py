@@ -54,6 +54,7 @@ import requests
 REPO = os.environ.get("ABE_REPO", "markwbecker/abebooks-listings")
 API = "https://api.github.com"
 SKU_PREFIX = "NGP-"
+SKU_PREFIX_ANTIQUARIAN = "NGA-"   # early and collectible books: + publisher code + year
 SKU_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"  # no 0/O or 1/I — easy to read aloud
 
 BOOK_CONDITION_VALUES = {"New", "As New", "Fine", "Near Fine", "Very Good", "Good", "Fair", "Poor"}
@@ -292,8 +293,86 @@ def title_code(main_title: str, limit: int = 4) -> str:
     return code[:limit]
 
 
-def derive_sku(author: str | None, title: str | None, taken: set[str]) -> str:
+IMPRINT_PREFIXES = re.compile(
+    r"^(?:(?:printed|impressum|imprinted|gedruckt|imprim[ée]|stampat[oa]|impresso|impreso)\s+(?:and\s+sold\s+)?"
+    r"(?:by|for|at|bey|bei|par|chez|per|da|por|en|zu)?|apud|ex\s+officina|ex\s+typographia|ex\s+typographeo|"
+    r"in\s+officina|in\s+aedibus|typis|sumptibus|impensis|excudebat|excudit|excusum|formis|"
+    r"in\s+bibliopolio|prostant|venundantur|veneunt|chez|de\s+l'imprimerie\s+de|bey|bei|appresso|per|"
+    r"nella\s+stamperia\s+di|for|by|at|the)\s+", re.I)
+GENERIC_PUBLISHER_WORDS = {"press", "presse", "printing", "printers", "printer", "publishers", "publisher",
+                           "publishing", "books", "co", "company", "cie", "ltd", "inc", "sons", "son", "brothers",
+                           "bros", "officina", "officine", "typographia", "typographeo", "stamperia", "libreria",
+                           "librairie", "verlag", "buchhandlung", "haeredes", "heirs", "heredes", "haeredum",
+                           "widow", "vidua", "viduam", "veuve", "wed", "erben", "societas", "society", "house",
+                           "university", "universitatis", "academy", "academiae", "typ", "typis", "off", "the", "de",
+                           "la", "le", "des", "du", "van", "von", "der", "den", "et", "y", "e", "und", "and", "&"}
+
+
+def publisher_code(publisher: str | None, n: int = 4) -> str:
+    """First four letters of the printer's or publisher's name as a cataloguer would file it.
+
+    'Christophori Plantini' -> PLAN   'Printed for T. Cadell and W. Davies' -> CADE
+    'Clarendon Press'       -> CLAR   'Ex officina Elzeviriana'           -> ELZE
+    'Apud Ioannem Tornaesium' -> TORN 'Aldus'                             -> ALDU
+    Takes the first party of a joint imprint, drops imprint formulae ("apud", "printed for") and
+    generic words ("press", "heirs of"), and uses the last remaining word when what is left looks
+    like forename + surname, otherwise the first.
+    """
+    if not publisher:
+        return ""
+    text = re.split(r"[:;/]|\bet\b|\band\b|\bund\b|\by\b|&", publisher, maxsplit=1, flags=re.I)[0]
+    text = re.sub(r"[\[\]()\"'“”‘’]", " ", text).strip()
+    for _ in range(3):                                   # peel stacked formulae: "Printed for ... at ..."
+        text2 = IMPRINT_PREFIXES.sub("", text).strip()
+        if text2 == text:
+            break
+        text = text2
+    words = [w for w in re.split(r"[\s.,]+", text) if w]
+    words = [w for w in words if _alnum(w, digits=False) and w.lower().strip(".") not in GENERIC_PUBLISHER_WORDS
+             and not (len(_alnum(w, digits=False)) == 1)]         # drop initials like "T." "W."
+    if not words:
+        words = [w for w in re.split(r"[\s.,]+", text) if _alnum(w, digits=False)]
+    if not words:
+        return ""
+    pick = words[-1] if len(words) >= 2 else words[0]
+    return _alnum(pick, digits=False)[:n].upper()
+
+
+_ROMAN = {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
+
+
+def roman_to_int(text: str) -> int | None:
+    """MDCLXIV -> 1664. Accepts dotted forms (M.DC.LXIV) and the apostrophus forms CIↃ / IↃ."""
+    t = text.upper().replace("CIↃ", "M").replace("CIƆ", "M").replace("CI)", "M").replace("IↃ", "D").replace("IƆ", "D").replace("I)", "D")
+    t = re.sub(r"[^MDCLXVI]", "", t)
+    if not t:
+        return None
+    total, prev = 0, 0
+    for ch in reversed(t):
+        v = _ROMAN[ch]
+        total = total - v if v < prev else total + v
+        prev = max(prev, v)
+    return total if 1400 <= total <= 2100 else None
+
+
+def year_code(year: str | int | None) -> str:
+    """'1664' / '[1664]' / 'c. 1664' / 'MDCLXIV' / 'M.DC.LXIV.' -> '1664'; nothing usable -> '0000'."""
+    if year is None:
+        return "0000"
+    y = str(year)
+    m = re.search(r"(1[4-9]\d\d|20\d\d)", y)
+    if m:
+        return m.group(1)
+    r = roman_to_int(y)
+    return f"{r:04d}" if r else "0000"
+
+
+def derive_sku(author: str | None, title: str | None, taken: set[str], antiquarian: bool = False,
+               publisher: str | None = None, year: str | int | None = None) -> str:
     """NGP- + first 4 letters of the author's surname + up to 4 characters of title initials.
+
+    Antiquarian books use NGA- and add the publisher code and the year:
+    'Plinius Secundus, Gaius' / 'Historia naturalis' / 'Elzevir' / 'MDCXXXV' -> NGA-PLINHNELZE1635
 
     'Bailey, Cyril'    / 'Religion in Vergil'                  -> NGP-BAILRIV    (3 initials, all words fit)
     'Detienne, Marcel' / 'The Masters of Truth in Archaic ...'  -> NGP-DETIMTAG   (7 would be too long -> major words)
@@ -309,11 +388,15 @@ def derive_sku(author: str | None, title: str | None, taken: set[str]) -> str:
     core = _alnum(surname, digits=False)[:4] + title_code(main_title)
     if not core:
         core = "".join(secrets.choice(SKU_ALPHABET) for _ in range(8))
-    cand = SKU_PREFIX + core
+    prefix = SKU_PREFIX
+    if antiquarian:
+        prefix = SKU_PREFIX_ANTIQUARIAN
+        core = core + publisher_code(publisher) + year_code(year)
+    cand = prefix + core
     if cand not in taken:
         return cand
     for n in range(2, 100):
-        cand = f"{SKU_PREFIX}{core}{n}"
+        cand = f"{prefix}{core}{n}"
         if cand not in taken:
             return cand
     raise SystemExit("could not derive a unique SKU — pass --random")
@@ -331,6 +414,10 @@ def cmd_sku(a):
     taken = existing_skus()
     if a.random or not (a.author or a.title):
         print(new_sku(taken))
+    elif a.antiquarian:
+        if not a.publisher or not a.year:
+            sys.exit("antiquarian SKUs need --publisher (printer's surname or firm) and --year (Arabic or Roman; an estimate is fine)")
+        print(derive_sku(a.author, a.title, taken, antiquarian=True, publisher=a.publisher, year=a.year))
     else:
         print(derive_sku(a.author, a.title, taken))
 
@@ -656,6 +743,128 @@ COND_URL_TOKEN = {7: "new", 6: "an", 5: "fine", 4: "nf", 3: "vg", 2: "good", 1: 
 TIER_NAME = {7: "New", 6: "As New", 5: "Fine", 4: "Near Fine", 3: "Very Good", 2: "Good", 1: "Fair", 0: "Poor"}
 
 
+def price_comparable(comps: list[dict], a) -> dict:
+    """Mark's rule for antiquarian and collectible books: find the closest comparable copies of the
+    SAME edition and sit just under them.
+
+    Each comp carries, besides seller/location/condition/price, three judgements Claude has already
+    made from the listing text: kind = ask | realized (auction hammer, premium included if known);
+    match = exact (same edition and issue) | close (same edition, different issue or state; or the
+    same work in the nearest edition) | reference (anything else that helps); quality = better |
+    equal | worse | unknown, Mark's copy measured against it (condition, binding, completeness).
+
+    * Anchor: the lowest total (item + shipping, USD) among EXACT asks for copies of equal or better
+      quality. Two or more such copies -> price 5-10% under the anchor (default 8%). Exactly one ->
+      match it. None, but worse exact copies exist -> no number; report the best of them and let
+      Claude price above it in proportion to the difference. No exact copies at all -> no number;
+      report the range of close/reference evidence so Claude can propose a range and ask Mark.
+    * Realized prices are a floor and a sanity check, never the anchor: the proposal is raised to the
+      highest recent exact hammer for an equal-or-better copy, and asks are flagged as looking
+      inflated when the anchor is more than three times the median recent exact hammer.
+    """
+    junk = re.compile(r"test|\bqa\b|qa_|zz[-_]|prueba|do not buy|sample listing", re.I)
+    kept, dropped = [], []
+    cutoff = datetime.now(timezone.utc).year - int(a.recent_years)
+    for c in comps:
+        price = money(c.get("price"))
+        if price is None or price <= 0:
+            dropped.append({**c, "reason": "no usable price"}); continue
+        kind = (c.get("kind") or "ask").lower()
+        match = (c.get("match") or "reference").lower()
+        quality = (c.get("quality") or "unknown").lower()
+        if kind not in ("ask", "realized") or match not in ("exact", "close", "reference"):
+            dropped.append({**c, "reason": f"kind must be ask|realized and match exact|close|reference (got {kind}/{match})"}); continue
+        if junk.search(" ".join(str(c.get(k, "")) for k in ("seller", "title", "notes"))):
+            dropped.append({**c, "reason": "test/junk listing"}); continue
+        ship = money(c.get("shipping"))
+        total = price + (ship or 0.0) if kind == "ask" else price
+        year = None
+        m = re.search(r"(19|20)\d\d", str(c.get("date") or ""))
+        if m:
+            year = int(m.group(0))
+        c = {**c, "kind": kind, "match": match, "quality": quality, "price": price, "shipping": ship,
+             "total": round(total, 2), "year": year,
+             "region": seller_region(c.get("location") or c.get("country") or c.get("house") or "")}
+        if kind == "ask" and ship is None:
+            c["note"] = (c.get("note") or "") + " shipping not shown; total = item price"
+        kept.append(c)
+
+    def show(c):
+        keys = ("seller", "house", "location", "source", "kind", "match", "quality", "condition", "binding",
+                "price", "shipping", "total", "date", "url", "note", "notes")
+        return {k: c.get(k) for k in keys if c.get(k) not in (None, "")}
+
+    asks = [c for c in kept if c["kind"] == "ask"]
+    realized = [c for c in kept if c["kind"] == "realized"]
+    exact_asks = sorted([c for c in asks if c["match"] == "exact"], key=lambda c: c["total"])
+    close_asks = sorted([c for c in asks if c["match"] == "close"], key=lambda c: c["total"])
+    ref_asks = sorted([c for c in asks if c["match"] == "reference"], key=lambda c: c["total"])
+    exact_real = sorted([c for c in realized if c["match"] == "exact"], key=lambda c: c["total"])
+    recent_exact_real = [c for c in exact_real if c["year"] is None or c["year"] >= cutoff]
+    good_real = [c for c in recent_exact_real if c["quality"] in ("equal", "better")]
+
+    flags, rule = [], None
+    anchor_set = [c for c in exact_asks if c["quality"] in ("equal", "better")]
+    worse = [c for c in exact_asks if c["quality"] == "worse"]
+    unknown_q = [c for c in exact_asks if c["quality"] == "unknown"]
+    proposal, band, anchor = None, None, None
+    if len(anchor_set) >= 2:
+        anchor = anchor_set[0]
+        proposal = anchor["total"] * (1 - a.under)
+        band = [round(anchor["total"] * 0.90, 2), round(anchor["total"] * 0.95, 2)]
+        rule = (f"{len(anchor_set)} exact copies of equal or better quality on the market; "
+                f"{int(a.under*100)}% under the lowest of them ({anchor.get('seller')}, ${anchor['total']:.2f} incl. shipping)")
+    elif len(anchor_set) == 1:
+        anchor = anchor_set[0]
+        proposal = anchor["total"]
+        rule = f"one exact copy of equal or better quality on the market; match it ({anchor.get('seller')}, ${anchor['total']:.2f} incl. shipping)"
+    elif worse:
+        rule = (f"only worse copies of this edition are offered (best of them {worse[-1].get('seller')} at "
+                f"${worse[-1]['total']:.2f}); price ABOVE that in proportion to the difference — no automatic number")
+        flags.append("only-worse-copies: set the price yourself with --set and say why in --rationale")
+    elif exact_asks:
+        rule = "exact copies found but none has a quality judgement (better/equal/worse) — add 'quality' to each and run again"
+        flags.append("exact asks lack quality judgements")
+    else:
+        rule = ("no copy of this edition is on the market; propose a range from the close/reference evidence "
+                "below and ask Mark for the number before drafting a price")
+        flags.append("no-exact-comps: propose a range and ask Mark")
+    if unknown_q and anchor_set:
+        flags.append(f"{len(unknown_q)} exact ask(s) without a quality judgement were ignored for the anchor")
+
+    floor = max((c["total"] for c in good_real), default=None)
+    if proposal is not None and floor is not None and proposal < floor:
+        flags.append(f"proposal ${proposal:.2f} was below the highest recent exact hammer for an equal-or-better copy (${floor:.2f}); raised to it")
+        proposal = floor
+    if anchor and recent_exact_real:
+        med = statistics.median(c["total"] for c in recent_exact_real)
+        if anchor["total"] > 3 * med:
+            flags.append(f"dealer asks look inflated: anchor ${anchor['total']:.2f} is over 3x the median recent hammer ${med:.2f} — say so in the draft")
+    if exact_real and not recent_exact_real:
+        flags.append(f"the only realized prices are older than {a.recent_years} years and were not used as a floor")
+
+    def span(rows):
+        return [rows[0]["total"], rows[-1]["total"]] if rows else None
+
+    out = {"method": "comparable", "status": "set" if a.set is not None else "proposal",
+           "price": (int(a.set + 0.5) if a.set is not None else (int(proposal + 0.5) if proposal is not None else None)),
+           "currency": "USD", "proposal_raw": round(proposal, 2) if proposal is not None else None,
+           "competitive_band": band, "anchor": show(anchor) if anchor else None, "anchor_rule": rule,
+           "realized_floor": floor, "recent_years": a.recent_years, "flags": flags,
+           "rationale": a.rationale,
+           "evidence": {"exact_asks": [show(c) for c in exact_asks], "exact_asks_range": span(exact_asks),
+                        "close_asks": [show(c) for c in close_asks], "close_asks_range": span(close_asks),
+                        "reference_asks": [show(c) for c in ref_asks],
+                        "realized": [show(c) for c in sorted(realized, key=lambda c: (c["match"], -(c["year"] or 0)))],
+                        "exact_realized_range": span(exact_real)},
+           "dropped": [{**show(c), "reason": c.get("reason")} for c in dropped]}
+    if a.set is not None and not a.rationale:
+        out["flags"].append("--set without --rationale: the listing's pricing block needs the reasoning in words")
+    if a.set is None and proposal is None:
+        out["next"] = "no automatic price for this book — see anchor_rule; run again with --set <price> --rationale '...' once decided"
+    return out
+
+
 def cmd_price(a):
     comps = json.loads(Path(a.comps).read_text())
     mine_tier = 7 if a.new else condition_tier(a.condition)
@@ -694,6 +903,10 @@ def cmd_price(a):
             filters.append("binding relaxed (too few same-binding comps)")
 
     view = lambda c: {k: c.get(k) for k in ("seller", "location", "region", "condition", "binding", "price", "shipping", "total")}
+
+    if a.method == "comparable":
+        print(json.dumps(price_comparable(comps, a), indent=2, ensure_ascii=False))
+        return
 
     if a.method in ("avg-total", "max-total-discount"):
         # Mark's rules work on the buyer's total (item + shipping): overseas sellers show a low item
@@ -784,8 +997,30 @@ def normalise_listing(l: dict) -> tuple[dict, list[str]]:
     problems = []
     l = dict(l)
     l["sku"] = (l.get("sku") or "").strip().upper()
-    if not re.fullmatch(r"NGP-[A-Z0-9]{2,36}", l["sku"]):
-        problems.append(f"sku {l['sku']!r} must be NGP- followed by 2-36 letters/digits")
+    if not re.fullmatch(r"NG[PA]-[A-Z0-9]{2,36}", l["sku"]):
+        problems.append(f"sku {l['sku']!r} must be NGP- or NGA- followed by 2-36 letters/digits")
+    if l["sku"].startswith("NGA-") and (l.get("transaction") or "add") != "delete":
+        # An antiquarian listing is a full bibliographic description, and it must say what was and
+        # wasn't verified. These are the parts buyers of early books read first.
+        desc = l.get("description") or ""
+        if len(desc) < 800:
+            problems.append(f"antiquarian description is {len(desc)} chars; a full description runs to 800+ "
+                            "(heading, format and collation, binding, condition, provenance, references, note)")
+        for key, why in (("collation", "the collation formula, or 'not collated'"),
+                         ("collation_verified", "true/false — whether the collation was checked against a reference or a digitised copy"),
+                         ("completeness", "'complete', 'apparently complete, not collated', or what is lacking"),
+                         ("binding_description", "period, material, decoration, repairs"),
+                         ("references", "a list (may be empty) of STC/ESTC/Wing/USTC/VD/Adams/Brunet... numbers found")):
+            if key not in l:
+                problems.append(f"antiquarian record is missing {key!r}: {why}")
+        if l.get("collation_verified") is False and not re.search(r"not (been )?collated|collation not (been )?(verified|checked)|uncollated", desc, re.I):
+            problems.append("collation_verified is false but the description does not say so — buyers of early books expect the words 'not collated'")
+        if re.search(r"\b(complete|collated)\b", desc, re.I) and l.get("collation_verified") is False and not re.search(r"apparently complete", desc, re.I):
+            problems.append("description claims 'complete'/'collated' but collation_verified is false — write 'apparently complete, not collated' or verify it")
+        if not l.get("size"):
+            problems.append("antiquarian record has no size (format and leaf height, e.g. '4to (215 x 160 mm)')")
+        if not (l.get("pricing") or {}).get("rationale"):
+            problems.append("antiquarian pricing needs a 'rationale' — which comparables anchored the price and why")
     l["transaction"] = (l.get("transaction") or "add").lower()
     if l["transaction"] not in ("add", "update", "delete"):
         problems.append("transaction must be add, update or delete")
@@ -979,6 +1214,9 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("check").set_defaults(fn=cmd_check)
     p = sub.add_parser("sku"); p.add_argument("--author"); p.add_argument("--title"); p.add_argument("--random", action="store_true")
+    p.add_argument("--antiquarian", action="store_true", help="NGA- form: adds the publisher code and year")
+    p.add_argument("--publisher", help="antiquarian: printer's or publisher's name as catalogued (surname or firm)")
+    p.add_argument("--year", help="antiquarian: year of publication, Arabic or Roman; an estimate is fine")
     p.set_defaults(fn=cmd_sku)
     p = sub.add_parser("photos"); p.add_argument("--sku", required=True); p.add_argument("--out")
     p.add_argument("--replace", action="store_true", help="start numbering from 1 again instead of appending")
@@ -997,7 +1235,12 @@ def main():
     p.set_defaults(fn=cmd_fix)
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)
     p.add_argument("--binding", choices=["hard", "soft", "any"], default="any"); p.add_argument("--new", action="store_true")
-    p.add_argument("--method", choices=["avg-total", "max-total-discount", "average-item"], default="avg-total")
+    p.add_argument("--method", choices=["avg-total", "max-total-discount", "average-item", "comparable"], default="avg-total",
+                   help="comparable = antiquarian rule: just under the closest same-edition copies, auctions as a floor")
+    p.add_argument("--under", type=float, default=0.08, help="comparable: fraction under the anchor ask (default 0.08, i.e. inside the 5-10%% band)")
+    p.add_argument("--recent-years", type=int, default=5, help="comparable: how far back realized prices count as a floor")
+    p.add_argument("--set", type=float, help="comparable: the agreed price, to produce the final pricing block")
+    p.add_argument("--rationale", help="comparable: the reasoning in words, stored with the listing")
     p.add_argument("--regions", default="US,UK,CA", help="seller regions that count, comma-separated (default US,UK,CA)")
     p.add_argument("--discount", type=float, default=0.20, help="max-total-discount only: fraction below the top total")
     p.add_argument("--no-outlier-filter", action="store_true"); p.add_argument("--min-comps", type=int, default=1)
