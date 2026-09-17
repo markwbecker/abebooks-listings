@@ -29,6 +29,11 @@ Ground rules:
   upside down, and trims the background when the book's edges are unambiguous. It is deliberately
   conservative and says why it declined. Open every processed file and check it — upright, book not
   clipped — then `fix --sku <SKU> 3=180 --recrop`, or re-run `photos --replace --no-crop`.
+* A "quote" or "price check" is not a listing: identify the book, grade it, price it, save
+  `quotes/<SKU>.json` and stop — nothing goes into `photos/` or `listings/`, and no description or
+  keywords are written. Quotes are inert, since the workflow only fires on `listings/*.json`.
+  When he later sends more photos and says list it, re-grade from the whole set and re-price if the
+  grade moved — the quote is a starting point, not a settled answer. See `quotes/README.md`.
 * Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
   wait for "go" before `publish`. He often sends photos in several batches — the photos command
   appends, so keep collecting until he says go (AbeBooks keeps up to 20). Prices follow his rule:
