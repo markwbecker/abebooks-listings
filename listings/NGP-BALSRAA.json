@@ -1,0 +1,74 @@
+{
+  "sku": "NGP-BALSRAA",
+  "transaction": "update",
+  "title": "Romans and Aliens",
+  "author": "Balsdon, John Percy Vyvian Dacre",
+  "publisher": "Gerald Duckworth & Co. Ltd",
+  "publishPlace": "London",
+  "publishYear": "1979",
+  "isbn": "0807813834",
+  "edition": "",
+  "printing": "",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "Fair",
+  "bookCondition": "Very Good",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "ancient Rome; Roman history; Roman social history; classical studies; Roman Empire; Roman citizenship; slavery in antiquity; acculturation; foreigners in Rome; xenophobia; ancient world; Balsdon; Duckworth",
+  "description": "Duckworth's 1979 edition of Balsdon's study of Roman attitudes to foreigners, with bibliographies and index; the copyright page carries no printing statement or number line. Navy cloth hardcover, gilt titling to the spine and front board, in the original teal photographic dust jacket. The jacket is chipped with paper loss along the top edge, heaviest at the head of the spine, and torn and frayed at the edges with a few nicks to the fore-edge. The cloth is clean and the gilt bright, with the corners lightly bumped and faint discolouration to the board edges; the text block is clean and unmarked throughout, the binding tight and square, the page edges lightly toned. A very good copy in a fair dust jacket.",
+  "price": 33,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-BALSRAA/1.jpg",
+    "photos/NGP-BALSRAA/2.jpg",
+    "photos/NGP-BALSRAA/3.jpg",
+    "photos/NGP-BALSRAA/4.jpg",
+    "photos/NGP-BALSRAA/5.jpg",
+    "photos/NGP-BALSRAA/6.jpg",
+    "photos/NGP-BALSRAA/7.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/title/romans-and-aliens/author/balsdon/?bi=h&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 9,
+    "by_region": {
+      "US": 7,
+      "UK": 1,
+      "CA": 1
+    },
+    "range_total": [
+      17.96,
+      71.73
+    ],
+    "raw_price": 33.41,
+    "median_total": 25.75,
+    "quoted_same_day": "quotes/NGP-BALSRAA.json"
+  },
+  "condition_points": [
+    "dust jacket chipped with paper loss along the top edge, heaviest at the head of the spine",
+    "jacket torn and frayed at the edges, with a few nicks to the fore-edge",
+    "teal photographic jacket still bright, no significant sunning or fading",
+    "navy cloth clean, gilt titling bright on spine and front board",
+    "corners lightly bumped; faint discolouration to the board edges",
+    "spine square and uncocked, binding tight",
+    "text block clean and unmarked throughout",
+    "page edges lightly toned, small nick to the fore-edge of the text block"
+  ],
+  "not_seen_in_photos": [
+    "rear board and rear jacket panel",
+    "jacket flaps (price-clipping not verified)",
+    "title page",
+    "endpapers"
+  ],
+  "condition_notes_from_mark": "very good condition with dust jacket in fair condition; pages clean and unmarked, slight bumping of cover corners and minor discoloration at the edges; jacket torn a bit and frayed at the edges",
+  "notes": "Jacket and front board read 'Romans & Aliens'; Library of Congress cataloguing gives 'Romans and aliens'. Duckworth 1979 imprint page carries ISBN 0-8078-1383-4, a University of North Carolina Press number, so this is the Duckworth printing of the UNC co-publication. No printing statement seen, so not listed as a first edition.",
+  "pushed_at": "2026-09-17T18:03:11+00:00"
+}
