@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-COMMTOOH</vendorBookID>
+      <author>Commager, Steele</author>
+      <title>The Odes of Horace: A Critical Study</title>
+      <publisher>University of Oklahoma Press</publisher>
+      <subject>classics; Latin literature; Horace; Odes; Carmina; Latin poetry; literary criticism; Roman poetry; Augustan Rome; Steele Commager; David Armstrong; Oklahoma Paperbacks</subject>
+      <price currency="USD">16.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Oklahoma Paperbacks edition, first printing, 1995, of Steele Commager's 1962 Yale study, with a new foreword by David Armstrong. Trade paperback in glossy purple wrappers; no dust jacket, as issued. A very good copy: the lamination is rubbed and lightly chipped at the head and tail of the spine, with light surface scuffing to the wrappers, and the spine panel remains bright and unfaded. Text is clean and unmarked throughout and the binding is tight. Includes bibliographical references and index.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780806127293</isbn>
+      <publishPlace>Norman</publishPlace>
+      <publishYear>1995</publishYear>
+      <edition>Oklahoma Paperbacks edition</edition>
+      <printing>1st printing</printing>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3360603351330022d6290839358e6d72c22b8ee6/photos/NGP-COMMTOOH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3360603351330022d6290839358e6d72c22b8ee6/photos/NGP-COMMTOOH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3360603351330022d6290839358e6d72c22b8ee6/photos/NGP-COMMTOOH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3360603351330022d6290839358e6d72c22b8ee6/photos/NGP-COMMTOOH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/3360603351330022d6290839358e6d72c22b8ee6/photos/NGP-COMMTOOH/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
