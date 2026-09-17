@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>add</transactionType>
+      <vendorBookID>NGP-RUDDH200</vendorBookID>
+      <author>Rudd, Niall</author>
+      <title>Horace 2000: A Celebration: Essays for the Bimillennium</title>
+      <publisher>The University of Michigan Press</publisher>
+      <subject>Horace; Quintus Horatius Flaccus; Latin poetry; Roman literature; classical studies; classics; Augustan Rome; literary criticism; Niall Rudd; University of Michigan Press</subject>
+      <price currency="USD">41.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>true</dustJacket>
+      <binding type="hard">Hardcover</binding>
+      <firstEdition>false</firstEdition>
+      <signed>false</signed>
+      <description>Collection of seven essays on Horace marking the bimillennium of his death, edited by Niall Rudd, with contributions from Herbert Huxley, Jasper Griffin, Robin Seager, Denis Feeney, Oswyn Murray, Brian Arkins and Philip Hardie. Hardcover in the original pictorial dust jacket, now in a mylar protector; jacket is bright and unfaded with no chips or tears. A former library copy: call-number label to the spine, a blank label to the lower front cover, ownership stamps of the William F. Maag Library, Youngstown State University to the front flyleaf and title page, a red WITHDRAWN stamp to the title page, library marks stamped on the edges of the text block, and tape residue at the front flyleaf where the pocket was removed. Apart from the library markings the book is excellent - boards square and tight, spine unfaded, text clean and unmarked - and the publisher's errata slip is still tipped in at the front.</description>
+      <bookCondition>Very Good</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>Very Good</jacketCondition>
+      <bookType>Ex-Library</bookType>
+      <isbn>9780472104901</isbn>
+      <publishPlace>Ann Arbor</publishPlace>
+      <publishYear>1993</publishYear>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/2efd366940508aaade87d4e7f791e590aea29783/photos/NGP-RUDDH200/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
