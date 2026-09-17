@@ -1,0 +1,80 @@
+{
+  "sku": "NGP-CURRPCH",
+  "transaction": "update",
+  "title": "Pindar and the Cult of Heroes",
+  "author": "Currie, Bruno",
+  "publisher": "Oxford University Press",
+  "publishPlace": "Oxford",
+  "publishYear": "2010",
+  "isbn": "9780199586707",
+  "edition": "First paperback edition",
+  "printing": "",
+  "firstEdition": false,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Softcover",
+  "bindingType": "soft",
+  "dustJacket": false,
+  "jacketCondition": "No Jacket",
+  "bookCondition": "As New",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "classics; Greek literature; Pindar; hero cult; Greek religion; victory odes; epinician poetry; ancient Greece; Oxford Classical Monographs; classical studies; heroization; fifth century BC",
+  "description": "First paperback issue (2010) of Currie's 2005 Oxford monograph, published in the Oxford Classical Monographs series. Softcover in dark green pictorial laminated wrappers reproducing a Syracusan silver decadrachm; no dust jacket, as issued. As new: the spine is unbroken and uncreased, the wrappers bright and unrubbed, and the text block is entirely clean and unmarked; the only wear is very slight bumping to the corners. A study of hero cult in Archaic and Classical Greece and of its bearing on Pindar's epinicians, with five odes interpreted in detail.",
+  "price": 45,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-CURRPCH/1.jpg",
+    "photos/NGP-CURRPCH/2.jpg",
+    "photos/NGP-CURRPCH/3.jpg",
+    "photos/NGP-CURRPCH/4.jpg",
+    "photos/NGP-CURRPCH/5.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780199586707/?bi=s&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 1,
+    "by_region": {
+      "US": 1,
+      "UK": 0,
+      "CA": 0
+    },
+    "range_total": [
+      43.95,
+      43.95
+    ],
+    "raw_price": 43.95,
+    "comps": [
+      {
+        "seller": "The Compleat Scholar",
+        "location": "Rochester, NY, U.S.A.",
+        "condition": "Used - As new",
+        "price": 38.5,
+        "shipping": 5.45,
+        "total": 43.95
+      }
+    ],
+    "set_aside": [
+      "1 Near Fine copy at $41.00 (Old Line Books, Severna Park MD) - different grade",
+      "7 new copies, totals $83.79-$188.76",
+      "2 of those new copies from sellers outside US/UK/CA"
+    ],
+    "set_by_mark": true
+  },
+  "condition_points": [
+    "spine unbroken and uncreased",
+    "wrappers bright, unrubbed and unfaded",
+    "pages entirely clean and unmarked",
+    "very slight bumping to the corners",
+    "binding tight, no reading creases"
+  ],
+  "not_seen_in_photos": [
+    "spine panel",
+    "page edges (fore-edge and foot)"
+  ],
+  "condition_notes_from_mark": "The book is in as new condition, spine unbroken, Pages totally clean and unmarked. Very slight bumping to the corners.",
+  "pushed_at": "2026-09-17T20:35:39+00:00"
+}
