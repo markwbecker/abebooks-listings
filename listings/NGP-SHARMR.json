@@ -1,0 +1,88 @@
+{
+  "sku": "NGP-SHARMR",
+  "transaction": "update",
+  "title": "Metamorphic Readings: Transformation, Language, and Gender in the Interpretation of Ovid's Metamorphoses",
+  "author": "Sharrock, Alison; Moller, Daniel; Malm, Mats",
+  "publisher": "Oxford University Press",
+  "publishPlace": "Oxford",
+  "publishYear": "2020",
+  "isbn": "9780198864066",
+  "edition": "First Edition",
+  "printing": "Impression 1",
+  "firstEdition": true,
+  "signed": false,
+  "inscriptionType": "",
+  "illustrator": "",
+  "binding": "Hardcover",
+  "bindingType": "hard",
+  "dustJacket": true,
+  "jacketCondition": "As New",
+  "bookCondition": "As New",
+  "bookType": "",
+  "size": "8vo",
+  "language": "ENG",
+  "subject": "Ovid; Metamorphoses; Latin poetry; Roman epic; classical literature; classical reception; classical studies; gender in antiquity; literary criticism; Alison Sharrock; Oxford University Press; myth",
+  "description": "First edition, first impression (Impression: 1), of this Oxford University Press collection edited by Alison Sharrock, Daniel Moller, and Mats Malm; essays by thirteen contributors on transformation, language, and gender in the interpretation of Ovid's Metamorphoses, among them Alessandro Barchiesi, Philip Hardie, Andrew Feldherr, and Louise Vinge. Publisher's dark navy cloth-textured boards with gilt lettering to the spine, in the original pictorial dust jacket. As new throughout: boards clean and square, gilt bright, binding tight and square, text block clean and unmarked with no underlining or ownership marks. The dust jacket is likewise as new, with no chips, tears, creasing, sunning or rubbing.",
+  "price": 185,
+  "currency": "USD",
+  "quantity": 1,
+  "photos": [
+    "photos/NGP-SHARMR/1.jpg",
+    "photos/NGP-SHARMR/2.jpg",
+    "photos/NGP-SHARMR/3.jpg",
+    "photos/NGP-SHARMR/4.jpg",
+    "photos/NGP-SHARMR/5.jpg",
+    "photos/NGP-SHARMR/6.jpg",
+    "photos/NGP-SHARMR/7.jpg",
+    "photos/NGP-SHARMR/8.jpg",
+    "photos/NGP-SHARMR/9.jpg",
+    "photos/NGP-SHARMR/10.jpg"
+  ],
+  "pricing": {
+    "url": "https://www.abebooks.com/book-search/isbn/9780198864066/?bi=h&cond=an&sortby=1",
+    "method": "average U.S./U.K./Canadian same-condition total (item + shipping)",
+    "n_used": 2,
+    "by_region": {
+      "US": 1,
+      "UK": 1,
+      "CA": 0
+    },
+    "range_total": [
+      193.42,
+      216.15
+    ],
+    "raw_price": 204.78,
+    "comps": [
+      {
+        "seller": "GreatBookPricesUK",
+        "location": "Woodford Green, United Kingdom",
+        "condition": "Used - As new",
+        "price": 196.08,
+        "shipping": 20.07,
+        "total": 216.15
+      },
+      {
+        "seller": "GreatBookPrices",
+        "location": "Columbia, MD, U.S.A.",
+        "condition": "Used - As new",
+        "price": 190.78,
+        "shipping": 2.64,
+        "total": 193.42
+      }
+    ],
+    "note": "Rule (average of US/UK/CA same-grade totals) gave $205 from only 2 As New comps, both the GreatBookPrices group ($193.42 and $216.15). Mark set $185, just under the median total of the 15 US/UK New copies (mean $192.82, median $189.05, range $102.46-$306.10).",
+    "price_set_by_mark": 185
+  },
+  "condition_points": [
+    "boards clean, square and unbumped; gilt spine lettering bright",
+    "binding tight and square; pages fresh and flat",
+    "text block clean and unmarked - no underlining, notes, bookplate or ownership names",
+    "dust jacket fresh - no chips, tears, creasing, sunning or rubbing"
+  ],
+  "not_seen_in_photos": [
+    "top of the front jacket flap (price corner hidden by the weight)",
+    "page edges"
+  ],
+  "condition_notes_from_mark": "The book and the dust jacket are in new condition.",
+  "pushed_at": "2026-09-17T18:17:03+00:00"
+}
