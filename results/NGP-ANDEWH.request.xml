@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<inventoryUpdateRequest version="1.0">
+  <action name="bookupdate">
+    <username>***</username>
+    <password>***</password>
+  </action>
+  <AbebookList>
+    <Abebook>
+      <transactionType>update</transactionType>
+      <vendorBookID>NGP-ANDEWH</vendorBookID>
+      <author>Anderson, William S.</author>
+      <title>Why Horace? A Collection of Interpretations</title>
+      <publisher>Bolchazy-Carducci Publishers, Inc.</publisher>
+      <subject>Horace; Latin poetry; classical studies; Roman literature; Odes; carpe diem; literary criticism; Augustan Rome; classics; Bolchazy-Carducci</subject>
+      <price currency="USD">63.00</price>
+      <languageIsoCode>ENG</languageIsoCode>
+      <dustJacket>false</dustJacket>
+      <binding type="soft">Softcover</binding>
+      <firstEdition>true</firstEdition>
+      <signed>false</signed>
+      <description>First edition of this collection of interpretive essays on Horace, edited by William S. Anderson, with contributions from Arthur J. Pomeroy, Niall Rudd, Charles Segal, Gregson Davis, W. R. Johnson, Ronnie Ancona and others; general editor Laurie K. Haight. Trade paperback with glossy pictorial wrappers in blue and cream, lyre motif adapted from Thomas Hope; no dust jacket, as issued. As new: wrappers bright and unrubbed with square, uncreased spine and sharp corners; text block clean, tight and unmarked, free of any previous owner's name or annotation. Essays are arranged by poem across Odes I-IV, the Epodes, Satires and Epistles, with bibliographical references.</description>
+      <bookCondition>As New</bookCondition>
+      <size>8vo</size>
+      <jacketCondition>No Jacket</jacketCondition>
+      <isbn>9780865164178</isbn>
+      <publishPlace>Wauconda, Illinois</publishPlace>
+      <publishYear>1999</publishYear>
+      <edition>First Edition</edition>
+      <quantity amount="1"></quantity>
+      <pictureList>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/941dba1176989c8090dc78d914dedd18190b7fc0/photos/NGP-ANDEWH/1.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/941dba1176989c8090dc78d914dedd18190b7fc0/photos/NGP-ANDEWH/2.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/941dba1176989c8090dc78d914dedd18190b7fc0/photos/NGP-ANDEWH/3.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/941dba1176989c8090dc78d914dedd18190b7fc0/photos/NGP-ANDEWH/4.jpg</pictureURL>
+        <pictureURL>https://raw.githubusercontent.com/markwbecker/abebooks-listings/941dba1176989c8090dc78d914dedd18190b7fc0/photos/NGP-ANDEWH/5.jpg</pictureURL>
+      </pictureList>
+    </Abebook>
+  </AbebookList>
+</inventoryUpdateRequest>
