@@ -24,6 +24,11 @@ Ground rules:
   rename a session yourself, so as soon as you know the book, put `/rename SURNAME Main Title`
   (surname in capitals, no subtitle) on its own line at the top of your first reply for him to
   copy and send.
+* Phone photos come out sideways and framed loose. The photos command applies EXIF orientation,
+  takes `--rotate` (one angle, one per file, or `name=angle`) for shots that still read sideways or
+  upside down, and trims the background when the book's edges are unambiguous. It is deliberately
+  conservative and says why it declined. Open every processed file and check it — upright, book not
+  clipped — then `fix --sku <SKU> 3=180 --recrop`, or re-run `photos --replace --no-crop`.
 * Show Mark the draft (title, condition points, price + comps, description, SKU, photo count) and
   wait for "go" before `publish`. He often sends photos in several batches — the photos command
   appends, so keep collecting until he says go (AbeBooks keeps up to 20). Prices follow his rule:

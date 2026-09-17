@@ -44,6 +44,10 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+try:
+    import numpy as _np
+except Exception:                                   # cropping needs numpy; everything else doesn't
+    _np = None
 
 import requests
 
@@ -331,8 +335,170 @@ def cmd_sku(a):
         print(derive_sku(a.author, a.title, taken))
 
 
+ROTATE_WORDS = {"none": 0, "0": 0, "left": 90, "ccw": 90, "90": 90, "180": 180, "flip": 180,
+                "right": 270, "cw": 270, "270": 270, "-90": 270}
+
+
+def parse_rotations(spec: str | None, files: list[str]) -> dict[str, int]:
+    """--rotate takes one angle for every file, a comma list in file order, or name=angle pairs."""
+    if not spec:
+        return {}
+    parts = [x.strip() for x in spec.split(",") if x.strip()]
+    if any("=" in x for x in parts):
+        out = {}
+        for part in parts:
+            name, _, ang = part.partition("=")
+            name, ang = name.strip(), ang.strip().lower()
+            if ang not in ROTATE_WORDS:
+                raise SystemExit(f"--rotate: '{ang}' is not 0/90/180/270 (or left/right/flip)")
+            hits = [f for f in files if Path(f).name == name or f == name or Path(f).stem == name]
+            if not hits:
+                raise SystemExit(f"--rotate: no file named '{name}' in this batch")
+            for f in hits:
+                out[f] = ROTATE_WORDS[ang]
+        return out
+    if len(parts) == 1:
+        if parts[0].lower() not in ROTATE_WORDS:
+            raise SystemExit(f"--rotate: '{parts[0]}' is not 0/90/180/270 (or left/right/flip)")
+        return {f: ROTATE_WORDS[parts[0].lower()] for f in files}
+    if len(parts) != len(files):
+        raise SystemExit(f"--rotate: {len(parts)} angles for {len(files)} files; give one angle, "
+                         f"one per file in order, or name=angle pairs")
+    for x in parts:
+        if x.lower() not in ROTATE_WORDS:
+            raise SystemExit(f"--rotate: '{x}' is not 0/90/180/270 (or left/right/flip)")
+    return {f: ROTATE_WORDS[x.lower()] for f, x in zip(files, parts)}
+
+
+def _open_mask(mask, k=2):
+    for _ in range(k):
+        mask = mask & _np.roll(mask, 1, 0) & _np.roll(mask, -1, 0) & _np.roll(mask, 1, 1) & _np.roll(mask, -1, 1)
+    for _ in range(k):
+        mask = mask | _np.roll(mask, 1, 0) | _np.roll(mask, -1, 0) | _np.roll(mask, 1, 1) | _np.roll(mask, -1, 1)
+    return mask
+
+
+def _largest_blob(mask):
+    try:
+        from scipy import ndimage                       # nicer when it happens to be installed
+        lab, n = ndimage.label(mask)
+        if not n:
+            return None
+        sizes = ndimage.sum(mask, lab, range(1, n + 1))
+        sl = ndimage.find_objects(lab == int(_np.argmax(sizes)) + 1)[0]
+        return sl[1].start, sl[0].start, sl[1].stop - 1, sl[0].stop - 1
+    except Exception:
+        pass
+
+    def longest_run(profile, n, occ=0.10):               # numpy-only fallback
+        on = list(profile > occ * n) + [False]
+        best = cur = None
+        for i, v in enumerate(on):
+            if v:
+                cur = i if cur is None else cur
+            elif cur is not None:
+                if best is None or (i - cur) > (best[1] - best[0] + 1):
+                    best = (cur, i - 1)
+                cur = None
+        return best or (0, len(profile) - 1)
+
+    h, w = mask.shape
+    x0, x1 = longest_run(mask.sum(0), h)
+    y0, y1 = longest_run(mask.sum(1), w)
+    return x0, y0, x1, y1
+
+
+def autocrop_box(im, margin=0.015, work=640, corner=0.10, cover=0.85, tol=46.0, min_px=800):
+    """Find the book against its background. Returns (box|None, diagnostics).
+
+    Deliberately conservative: it declines whenever the evidence is thin, because a crop that
+    clips the book is far worse than a photo that keeps some tabletop. Claude checks the results.
+    """
+    if _np is None:
+        return None, {"reason": "numpy not installed; run pip install -r tools/requirements.txt"}
+    W, H = im.size
+    sm = im.convert("RGB").copy()
+    sm.thumbnail((work, work))
+    a = _np.asarray(sm, dtype="float32")
+    h, w, _ = a.shape
+    c = max(4, int(round(min(h, w) * corner)))
+
+    votes, seen = {}, {}                                  # background = colours shared by >=2 corners
+    for idx, patch in enumerate([a[:c, :c], a[:c, -c:], a[-c:, :c], a[-c:, -c:]]):
+        q = (patch.reshape(-1, 3) // 24).astype("int32")
+        keys, counts = _np.unique(q, axis=0, return_counts=True)
+        o = _np.argsort(-counts)
+        keys, counts = keys[o], counts[o]
+        take = int(_np.searchsorted(_np.cumsum(counts) / counts.sum(), cover)) + 1
+        for k, n in zip(map(tuple, keys[:take]), counts[:take]):
+            votes.setdefault(k, set()).add(idx)
+            seen[k] = seen.get(k, 0) + int(n)
+    shared = [k for k, cs in votes.items() if len(cs) >= 2] or sorted(seen, key=lambda k: -seen[k])[:3]
+    bg = _np.array(shared, dtype="float32") * 24 + 12.0
+
+    dist = _np.linalg.norm(a[:, :, None, :] - bg[None, None, :, :], axis=3).min(axis=2)
+    mask = _open_mask(dist > tol)
+    fg = float(mask.mean())
+    diag = {"subject_fraction": round(fg, 3)}
+    if fg > 0.93:
+        return None, {**diag, "reason": "book already fills the frame"}
+    if fg < 0.04:
+        return None, {**diag, "reason": "no subject stands out from the background"}
+    bb = _largest_blob(mask)
+    if bb is None:
+        return None, {**diag, "reason": "no subject found"}
+    x0, y0, x1, y1 = bb
+    fill = float(mask[y0:y1 + 1, x0:x1 + 1].mean())
+    diag["solidity"] = round(fill, 3)
+    if fill < 0.75:
+        return None, {**diag, "reason": "no solid edge (looks like text or a close-up, nothing to trim)"}
+
+    sx, sy = W / w, H / h
+    mx, my = margin * W, margin * H
+    box = (max(0, int(x0 * sx - mx)), max(0, int(y0 * sy - my)),
+           min(W, int((x1 + 1) * sx + mx)), min(H, int((y1 + 1) * sy + my)))
+    cov = ((box[2] - box[0]) * (box[3] - box[1])) / float(W * H)
+    diag["coverage"] = round(cov, 3)
+    if cov < 0.20:
+        return None, {**diag, "reason": "detected region too small to be the book"}
+    if cov > 0.985:
+        return None, {**diag, "reason": "nothing worth trimming"}
+    gx, gy = 0.012 * W, 0.012 * H
+    sides = {"left": box[0] > gx, "top": box[1] > gy, "right": box[2] < W - gx, "bottom": box[3] < H - gy}
+    diag["margins"] = sorted(k for k, v in sides.items() if v)
+    if not ((sides["left"] and sides["right"]) or (sides["top"] and sides["bottom"])):
+        return None, {**diag, "reason": "book runs off the frame; nothing safe to trim"}
+    if min(box[2] - box[0], box[3] - box[1]) < min_px and min(W, H) >= min_px:
+        return None, {**diag, "reason": "crop would leave too few pixels"}
+    return box, diag
+
+
+def process_image(im, rotate=0, crop=True):
+    """EXIF orientation, then Mark's rotation, then the auto-crop. Returns (image, notes)."""
+    from PIL import ImageOps
+    im = ImageOps.exif_transpose(im)
+    notes = {}
+    if rotate:
+        im = im.rotate(rotate, expand=True)      # PIL rotates counter-clockwise
+        notes["rotated"] = rotate
+    if im.mode not in ("RGB", "L"):
+        im = im.convert("RGB")
+    if crop:
+        box, diag = autocrop_box(im)
+        if box:
+            before = im.size
+            im = im.crop(box)
+            notes["crop"] = {"applied": True, "box": list(box),
+                             "trimmed_pct": round(100 * (1 - (im.size[0] * im.size[1]) /
+                                                         float(before[0] * before[1]))),
+                             **{k: v for k, v in diag.items() if k in ("solidity", "margins")}}
+        else:
+            notes["crop"] = {"applied": False, "reason": diag.get("reason", "no box found")}
+    return im, notes
+
+
 def cmd_photos(a):
-    from PIL import Image, ImageOps
+    from PIL import Image
     try:
         import pillow_heif
         pillow_heif.register_heif_opener()
@@ -346,27 +512,60 @@ def cmd_photos(a):
             p.unlink()
         existing = []
     start = (max(int(p.stem) for p in existing) + 1) if existing else 1   # later batches append, numbering continues
+    rotations = parse_rotations(getattr(a, "rotate", None), list(a.files))
     report = []
     for i, src in enumerate(a.files, start=start):
         p = Path(src)
         try:
             im = Image.open(p)
-            im = ImageOps.exif_transpose(im)
         except Exception as e:
             report.append({"source": str(p), "error": f"cannot open: {e}"})
             continue
-        if im.mode not in ("RGB", "L"):
-            im = im.convert("RGB")
+        im, notes = process_image(im, rotate=rotations.get(src, 0), crop=not a.no_crop)
         im.thumbnail((a.max_px, a.max_px))  # keeps aspect ratio; never upsizes
         dest = out / f"{i}.jpg"
         im.save(dest, "JPEG", quality=a.quality, optimize=True, progressive=True)
         report.append({"source": str(p), "output": str(dest), "size_kb": round(dest.stat().st_size / 1024),
-                       "width": im.width, "height": im.height})
+                       "width": im.width, "height": im.height, **notes})
     all_photos = sorted_photos(str(out))
     repo_paths = [f"photos/{a.sku}/{p.name}" for p in all_photos]
     print(json.dumps({"sku": a.sku, "dir": str(out), "added": report, "total_photos": len(all_photos),
                       "over_abebooks_limit": max(0, len(all_photos) - 20),
-                      "listing_photos_field": repo_paths[:20]}, indent=2))
+                      "listing_photos_field": repo_paths[:20],
+                      "review": "open each output and check it: upright, and the book not clipped. "
+                                "Fix with: fix --sku <SKU> <n>=180 --recrop, or re-run photos --replace "
+                                "--no-crop with the same sources."}, indent=2))
+
+
+def cmd_fix(a):
+    """Rotate or re-crop photos already written to photos/<SKU>/ — after seeing how they came out."""
+    from PIL import Image
+    out = Path(a.out) if a.out else ((ROOT / "photos" / a.sku) if GIT_MODE else Path("photos") / a.sku)
+    have = {p.stem: p for p in sorted_photos(str(out))}
+    if not have:
+        raise SystemExit(f"no photos in {out}")
+    jobs = {}
+    for part in a.edits:
+        idx, _, ang = part.partition("=")
+        idx = idx.strip()
+        if idx not in have:
+            raise SystemExit(f"{out} has no photo {idx} (have {', '.join(sorted(have, key=int))})")
+        ang = (ang or "0").strip().lower()
+        if ang not in ROTATE_WORDS:
+            raise SystemExit(f"'{ang}' is not 0/90/180/270 (or left/right/flip)")
+        jobs[idx] = ROTATE_WORDS[ang]
+    if not jobs and a.recrop:
+        jobs = {k: 0 for k in have}
+    report = []
+    for idx, ang in sorted(jobs.items(), key=lambda kv: int(kv[0])):
+        src = have[idx]
+        im, notes = process_image(Image.open(src), rotate=ang, crop=a.recrop)
+        im.save(src, "JPEG", quality=a.quality, optimize=True, progressive=True)
+        report.append({"photo": str(src), "width": im.width, "height": im.height,
+                       "size_kb": round(src.stat().st_size / 1024), **notes})
+    print(json.dumps({"sku": a.sku, "dir": str(out), "changed": report,
+                      "note": "these are the processed copies; to undo a crop, re-run photos "
+                              "--replace --no-crop with the original files"}, indent=2))
 
 
 def condition_tier(text: str | None) -> int | None:
@@ -784,7 +983,18 @@ def main():
     p = sub.add_parser("photos"); p.add_argument("--sku", required=True); p.add_argument("--out")
     p.add_argument("--replace", action="store_true", help="start numbering from 1 again instead of appending")
     p.add_argument("--max-px", type=int, default=1600); p.add_argument("--quality", type=int, default=85)
+    p.add_argument("--rotate", help="one angle for all files, one per file in order, or name=angle pairs; "
+                                    "0/90/180/270 or left/right/flip (EXIF orientation is always applied first)")
+    p.add_argument("--no-crop", action="store_true", help="keep the full frame; by default the background "
+                                                          "is trimmed when the book's edges are unambiguous")
     p.add_argument("files", nargs="+"); p.set_defaults(fn=cmd_photos)
+    p = sub.add_parser("fix", help="rotate or re-crop photos already in photos/<SKU>/")
+    p.add_argument("--sku", required=True); p.add_argument("--out")
+    p.add_argument("--recrop", action="store_true", help="run the auto-crop again on these photos")
+    p.add_argument("--quality", type=int, default=88)
+    p.add_argument("edits", nargs="*", metavar="N=ANGLE",
+                   help="photo number = 0/90/180/270 or left/right/flip, e.g. 3=180 5=left")
+    p.set_defaults(fn=cmd_fix)
     p = sub.add_parser("price"); p.add_argument("--comps", required=True); p.add_argument("--condition", required=True)
     p.add_argument("--binding", choices=["hard", "soft", "any"], default="any"); p.add_argument("--new", action="store_true")
     p.add_argument("--method", choices=["avg-total", "max-total-discount", "average-item"], default="avg-total")
